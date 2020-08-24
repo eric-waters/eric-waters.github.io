@@ -19,7 +19,3 @@ io.on('connection', function(socket) {
     io.emit('message', msg);
   });
 });
-
-app.get('/', function(request, response) {
-  response.send(__dirname);
-  });
