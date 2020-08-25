@@ -45,6 +45,12 @@ body .custom-toggler.navbar-toggler {
 body .img-fluid {
   max-width: 50%; }
 
+.buttonLink {
+  transition: color 300ms ease;
+}
+  .buttonLink:hover  {
+    color: white;
+  }
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
