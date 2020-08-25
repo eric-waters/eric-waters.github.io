@@ -11,11 +11,14 @@ header,
 }
 
 #intro {
-  background: "assets/background_planets"no-repeat center center fixed;
+  background: url("../../assets/background_planets.jpg");
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%; 
+  overflow: hidden;
 }
 
 $theme-colors: (

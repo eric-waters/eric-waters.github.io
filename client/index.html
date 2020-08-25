@@ -25,6 +25,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarMenu">
 					<ul id="theList" class="navbar-nav ml-auto">
+						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link">Home</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#resume" class="nav-link">Resume</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="nav-link">Projects</a></li>
@@ -415,19 +416,19 @@
 				<p class="text-primary">Whether you want to just say hello, leave feedback on the website, or talk about an opportunity, I would love to hear it!</p>
 				<form>
 					<div class="form-group">
-					  <label class="text-muted" for="nameInput">Your name</label>
+					  <label class="text-muted text-left" style="display: block;" for="nameInput">Your name</label>
 					  <input type="text" class="form-control" id="nameInput" placeholder="John Doe" required>
 					</div>
 					<div class="form-group">
-						<label class="text-muted" for="nameInput">Your organization</label>
+						<label class="text-muted text-left" style="display: block;" for="nameInput">Your organization</label>
 						<input type="text" class="form-control" id="orgInput" placeholder="Company">
 					  </div>
 					<div class="form-group">
-						<label class="text-muted" for="emailInput">Your email address</label>
+						<label class="text-muted text-left" style="display: block;" for="emailInput">Your email address</label>
 						<input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
 					</div>
 					<div class="form-group">
-					  <label class="text-muted" for="messageInput">Write your message here</label>
+					  <label class="text-muted text-left" style="display: block;" for="messageInput">Write your message here</label>
 					  <textarea class="form-control" id="messageInput" rows="3" placeholder="Let's set up an interview!" required></textarea>
 					</div>
 					<button type="button" class="btn btn-primary" onclick="sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value)">Submit</button>
