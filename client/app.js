@@ -122,3 +122,23 @@ $(function () {
       container: 'body'
     })
   })
+
+  $(document).ready(function () {
+
+    $('[data-toggle="popover"]').popover({
+        placement: 'bottom',
+        delay: {
+            "show": 500,
+            "hide": 100
+        }
+    });
+
+    $('[data-toggle="popover"]').click(function () {
+
+        setTimeout(function () {
+            $('.popover').fadeOut('slow');
+        }, 3000);
+
+    });
+
+});
