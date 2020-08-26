@@ -111,34 +111,3 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-
-//popovers
-$(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-
-  $(function () {
-    $('.example-popover').popover({
-      container: 'body'
-    })
-  })
-
-  $(document).ready(function () {
-
-    $('[data-toggle="popover"]').popover({
-        placement: 'bottom',
-        delay: {
-            "show": 500,
-            "hide": 100
-        }
-    });
-
-    $('[data-toggle="popover"]').click(function () {
-
-        setTimeout(function () {
-            $('.popover').fadeOut('slow');
-        }, 3000);
-
-    });
-
-});
