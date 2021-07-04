@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "scss": "node-sass --watch client/src/scss -o client/src/css"
   },
   "keywords": [],
   "author": "",

@@ -48,9 +48,14 @@ body .img-fluid {
 .buttonLink {
   transition: color 300ms ease;
 }
-  .buttonLink:hover  {
-    color: white;
-  }
+
+.buttonLink:hover  {
+  color: white;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
