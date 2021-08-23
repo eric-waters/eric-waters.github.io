@@ -235,9 +235,30 @@
 				</div>
 
 				<!--Work Experience-->
-				<h3 class="heading text-center text-md-left">Work Experience</h3>
-				<hr class="my-3">
-				<p>Insert information about Dell here</p>
+				<div>
+					<h3 class="heading text-center text-md-left"><br>Work Experience</h3>
+					<hr class="my-3">
+					<div class="row">
+						<div class="col-7 col-md-5">
+							<div class="row mx-0">
+								<img src="assets/dell-logo.png" height="30" width="30" class="mr-1">
+								<h4 class="text-muted">Dell Technologies</h4>
+							</div>
+
+							<p class="text-dark">Software Engineering Intern</p>
+						</div>
+						<div class="col-5 col-md-7">
+							<p class="text-right">Remote - Arizona<br><em>May 2021 - August 2021</em></p>
+						</div>
+						<div class="container text-left">
+							<ul class="mx-auto">
+								<li>Created a Kanban Board application from scratch using Java, HTML/CSS, JavaScript, Spring, MySQL and deployed it to a company-accessible Tomcat server for use across Dell</li>
+								<li>Configured SSO against Dell’s LDAP directory for a tax exemption management application</li>
+								<li>Gathered requirements from key stakeholders, worked as part of a global team, and presented to executives</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
 				<!--Skills-->
 				<h3 class="heading text-center text-md-left"><br>Skills</h3>
@@ -248,7 +269,7 @@
 						<h5 class="heading text-muted text-center mt-3">Proficient:</h5>
 					</div>
 					<div class="col-12 col-md-8 my-2 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4" >Java</button>
+						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default" >Java</button>
 						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">C/C++</button>
 					</div>
 				</div>
@@ -325,6 +346,7 @@
 					<h3 class="heading text-center text-md-left"><br>Certifications (click to see certificates)</h3>
 					<hr class="my-3">
 					<div class="mt-3 text-center">
+						<a href="https://imgur.com/a/acjGnfg" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Udemy: The Java Spring Tutorial</button></a>
 						<a href="https://imgur.com/a/LcJuhp7" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: HTML</button></a>
 						<a href="https://imgur.com/a/9EKZ9CV" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: CSS</button></a>
 						<a href="https://imgur.com/a/k0x8kr8" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: JavaScript</button></a>
@@ -339,7 +361,8 @@
 						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">President's Scholarship</button>
 						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Annis Dotts Memorial Scholarship</button>
 						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Dean's List</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Opportunity Hack: Top 5 Team</button>
+						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Opportunity Hack Finalist</button>
+						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Dell Intern Hackathon – First Place</button>
 					</div>
 				</div>
 				<!--Employment History-->
@@ -395,16 +418,34 @@
 				<h1 class="heading text-center text-white">Projects</h1>
 			</div>
 			<!--Card Deck-->
-			<div class="card-deck mx-auto mt-3 cardWidth">
+			<div class="card-deck mx-auto mt-3">
+				<div class="card">
+				  <img class="card-img-top" src="assets/kanbanboard.png" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">Kanban Board</h5>
+					<p class="card-text">An agile project management tool to visualize your work and maximize your efficiency. Created using Spring MVC, Bootstrap, and MySQL.</p>
+					<div class="text-center">
+
+						<a class="text-dark" href="https://youtu.be/Yeo4pdilhBI" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Watch the Demonstration</button></a>
+						<a class="text-dark" href="https://devpost.com/software/kanban-board-0p7xeg" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
+						<a class="text-dark" href="https://thekanbanboard.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Try it out</button></a>
+					</div>
+				  </div>
+				  <div class="card-footer">
+					<small class="text-muted">Developed at SunHacks 2019</small>
+				  </div>
+				</div>
+			</div>
+			<div class="card-deck mx-auto mt-3">
 				<div class="card">
 				  <img class="card-img-top" src="assets/text_blaster.png" alt="Card image cap">
 				  <div class="card-body">
 					<h5 class="card-title">Fact Blast</h5>
 					<p class="card-text">A fun way to annoy your friends... or to make them better at trivia! Utilized Twilio, Firebase, and Heroku.</p>
 					<div class="text-center">
-						<button type="button" class="btn btn-primary mx-3 my-1" ><a class="text-dark" href="https://devpost.com/software/fact-blast" target="_blank">See the Devpost</a></button>
-						<button type="button" class="btn btn-primary mx-3 my-1"><a class="text-dark" href="http://sunhacks2019.herokuapp.com/" target="_blank">Visit the Website</a></button>
-						<button type="button" class="btn btn-primary mx-3 my-1"><a class="text-dark" href="https://github.com/eswaters/Sunhacks2019_FINAL" target="_blank">View in Github</a></button>
+						<a class="text-dark" href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
+						<a class="text-dark" href="http://sunhacks2019.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Visit the Website</button></a>
+						<a class="text-dark" href="https://github.com/eswaters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
 					</div>
 				  </div>
 				  <div class="card-footer">
@@ -417,23 +458,23 @@
 					<h5 class="card-title">NMTSA Scheduling App</h5>
 					<p class="card-text">Created an application to organize patient data and make it more accessible for therapists to read. First experience developing for a real organization!</p>
 					<div class="text-center">
-						<button type="button" class="btn btn-primary mx-3 my-1" ><a class="text-dark" href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank">See the Devpost</a></button>
-						<button type="button" class="btn btn-primary mx-3 my-1" ><a class="text-dark" href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank">View in Github</a></button>
+						<a class="text-dark" href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
+						<a class="text-dark" href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
 					</div>
 				  </div>
 				  <div class="card-footer">
-					<small class="text-muted">Developed at Opportunity Hack 2019 - 5th Place</small>
+					<small class="text-muted">Developed at Opportunity Hack 2019 - Finalists</small>
 				  </div>
 				</div>
 			</div>
-			<div class="card-deck mx-auto mt-4 cardWidth">
+			<div class="card-deck mx-auto mt-4">
 				<div class="card">
 				  <img class="card-img-top" src="assets/Project_Spyn_2.jpg" alt="Card image cap">
 				  <div class="card-body">
 					<h5 class="card-title">Lego EV3 Robot</h5>
 					<p class="card-text">Made entirely of Legos and electric motors, this little robot can make its way through a maze, pick up a passenger (manually), and deliver them to the drop-off point.<br>Created with MATLAB.</p>
 					<div class="text-center">
-						<button type="button" class="btn btn-primary mx-3 my-1"><a class="text-dark" href="https://www.youtube.com/watch?v=3HiXNcQ5-lU" target="_blank">Watch on Youtube</a></button>
+						<a class="text-dark" href="https://www.youtube.com/watch?v=3HiXNcQ5-lU" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Watch on Youtube</button></a>
 					</div>
 				  </div>
 				  <div class="card-footer">
@@ -448,8 +489,8 @@
 						  this was my first GUI application. It allows the user to select a game, seats, enter their card information, 
 						  and export a ticket as a .txt file into their file system.</p>
 					  <div class="text-center">
-						<button type="button" class="btn btn-primary mx-3 my-1" ><a class="text-dark" href="https://devpost.com/software/ticket-system" target="_blank">See the Devpost</a></button>
-						<button type="button" class="btn btn-primary mx-3 my-1" ><a class="text-dark" href="https://github.com/eswaters/Ticket-System" target="_blank">View in Github</a></button>
+						<a class="text-dark" href="https://devpost.com/software/ticket-system" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
+						<a class="text-dark" href="https://github.com/eswaters/Ticket-System" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
 					  </div>
 					</div>
 					<div class="card-footer">
