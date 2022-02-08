@@ -1,4 +1,6 @@
-// My variables
+//To run from root directory:
+//sass client/src/scss/app.scss client/src/css/bootstrap.css
+
 html body .heading{
   font-family: 'Courier New';
 }
@@ -21,18 +23,9 @@ header,
   overflow: hidden;
 }
 
-$theme-colors: (
-    "primary": #ffffff,
-    "danger": #990033
-);
-
 body .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102,204,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-body .custom-toggler.navbar-toggler {
-  border-color: rgb(102, 204, 255);
-} 
 
 .icon {
   height: 15%;
@@ -56,34 +49,25 @@ body .custom-toggler.navbar-toggler {
   top: -6%;
 }
 
-
-.cardWidth {
-  //s
-  @media (min-width: 576px) {
-
-  }
-  //md
-  @media (min-width: 768px) {
-
-  }
-  //lg
-  @media (min-width: 992px) {
-
-  }
-  //xl
-  @media (min-width: 1200px) {
-
-  }
-}
-
-body .img-fluid {
-  max-width: 50%;
+.buttonLink {
+  transition: color 300ms ease;
 }
 
 .buttonLink:hover  {
   color: white;
 }
 
+.cursor-default {
+  cursor: default !important;
+}
+
+$primary: #9bc4e2;
+$secondary: #6082B6;
+$light: #f2f2f2;
+
 // Bootstrap and its default variables
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "~bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body .custom-toggler.navbar-toggler {
+  border-color: $primary;
+} 

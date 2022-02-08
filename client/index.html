@@ -4,29 +4,27 @@
         <title>Eric Waters</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-		<link rel="stylesheet" href="/src/css/bootstrap.css">
-		<link rel="stylesheet" href="/src/css/styles.css">
+		<link rel="stylesheet" href="src/css/bootstrap.css">
 		<link rel="icon" href="assets/pitchfork_logo.png">
        	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
 		<link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-		<!-- font awesome -->
+		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/d9fddfb3f3.js" crossorigin="anonymous"></script>
 	</head>
 	
     <body>
-            <!--Main Navigation-->
+    <!--Main Navigation-->
 	<header>
 		<nav id="myNavbar" class="navbar navbar-expand-md navbar-primary bg-dark fixed-top">
-			<div class="container-fluid">
+			<div class="container-fluid mx-1">
 				<a class="navbar-brand">Eric Waters</a>
-				<button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarMenu">
-					<ul id="theList" class="navbar-nav ml-auto">
-						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link">Home</a></li>
+					<ul id="theList" class="navbar-nav ms-auto">
+						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link active">Home</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#resume" class="nav-link">Resume</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="nav-link">Projects</a></li>
@@ -59,11 +57,11 @@
 						<img class="img-fluid mx-auto" src="assets/Headshot.jpg" style="border-radius: 50%; max-width: 30%; min-width: 20%; display: block;">
 					<!--Social Media Links-->
 					<div class="container mt-3 text-center" style="font-size: 2rem">
-                        <a href="mailto:eswaters@asu.edu" class="fa fa-envelope px-2 mt-2"></a>
-                        <a href="https://github.com/eswaters?tab=repositories" class="fa fa-github px-2 mt-2" target="_blank"></a>
-                        <a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2" target="_blank"></a>
-                        <a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram px-2 mt-2" target="_blank"></a>
-                        <a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin px-2 mt-2" target="_blank"></a>
+                        <a href="mailto:eswaters@asu.edu" class="fa fa-envelope px-2 mt-2 text-decoration-none"></a>
+                        <a href="https://github.com/eswaters?tab=repositories" class="fa fa-github px-2 mt-2 text-decoration-none" target="_blank"></a>
+                        <a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2 text-decoration-none" target="_blank"></a>
+                        <a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram px-2 mt-2 text-decoration-none" target="_blank"></a>
+                        <a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin px-2 mt-2 text-decoration-none" target="_blank"></a>
 					</div>
 					<!--Learn more about me-->
 					
@@ -82,122 +80,126 @@
 
 	<!--Main Layout-->
 	<main>
+		<div id="aboutMe" class="container-fluid bg-light">
+			<div class="container">
+				<h1 class="heading text-center py-3">About Me</h1>
+				<hr class="mb-5">
 
-		<div id="aboutMe" class="container">
-			<h1 class="heading text-center my-3">About Me</h1>
-			<hr class="mb-5">
-
-			<!--Carousel-->
-			<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				  <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-				  <li data-target="#carouselIndicators" data-slide-to="1"></li>
-				  <li data-target="#carouselIndicators" data-slide-to="2 mt-2"></li>
-				  <li data-target="#carouselIndicators" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-				  <div class="carousel-item active">
-					<img class="d-block w-100" src="assets/Ski.jpg" alt="First slide">
+				<!--Carousel-->
+				<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/Ski.jpg" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-							<h5>Skiing at Snowbowl Arizona</h5>
-					  	</div>
-				  </div>
-				  <div class="carousel-item">
-					<img class="d-block w-100" src="assets/Bikes.JPG" alt="Second slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Mountain Biking at Northstar, California</h5>
+						<!-- <h5>First slide label</h5> -->
+						<p>Skiing at Snowbowl Arizona</p>
 						</div>
-				  </div>
-				  <div class="carousel-item">
-					<img class="d-block w-100" src="assets/Fish.JPG" alt="Third slide">
+					</div>
+					<div class="carousel-item">
+						<img src="assets/Bikes.JPG" class="d-block w-100" alt="...">
 						<div class="carousel-caption d-none d-md-block">
-							<h5>Baracuda caught in Punta Cana, Dominican Republic</h5>
-					 	</div>
-				  </div>
-				  <div class="carousel-item">
-					<img class="d-block w-100" src="assets/New York.JPG" alt="Fourth slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Fine Arts Tour to New York, New York</h5>
+						<!-- <h5>Second slide label</h5> -->
+						<p>Mountain Biking in Truckee, California</p>
 						</div>
-				  </div>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/Fish.JPG" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						<!-- <h5>Third slide label</h5> -->
+						<p>Baracuda caught in Punta Cana, Dominican Republic</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/New York.JPG" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						<!-- <h5>Fourth slide label</h5> -->
+						<p>Fine Arts Tour to New York, New York</p>
+						</div>
+					</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
 			</div>
-
-			
+				
 			<!--Personal info Section-->
 			<div class="container">
 				<h1 class="heading text-center mt-5">Hobbies</h1>
 				<hr class="my-4">
 				<div class="text-center mt-3">
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Video Games</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Hiking</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Reading</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Skiing</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">YouTube</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Spending time with friends</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Self-Improvement</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Exercising</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Video Games</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Hiking</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Reading</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Skiing</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">YouTube</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Spending time with friends</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Self-Improvement</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Exercising</button>
 				</div>
 			</div>
 			<div class="container">
 				<h1 class="heading text-center mt-5">Sports I've Played</h1>
 				<hr class="my-4">
 				<div class="text-center mt-3">
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Gymnastics</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Football</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Basketball</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Baseball</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Pole Vaulting</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Diving</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Gymnastics</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Football</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Basketball</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Baseball</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Pole Vaulting</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Diving</button>
 				</div>
 			</div>
 			<div class="container">
 				<h1 class="heading text-center mt-5">Passionate Interests</h1>
 				<hr class="my-4">
 				<div class="text-center mt-3">
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Astronomy</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">PC Parts/Building</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Tesla Motors</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Space Exploration</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Neuralink</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Star Wars</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Astrophysics</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Programming</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-2 cursor-default">Sustainable Energy</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Astronomy</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">PC Parts/Building</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Tesla Motors</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Space Exploration</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Neuralink</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Star Wars</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Astrophysics</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Programming</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-2 cursor-default">Sustainable Energy</button>
 				</div>
 				<br>
 			</div>
 		
 		</div>
-		<div id="resume" class="container-fluid" style="background-color: #e8e8e8;">
+		<div id="resume" class="container-fluid">
 			<div class="container">
-				<h1 class="heading mx-2 mt-3 pt-3 text-black text-center" >Resume</h1>
-				<div class="row text-center mx-auto" style="display: block;">
-					<div class="mx-3">
-						<i class="fas fa-user mr-2"></i><span class="text-muted">Eric Stephen Waters</span>
+				<h1 class="heading mx-2 pt-3 text-black text-center">Resume</h1>
+				<div class="row text-center">
+					<div>
+						<i class="fas fa-user me-2"></i><span class="text-muted">Eric Stephen Waters</span>
 					</div>
-					<div class="mx-3">
-						<i class="fas fa-map-pin mr-2"></i><span class="text-muted">977 East Apache Blvd Apt 1046-B, Tempe, Arizona 85281</span>
+					<div>
+						<i class="fas fa-map-pin me-2"></i><span class="text-muted">977 East Apache Blvd Apt 1046-B, Tempe, Arizona 85281</span>
 					</div>
-					<div class="mx-3">
-						<i class="fas fa-phone-alt mr-2"></i><span class="text-muted">+1 (480)-359-8677</span>
+					<div>
+						<i class="fas fa-phone-alt me-2"></i><span class="text-muted">+1 (480)-359-8677</span>
 					</div>
-					<div class="mx-3">
-						<i class="fas fa-envelope mr-2"></i><span class="text-muted">eswaters@asu.edu</span>
+					<div>
+						<i class="fas fa-envelope me-2"></i><span class="text-muted">eswaters@asu.edu</span>
 					</div>
 				</div>
 			</div>
-			<div class="container mt-3">
+			<div class="container mt-5">
 				<!--Education-->
-				<h3 class="heading text-center text-md-left">Education</h3>
+				<h3 class="heading text-center text-md-start">Education</h3>
 				<hr class="my-3">
 				<div class="container text-center">
 					<img class="icon img-fluid" src="assets/barrett_logo.png">
@@ -207,50 +209,51 @@
 				<div class="row">
 					
 					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-						<p class="text-dark text-center text-md-left"><strong>Arizona State University, Tempe Campus<br>Barrett, the Honors College<br>Computer Science, B.S.</strong></p>
+						<p class="text-dark text-center text-sm-start"><strong>Arizona State University, Tempe Campus<br>Barrett, the Honors College<br>Computer Science, B.S.</strong></p>
 					</div>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-						<p class="text-dark text-center text-md-right">Tempe, Arizona<br>Graduating May, 2022<br>4.00 GPA</p>
+						<p class="text-dark text-center text-sm-end">Tempe, Arizona<br>Graduating May, 2022<br>4.00 GPA</p>
 					</div>
 				</div>
-				<h4 class="heading text-muted text-center text-md-left"><br>Key Coursework Completed:</h4>
+				<h4 class="heading text-muted text-center text-md-start"><br>Key Coursework Completed:</h4>
 				<div class="mt-3 text-center">
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 205: Object-Oriented Programming & Data (A)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 240: Intro to Programming Languages (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 230: Computer Organization & Assembly Language Programming (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 310: Data Structures & Algorithms (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 360: Intro to Software Engineering (A)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 330: Operating Systems (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 340: Principles of Programming Languages (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 365: Information Assurance (A+)</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 355: Intro to Theoretical Computer Science (A)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 205: Object-Oriented Programming & Data (A)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 240: Intro to Programming Languages (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 230: Computer Organization & Assembly Language Programming (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 310: Data Structures & Algorithms (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 360: Intro to Software Engineering (A)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 330: Operating Systems (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 340: Principles of Programming Languages (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 365: Information Assurance (A+)</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 355: Intro to Theoretical Computer Science (A)</button>
 				</div>
-				<h4 class="heading text-muted text-center text-md-left"><br>Coursework In Progress:</h4>
+				<h4 class="heading text-muted text-center text-md-start"><br>Coursework In Progress:</h4>
 				<div class="mt-3 text-center">
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 412: Database Management</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 464: Software QA and Testing</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">IEE 380: Probability & Statistics for Engineers</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 485: Capstone Project</button>
-					<button type="button" class="btn btn-outline-info mx-2 my-1 cursor-default">CSE 492: Honors Thesis</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 412: Database Management</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 464: Software QA and Testing</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">IEE 380: Probability & Statistics for Engineers</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 485: Capstone Project</button>
+					<button type="button" class="btn btn-outline-secondary mx-2 my-1 cursor-default">CSE 492: Honors Thesis</button>
 				</div>
 
 				<!--Work Experience-->
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Work Experience</h3>
+					<h3 class="heading text-center text-md-start"><br>Work Experience</h3>
 					<hr class="my-3">
 					<div class="row">
 						<div class="col-7 col-md-5">
-							<div class="row mx-0">
-								<img src="assets/dell-logo.png" height="30" width="30" class="mr-1">
-								<h4 class="text-muted">Dell Technologies</h4>
+							<div class="d-flex flex-row">
+								<img src="assets/dell-logo.png" class="me-2 img-fluid" style="max-width: 20%;">
+								<div class="d-flex flex-column justify-content-center">
+									<h4 class="text-muted">Dell Technologies</h4>
+								</div>
 							</div>
-
-							<p class="text-dark">Software Engineering Intern</p>
+							<p class="text-dark mt-3 ms-1"><em>Software Engineering Intern</em></p>
 						</div>
 						<div class="col-5 col-md-7">
-							<p class="text-right">Remote - Arizona<br><em>May 2021 - August 2021</em></p>
+							<p class="text-end">Remote - Arizona<br><em>May 2021 - August 2021</em></p>
 						</div>
-						<div class="container text-left">
+						<div class="container text-start">
 							<ul class="mx-auto">
 								<li>Created a Kanban Board application from scratch using Java, HTML/CSS, JavaScript, Spring, MySQL and deployed it to a company-accessible Tomcat server for use across Dell</li>
 								<li>Configured SSO against Dell’s LDAP directory for a tax exemption management application</li>
@@ -261,16 +264,16 @@
 				</div>
 
 				<!--Skills-->
-				<h3 class="heading text-center text-md-left"><br>Skills</h3>
+				<h3 class="heading text-center text-md-start"><br>Skills</h3>
 				<hr class="my-3">
-				<h4 class="heading text-muted text-center text-md-left"><br>Programming Languages:</h4>
+				<h4 class="heading text-muted text-center text-md-start"><br>Programming Languages:</h4>
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<h5 class="heading text-muted text-center mt-3">Proficient:</h5>
 					</div>
 					<div class="col-12 col-md-8 my-2 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default" >Java</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">C/C++</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default" >Java</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">C/C++</button>
 					</div>
 				</div>
 				<div class="row">
@@ -278,10 +281,10 @@
 						<h5 class="heading text-muted text-center mt-3">Effective:</h5>
 					</div>
 					<div class="col-12 col-md-8 my-2 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">HTML</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">CSS</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">JavaScript</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">SQL</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">HTML</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">CSS</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">JavaScript</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">SQL</button>
 					</div>
 				</div>
 				<div class="row">
@@ -289,89 +292,89 @@
 				<h5 class="heading text-muted text-center mt-3">Familiar:</h5>
 					</div>
 					<div class="col-12 col-md-8 my-2 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">Assembly</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">MATLAB</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">Prolog</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 cursor-default">Scheme</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">Assembly</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">MATLAB</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">Prolog</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 cursor-default">Scheme</button>
 					</div>
 				</div>
 				<hr class="my-2" style="width: 80%;">
 				<div class="row">
 					<div class="col-12 col-md-4">
-						<h4 class="heading text-muted text-center text-md-left"><br>Tools/Technologies:</h4>
+						<h4 class="heading text-muted text-center text-md-start"><br>Tools/Technologies:</h4>
 					</div>
 					<div class="col-12 col-md-8 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Spring Framework</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">MySQL</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Oracle DB</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Bootstrap</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Git</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Linux Command Line</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">JavaServer Pages (JSP) & JSTL</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Maven</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Apache Tomcat</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">Firebase</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 px-4 mt-md-4 cursor-default">NodeJS</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Spring Framework</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">MySQL</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Oracle DB</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Bootstrap</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Git</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Linux Command Line</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">JavaServer Pages (JSP) & JSTL</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Maven</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Apache Tomcat</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">Firebase</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 px-4 mt-md-4 cursor-default">NodeJS</button>
 					</div>
 				</div>
 				<hr class="mt-4" style="width: 80%;">
 				<div class="row">
 					<div class="col-12 col-md-4">
-						<h4 class="heading text-muted text-center text-md-left"><br>Key Concepts:</h4>
+						<h4 class="heading text-muted text-center text-md-start"><br>Key Concepts:</h4>
 					</div>
 					<div class="col-12 col-md-8">
 						<div class="mt-3 text-center">
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Object Orientation</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Data Structures</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Algorithm Design & Analysis</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">MVC Architecture</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Dependency Injection</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Lexer/Parser Construction</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Full-Stack Web Development & Design</button>
-							<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Aspect Oriented Programming</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Object Orientation</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Data Structures</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Algorithm Design & Analysis</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">MVC Architecture</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Dependency Injection</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Lexer/Parser Construction</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Full-Stack Web Development & Design</button>
+							<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Aspect Oriented Programming</button>
 
 						</div>
 					</div>
 				</div>
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Strongest Soft Skills</h3>
+					<h3 class="heading text-center text-md-start"><br>Strongest Soft Skills</h3>
 					<hr class="my-3">
 					<div class="mt-3 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Oral and Written Communication</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Teamwork</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Consistency and Reliability</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Problem Solving</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Adaptability</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Oral and Written Communication</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Teamwork</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Consistency and Reliability</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Problem Solving</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Adaptability</button>
 					</div>
 				</div>
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Certifications (click to see certificates)</h3>
+					<h3 class="heading text-center text-md-start"><br>Certifications (click to see certificates)</h3>
 					<hr class="my-3">
 					<div class="mt-3 text-center">
-						<a href="https://imgur.com/a/acjGnfg" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Udemy: The Java Spring Tutorial</button></a>
-						<a href="https://imgur.com/a/LcJuhp7" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: HTML</button></a>
-						<a href="https://imgur.com/a/9EKZ9CV" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: CSS</button></a>
-						<a href="https://imgur.com/a/k0x8kr8" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: JavaScript</button></a>
-						<a href="https://imgur.com/a/dVdZc7X" target="_blank"><button type="button" class="btn btn-outline-info mx-2 my-1 mt-2">Codecademy: Building Interactive JavaScript Websites</button></a>
+						<a href="https://imgur.com/a/acjGnfg" target="_blank"><button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2">Udemy: The Java Spring Tutorial</button></a>
+						<a href="https://imgur.com/a/LcJuhp7" target="_blank"><button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2">Codecademy: HTML</button></a>
+						<a href="https://imgur.com/a/9EKZ9CV" target="_blank"><button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2">Codecademy: CSS</button></a>
+						<a href="https://imgur.com/a/k0x8kr8" target="_blank"><button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2">Codecademy: JavaScript</button></a>
+						<a href="https://imgur.com/a/dVdZc7X" target="_blank"><button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2">Codecademy: Building Interactive JavaScript Websites</button></a>
 					</div>
 				</div>
 				<!--Accolades-->
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Accolades</h3>
+					<h3 class="heading text-center text-md-start"><br>Accolades</h3>
 					<hr class="my-3">
 					<div class="mt-3 text-center">
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">ASU SunHacks 2021: American Airlines First Place</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">ASU SunHacks 2021: Best Use of AssemblyAI</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">President's Scholarship</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Annis Dotts Memorial Scholarship</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Dean's List (Every Semester)</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Opportunity Hack Finalist</button>
-						<button type="button" class="btn btn-outline-info mx-2 my-1 mt-2 cursor-default">Dell Intern Hackathon – First Place</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">ASU SunHacks 2021: American Airlines First Place</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">ASU SunHacks 2021: Best Use of AssemblyAI</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">President's Scholarship</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Annis Dotts Memorial Scholarship</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Dean's List (Every Semester)</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Opportunity Hack Finalist</button>
+						<button type="button" class="btn btn-outline-secondary mx-2 my-1 mt-2 cursor-default">Dell Intern Hackathon – First Place</button>
 					</div>
 				</div>
 				<!--Employment History-->
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Other Employment History</h3>
+					<h3 class="heading text-center text-md-start"><br>Other Employment History</h3>
 					<hr class="my-3">
 					<div class="row">
 						<div class="col-5">
@@ -379,9 +382,9 @@
 							<p class="text-dark">Waiter</p>
 						</div>
 						<div class="col-7">
-							<p class="text-right">Mesa, Arizona<br><em>November 2017 - August 2019</em></p>
+							<p class="text-end">Mesa, Arizona<br><em>November 2017 - August 2019</em></p>
 						</div>
-						<div class="container text-center text-md-left">
+						<div class="container text-center text-md-start">
 							<p class="mx-auto">Developed skills with accountability and customer relations. Learned how to connect with people and fit their needs.</p>
 						</div>
 					</div>
@@ -392,9 +395,9 @@
 							<p class="text-dark">Shift Leader</p>
 						</div>
 						<div class="col-7">
-							<p class="text-right">Tempe, Arizona<br><em>October 2015 - October 2017</em></p>
+							<p class="text-end">Tempe, Arizona<br><em>October 2015 - October 2017</em></p>
 						</div>
-						<div class="container text-center text-md-left">
+						<div class="container text-center text-md-start">
 						<p class="mx-auto">Primary takeaway was leadership. Duty of training new employees and opening/closing was valuable in learning to manage both
 							myself and others.</p>
 						</div>
@@ -403,7 +406,7 @@
 				</div>
 				<!--Extracurriculars and Service-->
 				<div>
-					<h3 class="heading text-center text-md-left"><br>Extra Curriculars & Service</h3>
+					<h3 class="heading text-center text-md-start"><br>Extra Curriculars & Service</h3>
 					<hr class="my-3">
 					<ul>
 						<li>Active member of ASU's Software Developer's Association (SODA)</li>
@@ -412,80 +415,85 @@
 					<br>
 				</div>
 				<div class="text-center my-3">
-					<a href="assets/Resume_Eric_Waters.pdf" download><button type="button" class="btn btn-info">Download Resume (PDF)</button></a>
+					<a href="assets/Resume_Eric_Waters.pdf" download><button type="button" class="btn btn-secondary text-light">Download Resume (PDF)</button></a>
 				</div>
 				<br>
 			</div>
 		</div>
-		<div id="projects" class="container-fluid" style="background-color:#343A40;">
+		<div id="projects" class="container-fluid bg-dark">
 			<div class="pt-3 pb-1">
 				<h1 class="heading text-center text-white">Projects</h1>
 			</div>
 			<!--Card Deck-->
-			<div class="card-deck mx-auto mt-3">
-				<div class="card">
-				  <img class="card-img-top" src="assets/kanbanboard.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title">Kanban Board</h5>
-					<p class="card-text">An agile project management tool to visualize your work and maximize your efficiency. Created using Spring MVC, Bootstrap, and MySQL.</p>
-					<div class="text-center">
-
-						<a class="text-dark" href="https://youtu.be/Yeo4pdilhBI" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Watch the Demonstration</button></a>
-						<a class="text-dark" href="https://devpost.com/software/kanban-board-0p7xeg" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
-						<a class="text-dark" href="https://thekanbanboard.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Try it out</button></a>
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/kanbanboard.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Kanban Board</h5>
+							<p class="card-text">An agile project management tool to visualize your work and maximize your efficiency. Created using Spring MVC, Bootstrap, and MySQL.</p>
+							<div class="text-center">
+								<a href="https://youtu.be/Yeo4pdilhBI" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">Watch the Demonstration</button></a>
+								<a href="https://devpost.com/software/kanban-board-0p7xeg" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://thekanbanboard.herokuapp.com/" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">Try it out</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed during Summer 2021</small>
+						</div>
 					</div>
-				  </div>
-				  <div class="card-footer">
-					<small class="text-muted">Developed during Summer 2021</small>
-				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="assets/aa-inflight-transcriber.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title">AA In-Flight Transcriber</h5>
-					<p class="card-text">Transcribes in-fight announcements in real-time so that you don't miss a beat. Created using AssemblyAI, Bootstrap, and Firebase.</p>
-					<div class="text-center">
-						<a class="text-dark" href="https://tinyurl.com/y8ep483c" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See AssemblyAI's Blog Post</button></a>
-						<a class="text-dark" href="https://www.youtube.com/watch?v=e8oAAE0ailk&t=1s" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Watch the Demonstration</button></a>
-						<a class="text-dark" href="https://devpost.com/software/in-flight-closed-captioning" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
-						<a class="text-dark" href="https://aa-inflight-transcriber.herokuapp.com" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Try it out</button></a>
-						<a class="text-dark" href="https://github.com/clarkshaeffer/flight_captioning" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/aa-inflight-transcriber.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">AA In-Flight Transcriber</h5>
+							<p class="card-text">Transcribes in-fight announcements in real-time so that you don't miss a beat. Created using AssemblyAI, Bootstrap, and Firebase.</p>
+							<div class="text-center">
+								<a href="https://tinyurl.com/y8ep483c" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">See AssemblyAI's Blog Post</button></a>
+								<a href="https://www.youtube.com/watch?v=e8oAAE0ailk&t=1s" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">Watch the Demonstration</button></a>
+								<a href="https://devpost.com/software/in-flight-closed-captioning" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://aa-inflight-transcriber.herokuapp.com" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">Try it out</button></a>
+								<a href="https://github.com/clarkshaeffer/flight_captioning" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at SunHacks 2021 - Awarded American Airlines & AssemblyAI First Place Prizes</small>
+						</div>
 					</div>
-				  </div>
-				  <div class="card-footer">
-					<small class="text-muted">Developed at SunHacks 2021 - Awarded American Airlines & AssemblyAI First Place Prizes</small>
-				  </div>
 				</div>
-			</div>
-			<div class="card-deck mx-auto mt-3">
-				<div class="card">
-				  <img class="card-img-top" src="assets/text_blaster.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title">Fact Blast</h5>
-					<p class="card-text">A fun way to annoy your friends... or to make them better at trivia! Utilized Twilio and Firebase.</p>
-					<div class="text-center">
-						<a class="text-dark" href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
-						<a class="text-dark" href="http://sunhacks2019.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">Visit the Website</button></a>
-						<a class="text-dark" href="https://github.com/eswaters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/text_blaster.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Fact Blast</h5>
+							<p class="card-text">A fun way to annoy your friends... or to make them better at trivia! Utilized Twilio and Firebase.</p>
+							<div class="text-center">
+								<a href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="http://sunhacks2019.herokuapp.com/" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">Visit the Website</button></a>
+								<a href="https://github.com/eswaters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at SunHacks 2019</small>
+						</div>
 					</div>
-				  </div>
-				  <div class="card-footer">
-					<small class="text-muted">Developed at SunHacks 2019</small>
-				  </div>
 				</div>
-				<div class="card">
-				  <img class="card-img-top" src="assets/NMTSA.png" alt="Card image cap">
-				  <div class="card-body">
-					<h5 class="card-title">NMTSA Scheduling App</h5>
-					<p class="card-text">Created an application to organize patient data and make it more accessible for therapists to read. Utilized Bootstrap and Spring MVC.</p>
-					<div class="text-center">
-						<a class="text-dark" href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">See the Devpost</button></a>
-						<a class="text-dark" href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1">View in Github</button></a>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/NMTSA.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">NMTSA Scheduling App</h5>
+							<p class="card-text">Created an application to organize patient data and make it more accessible for therapists to read. Utilized Bootstrap and Spring MVC.</p>
+							<div class="text-center">
+								<a href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-secondary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at Opportunity Hack 2019 - Finalists</small>
+						</div>
 					</div>
-				  </div>
-				  <div class="card-footer">
-					<small class="text-muted">Developed at Opportunity Hack 2019 - Finalists</small>
-				  </div>
 				</div>
 			</div>
 			<!-- <div class="card-deck mx-auto mt-4">
@@ -528,53 +536,50 @@
 
 	<!--Footer-->
 	<footer>
-		<div id="contact" class="container-fluid text-center" style="background-color: #343A40;">
+		<div id="contact" class="container-fluid text-center bg-light pt-4">
 			<div class="container">
-				<h5 class="text-primary">Send me a message!</h5>
-				<p class="text-primary">Whether you want to just say hello, leave feedback on the website, or talk about an opportunity, I would love to hear it!</p>
+				<h5 class="text-secondary">Send me a message!</h5>
+				<p class="text-secondary">Whether you want to just say hello, leave feedback on the website, or talk about an opportunity, I would love to hear it!</p>
 				<form>
 					<div class="form-group">
-					  <label class="text-muted text-center" style="display: block;" for="nameInput">Your name</label>
-					  <input type="text" class="form-control text-center" id="nameInput" placeholder="John Doe" required>
+					  <label class="text-muted text-center mb-1" style="display: block;" for="nameInput">Your name</label>
+					  <input type="text" class="form-control text-center mb-2" id="nameInput" placeholder="John Doe" required>
 					</div>
 					<div class="form-group">
-						<label class="text-muted text-center" style="display: block;" for="nameInput">Your organization</label>
-						<input type="text" class="form-control text-center" id="orgInput" placeholder="Company">
+						<label class="text-muted text-center mb-1" style="display: block;" for="nameInput">Your organization</label>
+						<input type="text" class="form-control text-center mb-2" id="orgInput" placeholder="Company">
 					  </div>
 					<div class="form-group">
-						<label class="text-muted text-center" style="display: block;" for="emailInput">Your email address</label>
-						<input type="email" class="form-control text-center" id="emailInput" placeholder="name@example.com">
+						<label class="text-muted text-center mb-1" style="display: block;" for="emailInput">Your email address</label>
+						<input type="email" class="form-control text-center mb-2" id="emailInput" placeholder="name@example.com">
 					</div>
 					<div class="form-group">
-					  <label class="text-muted text-center" style="display: block;" for="messageInput">Write your message here</label>
-					  <textarea class="form-control text-center" id="messageInput" rows="3" placeholder="Let's set up an interview!" required></textarea>
+					  <label class="text-muted text-center mb-1" style="display: block;" for="messageInput">Write your message here</label>
+					  <textarea class="form-control text-center mb-2" id="messageInput" rows="3" placeholder="Let's set up an interview!" required></textarea>
 					</div>
-					<button type="button" class="btn btn-primary" onclick="sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value)">Submit</button>
+					<button type="button" class="btn btn-secondary mt-2 text-light" onclick="sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value)">Submit</button>
 				  </form>
 			</div>
 			<div class="container mt-3">
-				<p class="text-primary">Website developed by Eric Waters<br>eswaters@asu.edu</p>
+				<p class="text-secondary">Website developed by Eric Waters<br>eswaters@asu.edu</p>
 				<div class="container text-center" style="font-size: 1.4rem">
-					<a href="mailto:eswaters@asu.edu" class="fa fa-envelope mx-2"></a>
-					<a href="https://github.com/eswaters?tab=repositories" class="fa fa-github mx-2" target="_blank"></a>
-					<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook mx-2" target="_blank"></a>
-					<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram mx-2" target="_blank"></a>
-					<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin mx-2" target="_blank"></a>
+					<a href="mailto:eswaters@asu.edu" class="fa fa-envelope mx-2 text-decoration-none text-secondary"></a>
+					<a href="https://github.com/eswaters?tab=repositories" class="fa fa-github mx-2 text-decoration-none text-secondary" target="_blank"></a>
+					<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook mx-2 text-decoration-none text-secondary" target="_blank"></a>
+					<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram mx-2 text-decoration-none text-secondary" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin mx-2 text-decoration-none text-secondary" target="_blank"></a>
 				</div>
 			</div>
 			<br>
 		</div>
 	</footer>
-	<!--Footer-->
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-		<!-- <script src="./bundle.js"></script> -->
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
-		<!-- <script src="src/js/script.js"></script> -->
-        <script src="src/js/jquery.min.js"></script>
-        <script src="src/js/popper.min.js"></script>
-	   <script src="src/js/bootstrap.min.js"></script>
-	   <script src="./app.js"></script>
+	<!--End Footer-->
+
+	<!--Mail Script-->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<!--Bootstrap Bundle JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!--My own custom JS-->
+	<script src="./app.js"></script>
   </body>
 </html>
