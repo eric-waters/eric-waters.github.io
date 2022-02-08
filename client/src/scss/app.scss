@@ -61,6 +61,28 @@ body .custom-toggler .navbar-toggler-icon {
   cursor: default !important;
 }
 
+.image-background-left {
+  position: absolute;
+  width: 40rem;
+  left: -30%;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  top: 50%;
+  opacity: 0.06;
+}
+.image-background-right {
+  position: absolute;
+  width: 40rem;
+  left: 0%;
+  right: -30%;
+  margin: auto;
+  bottom: 0;
+  top: 50%;
+  opacity: 0.06;
+}
+
+
 $primary: #9bc4e2;
 $secondary: #6082B6;
 $light: #f2f2f2;
