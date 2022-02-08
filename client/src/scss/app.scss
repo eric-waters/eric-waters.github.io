@@ -13,7 +13,7 @@ header,
 }
 
 #intro {
-  background: url("../../assets/background_planets.jpg");
+  // background: url("../../assets/background_planets.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -61,6 +61,19 @@ body .custom-toggler .navbar-toggler-icon {
   cursor: default !important;
 }
 
+//for image-backgrounds to work, parent must be position: relative;
+.image-background-center {
+  position: absolute;
+  width: 40rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+  top: 50%;
+  opacity: 0.04;
+  transform: rotate(10deg);
+  z-index: -1;
+}
 .image-background-left {
   position: absolute;
   width: 40rem;
@@ -69,7 +82,9 @@ body .custom-toggler .navbar-toggler-icon {
   margin: auto;
   bottom: 0;
   top: 50%;
-  opacity: 0.06;
+  opacity: 0.04;
+  transform: rotate(10deg);
+  z-index: -1;
 }
 .image-background-right {
   position: absolute;
@@ -79,13 +94,58 @@ body .custom-toggler .navbar-toggler-icon {
   margin: auto;
   bottom: 0;
   top: 50%;
-  opacity: 0.06;
+  opacity: 0.04;
+  transform: rotate(-10deg);
+  z-index: -1;
 }
 
+#myVideo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  min-width: 100%;
+  z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.fake-button {
+  //remove hover effect
+  pointer-events: none !important;
+  //mx-2
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+  //my-1
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  //cursor-default
+  cursor: default !important;
+}
+
+.fake-button-padded {
+  //remove hover effect
+  pointer-events: none !important;
+  //mx-2
+  margin-right: 0.5rem !important;
+  margin-left: 0.5rem !important;
+  //my-1
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+  //cursor-default
+  cursor: default !important;
+  //px-4
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
 
 $primary: #9bc4e2;
 $secondary: #6082B6;
 $light: #f2f2f2;
+$dark: #100E0E;
 
 // Bootstrap and its default variables
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

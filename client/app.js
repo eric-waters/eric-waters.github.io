@@ -1,7 +1,12 @@
 var lastScrollPosition = window.pageYOffset;
-
+let hasScrolledYet = false;
+if(lastScrollPosition == 0 && !hasScrolledYet) {
+    document.getElementById('myNavbar').style.top = '-50%';
+}
 document.addEventListener('scroll', () => {
+    hasScrolledYet = true;
     let offset = window.pageYOffset;
+    console.log(offset);
     if(offset <= 500) {
         document.getElementById('myNavbar').style.top = '0%';
         lastScrollPosition = offset;
