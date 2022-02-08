@@ -53,12 +53,13 @@ body .custom-toggler .navbar-toggler-icon {
   right: 0;
   margin: auto;
   bottom: 0;
+  top: 0;
   opacity: 0.1;
   z-index: -1;
   max-width: 100%; }
 
-@media (min-width: 992px) {
-  .image-background-lg-left {
+@media (min-width: 768px) {
+  .image-background-md-left {
     position: absolute;
     width: 40rem;
     left: -50%;
@@ -69,8 +70,8 @@ body .custom-toggler .navbar-toggler-icon {
     opacity: 0.1;
     z-index: -1;
     max-width: 100%; } }
-@media (min-width: 992px) {
-  .image-background-lg-right {
+@media (min-width: 768px) {
+  .image-background-md-right {
     position: absolute;
     width: 40rem;
     right: -50%;
@@ -80,12 +81,18 @@ body .custom-toggler .navbar-toggler-icon {
     opacity: 0.1;
     z-index: -1;
     max-width: 100%; } }
-@media (min-width: 992px) {
-  .scooch-lg-right {
+@media (min-width: 768px) {
+  .scooch-md-right {
     left: -30%; } }
-@media (min-width: 992px) {
-  .scooch-lg-down {
+@media (min-width: 768px) {
+  .scooch-md-down {
     top: 100% !important; } }
+@media (min-width: 768px) {
+  .scooch-md-up {
+    bottom: 200% !important; } }
+@media (min-width: 768px) {
+  .super-scooch-md-up {
+    bottom: 500% !important; } }
 .image-background-left {
   position: absolute;
   width: 40rem;
