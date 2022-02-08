@@ -1,6 +1,3 @@
-// import 'bootstrap';
-// import './scss/app.scss';
-
 var lastScrollPosition = window.pageYOffset;
 
 document.addEventListener('scroll', () => {
