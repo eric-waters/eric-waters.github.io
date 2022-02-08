@@ -53,33 +53,62 @@ body .custom-toggler .navbar-toggler-icon {
   right: 0;
   margin: auto;
   bottom: 0;
-  top: 50%;
   opacity: 0.1;
-  z-index: -1; }
+  z-index: -1;
+  max-width: 100%; }
 
+@media (min-width: 992px) {
+  .image-background-lg-left {
+    position: absolute;
+    width: 40rem;
+    left: -50%;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    opacity: 0.1;
+    z-index: -1;
+    max-width: 100%; } }
+@media (min-width: 992px) {
+  .image-background-lg-right {
+    position: absolute;
+    width: 40rem;
+    right: -50%;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    opacity: 0.1;
+    z-index: -1;
+    max-width: 100%; } }
+@media (min-width: 992px) {
+  .scooch-lg-right {
+    left: -30%; } }
+@media (min-width: 992px) {
+  .scooch-lg-down {
+    top: 100% !important; } }
 .image-background-left {
   position: absolute;
   width: 40rem;
-  left: -30%;
+  left: 0;
   right: 0;
   margin: auto;
   bottom: 0;
-  top: 50%;
+  top: 0;
   opacity: 0.1;
-  transform: rotate(10deg);
-  z-index: -1; }
+  z-index: -1;
+  max-width: 100%; }
 
 .image-background-right {
   position: absolute;
   width: 40rem;
   left: 0%;
-  right: -30%;
+  right: 0;
   margin: auto;
   bottom: 0;
-  top: 50%;
+  top: 0;
   opacity: 0.1;
-  transform: rotate(-10deg);
-  z-index: -1; }
+  z-index: -1;
+  max-width: 100%; }
 
 #myVideo {
   position: absolute;
