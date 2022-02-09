@@ -1,23 +1,22 @@
-let EmailAPIKey;
-let MyEmail;
+let EmailAPIKey = process.env.EmailAPIKey;
+let MyEmail = process.env.MyEmail;
 const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
-console.log(EmailAPIKeyFromHeroku);
 const MyEmailFromHeroku = process.env.MyEmail;
 
-const loadModule = async () => {
-  try {
-    return await import('./src/js/config.js');
-  } catch (e) {
-    EmailAPIKey = EmailAPIKeyFromHeroku
-    MyEmail = MyEmailFromHeroku
-    return false
-  }
-}
+// const loadModule = async () => {
+//   try {
+//     return await import('./src/js/config.js');
+//   } catch (e) {
+//     EmailAPIKey = EmailAPIKeyFromHeroku
+//     MyEmail = MyEmailFromHeroku
+//     return false
+//   }
+// }
 
-var returnValue = loadModule().then((importedData) => {
-    EmailAPIKey = importedData.EmailAPIKey;
-    MyEmail = importedData.MyEmail;
-});
+// var returnValue = loadModule().then((importedData) => {
+//     EmailAPIKey = importedData.EmailAPIKey;
+//     MyEmail = importedData.MyEmail;
+// });
 
 // import { EmailAPIKey, MyEmail } from "./src/js/config.js";
 
