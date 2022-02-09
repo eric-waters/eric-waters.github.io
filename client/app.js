@@ -1,9 +1,22 @@
-import { EmailAPIKey, MyEmail } from "./src/js/config.js";
+let EmailAPIKey;
+let MyEmail;
 
-if(!EmailAPIKey) {
+const loadModule = async () => {
+  try {
+    return await import('./src/js/config.js');
+  } catch (e) {
     EmailAPIKey = process.env.EmailAPIKey;
     MyEmail = process.env.MyEmail;
+    return false
+  }
 }
+
+var returnValue = loadModule().then((importedData) => {
+    EmailAPIKey = importedData.EmailAPIKey;
+    MyEmail = importedData.MyEmail;
+});
+
+// import { EmailAPIKey, MyEmail } from "./src/js/config.js";
 
 var lastScrollPosition = window.pageYOffset;
 
