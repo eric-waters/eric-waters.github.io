@@ -1,12 +1,14 @@
 let EmailAPIKey;
 let MyEmail;
+const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
+const MyEmailFromHeroku = process.env.MyEmail;
 
 const loadModule = async () => {
   try {
     return await import('./src/js/config.js');
   } catch (e) {
-    EmailAPIKey = process.env.EmailAPIKey;
-    MyEmail = process.env.MyEmail;
+    EmailAPIKey = EmailAPIKeyFromHeroku
+    MyEmail = MyEmailFromHeroku
     return false
   }
 }
