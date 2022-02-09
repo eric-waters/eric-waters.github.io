@@ -1,6 +1,7 @@
 let EmailAPIKey;
 let MyEmail;
 const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
+console.log(EmailAPIKeyFromHeroku);
 const MyEmailFromHeroku = process.env.MyEmail;
 
 const loadModule = async () => {
