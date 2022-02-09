@@ -71,8 +71,13 @@ document.getElementById('sendEmailButton').addEventListener('click', () => {
     var nameInput = document.getElementById('nameInput');
     var orgInput = document.getElementById('orgInput');
     var emailInput = document.getElementById('emailInput');
-    var messageInput = document.getElementById('nameInput');
+    var messageInput = document.getElementById('messageInput');
     sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value);
+    //clear input values
+    nameInput.value = '';
+    orgInput.value ='';
+    emailInput.value = '';
+    messageInput.value = '';
 });
 
 //Text animation function at top of screen
