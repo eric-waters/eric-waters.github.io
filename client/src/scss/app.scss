@@ -1,0 +1,77 @@
+//To run from root directory:
+//sass client/src/scss/app.scss client/src/css/bootstrap.css
+
+//Headings in the whole document are set to 'Courier New'
+html body .heading {
+    font-family: 'Courier New';
+}
+  
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+//Not sure if all of this is necessary, but leaving it for now
+#intro {
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; 
+    overflow: hidden;
+}
+
+//customizes the color of the hamburger icon in the navbar
+body .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#myNavbar {
+    top: -0%;
+    transition: top 300ms ease;
+}
+
+#myNavbar:-webkit-scrollbar {
+    top: -6%;
+}
+
+//formats the background video on home screen
+#myVideo {
+    position: absolute;
+    z-index: -1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    opacity: 0.95;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+//Bootstrap theme color overrides
+$primary: #6082b6;
+$secondary: #9bc4e2;
+$light: #f2f2f2;
+$dark: #1b171b;
+
+// Bootstrap and its default variables
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Modifications that use $variables must go below the bootstrap css import,
+//otherwise the $variable will not be recognized.
+
+//sets border of hamburger to be primary
+body .custom-toggler.navbar-toggler {
+    border-color: $primary;
+}
+
+//sets nav links and brand to be secondary
+.nav-link, .navbar-brand {
+    color: $secondary;
+}

@@ -1,8 +1,19 @@
+import { EmailAPIKey, MyEmail } from "./src/js/config.js";
+
+if(!EmailAPIKey) {
+    EmailAPIKey = process.env.EmailAPIKey;
+    MyEmail = process.env.MyEmail;
+}
+
 var lastScrollPosition = window.pageYOffset;
+
+//Hide navbar on first load of website. Once user scrolls, show it if they scroll up.
 let hasScrolledYet = false;
 if(lastScrollPosition == 0 && !hasScrolledYet) {
     document.getElementById('myNavbar').style.top = '-50%';
 }
+
+//Hide navbar when scrolling down, show when scrolling up
 document.addEventListener('scroll', () => {
     hasScrolledYet = true;
     let offset = window.pageYOffset;
@@ -20,27 +31,28 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
+//Hide navbar after clicking nav item
 var navItems = document.getElementsByClassName("nav-item");
 var hideNavBar = function() {
     document.getElementById('myNavbar').style.top = '-50%';
 };
-
 for(let i = 0; i < navItems.length; i++) {
     navItems[i].addEventListener('click', () => {
         setTimeout(hideNavBar, 800);
     });
 }
 
-function sendEmail(nameInput, orgInput, emailInput, messageInput) {
-    console.log("sending email");
+//Send email
+export function sendEmail(nameInput, orgInput, emailInput, messageInput) {
     if(nameInput!= "" && messageInput!= "") {
         Email.send({
             Host : "smtp.elasticemail.com",
-            Username : "ericwaters2019@gmail.com",
-            Password : "9CF5F50F482B54C125BED0979C4EB1A1A3A9",
+            Username : MyEmail,
+            Password : EmailAPIKey,
             Port: "2525",
-            To : "ericwaters2019@gmail.com",
-            From : "ericwaters2019@gmail.com",
+            To : MyEmail,
+            From : MyEmail,
             Subject : "Message from Personal Website",
             Body : `${nameInput} (${emailInput}) from ${orgInput} has sent the following message:
             ${messageInput}`
@@ -54,6 +66,14 @@ function sendEmail(nameInput, orgInput, emailInput, messageInput) {
          alert('Please enter your name and a message in order to submit.');
     }
 }
+
+document.getElementById('sendEmailButton').addEventListener('click', () => {
+    var nameInput = document.getElementById('nameInput');
+    var orgInput = document.getElementById('orgInput');
+    var emailInput = document.getElementById('emailInput');
+    var messageInput = document.getElementById('nameInput');
+    sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value);
+});
 
 //Text animation function at top of screen
 //made by vipul mirajkar thevipulm.appspot.com
