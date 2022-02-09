@@ -213,10 +213,16 @@ body .custom-toggler .navbar-toggler-icon {
   padding-left: 1.5rem !important;
 }
 
-$primary: #9bc4e2;
-$secondary: #6082B6;
+.bottom-text {
+  position: absolute;
+  bottom: 0;
+}
+
+$primary: #6082b6;
+$secondary: #9bc4e2;
 $light: #f2f2f2;
-$dark: #100E0E;
+// $dark: #100E0E;
+$dark: #1b171b;
 
 // Bootstrap and its default variables
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
