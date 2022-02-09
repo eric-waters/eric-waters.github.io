@@ -26,7 +26,7 @@
 					<ul id="theList" class="navbar-nav ms-auto">
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link active">Home</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li>
-						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#skillsandresume" class="nav-link">Skills</a></li>
+						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#skillsandresume" class="nav-link">Skills & Technologies</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="nav-link">Projects</a></li>
 						<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#contact" class="nav-link">Contact</a></li>
 					</ul>
@@ -70,8 +70,11 @@
 						</div>
 						<!--Learn more about me-->
 						
-						<div class="container text-primary">
+						<div class="container text-primary" style="position: absolute; bottom: 5%;">
 							<a href="#aboutMe" class="mt-2 text-center text-primary" style="display: block;">
+								<!-- <button class="btn btn-primary">
+									Start Portfolio
+								</button> -->
 								<i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i>
 							</a>
 						</div>
@@ -94,18 +97,20 @@
 
 				<div class="row">
 					<div class="col-12 col-xl-4 my-auto pb-5">
-						<div class="card text-center bg-light text-dark border-3 border-primary" style="background-color: rgba(96, 130, 182, 0.1) !important">
-							<div class="card-header">
+						<div class="card bg-light text-dark" style="background-color: rgba(96, 130, 182, 0.05) !important">
+							<div class="card-header text-center">
 								Eric Waters
 							</div>
 							<img src="assets/Headshot.jpg" class="card-img-top mx-auto border border-3 border-primary mt-2" style="max-width: 30%; border-radius: 50%;" alt="">
 							<div class="card-body">
-								<h5 class="card-title">ASU '23, M.S. in Computer Science (Big Data Systems), Software Engineer</h5>
-								<p class="card-text">I'm attending my sixth and final semester of my B.S. in Computer Science. I'm enrolled in ASU's 4+1 program, allowing me to take graduate courses as an undergraduate
+								<h5 class="card-title text-center">ASU '23, M.S. in Computer Science (Big Data Systems), Software Engineer</h5>
+								<p class="card-text mt-4">I'm attending my sixth and final semester of my B.S. in Computer Science. I'm enrolled in ASU's 4+1 program, allowing me to take graduate courses as an undergraduate
 								in order to graduate with my M.S. in Computer Science in May 2023.</p>
 								<p class="card-text">Last summer, I worked at Dell Technologies as an Undergraduate Software Engineer Intern. I had a great experience, so I will be returning as a Graduate Software Engineer Intern next summer as well.</p>
-								<em style="text-decoration: underline;">Why "Big Data Systems"?</em>
-								<p class="card-text">So far, my favorite courses have all been related to data: Database Management, DBMS Internals, and Foundations of Machine Learning. 
+								<div class="text-center">
+									<em style="text-decoration: underline;">Why "Big Data Systems"?</em>
+								</div>
+								<p class="card-text mt-1">So far, my favorite courses have all been related to data: Database Management, DBMS Internals, and Foundations of Machine Learning. 
 									Year by year, the amount of data available in the world grows exponentially. I believe that the proper management and application of this data is the key to
 									unlocking the next level of computing.
 								</p>
@@ -579,7 +584,7 @@
 					</div>
 					<div class="col">
 						<div class="card bg-dark text-light h-100">
-							<img src="assets/spring (1).png" class="card-img-top py-5 px-5 img-fluid" alt="...">
+							<img src="assets/spring3.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body">
 							<h5 class="card-title">Spring Framework</h5>
 							<p class="card-text">At my Dell internship, I used Spring to create a web application from scratch. I also worked on some of my team's Spring Boot applications.</p>
@@ -597,7 +602,7 @@
 					</div>
 					<div class="col">
 						<div class="card bg-dark text-light h-100">  
-							<img src="assets/tree.png" class="card-img-top img-fluid" alt="...">
+							<img src="assets/data-structure.gif" class="card-img-top img-fluid px-3 my-3" alt="...">
 							<div class="card-body">
 							<h5 class="card-title">Data Structures</h5>
 							<p class="card-text">After several data structures courses, I am sound in my knowledge of graphs, trees, heaps, stacks, queues... you name it.</p>
@@ -605,8 +610,8 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="card bg-dark text-light h-100">
-							<img src="assets/linux.png" class="card-img-top pt-5 p-5 img-fluid" alt="...">
+						<div class="card bg-dark text-light h-100 d-flex justify-content-center" style="overflow: hidden;">
+							<img src="assets/Animated-Linux-Tux-Loading-v1.07.gif" class="card-img-top pt-2 img-fluid mx-auto" style="object-fit: cover; object-position: center center; min-width: 60%; min-height: 60%;" alt="...">
 							<div class="card-body">
 							<h5 class="card-title">Linux OS</h5>
 							<p class="card-text">Various coursework and real-world applications have acquainted myself with the linux terminal. In my operating systems class, I even programmed my own syscall into a custom kernel.</p>
@@ -615,7 +620,7 @@
 					</div>
 					<div class="col">
 						<div class="card bg-dark text-light h-100">
-							<img src="assets/cplusplus.jpg" class="card-img-top px-5 py-3 img-fluid" alt="..." style="max-height: 100%;">
+							<img src="assets/cplusplus.jpg" class="card-img-top py-2 img-fluid" alt="..." style="max-height: 100%;">
 							<div class="card-body">
 							<h5 class="card-title">C/C++</h5>
 							<p class="card-text">The majority of my algorithms and programming languages courses used C and C++ exclusively. As a result, it is my second strongest language.</p>
@@ -627,16 +632,16 @@
 							<img src="assets/javascript2.png" class="card-img-top px-2  img-fluid" style="max-height: 100%;" alt="...">
 							<div class="card-body">
 							<h5 class="card-title">JavaScript</h5>
-							<p class="card-text">I taught myself JavaScript in order to be a more effective web developer. I have used it in several projects, including this website!</p>
+							<p class="card-text">I taught myself JavaScript in order to be a more effective web developer. It really does come in handy when developing web applications like this one.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col">
 						<div class="card bg-dark text-light h-100">
-							<img src="assets/htmlandcss.png" class="card-img-top p-5 img-fluid" alt="...">
+							<img src="assets/htmlandcss (2).png" class="card-img-top mt-5 py-5 px-3 img-fluid" alt="...">
 							<div class="card-body">
-							<h5 class="card-title">HTML & CSS</h5>
-							<p class="card-text">I also taught myself HTML and CSS in order to build front-end applications. I often use Bootstrap 5 to create web applications (like this one!)</p>
+							<h5 class="card-title">HTML, CSS, jQuery, and Bootstrap</h5>
+							<p class="card-text">I also taught myself HTML, CSS, and jQuery in order to build the front-end of applications. I often choose to use Bootstrap 5 as a CSS framework (this website uses it).</p>
 							</div>
 						</div>
 					</div>
