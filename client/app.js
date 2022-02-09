@@ -6,13 +6,13 @@ if(lastScrollPosition == 0 && !hasScrolledYet) {
 document.addEventListener('scroll', () => {
     hasScrolledYet = true;
     let offset = window.pageYOffset;
-    console.log(offset);
     if(offset <= 500) {
         document.getElementById('myNavbar').style.top = '0%';
         lastScrollPosition = offset;
     }
     if(lastScrollPosition < offset) {
         document.getElementById('myNavbar').style.top = '-50%';
+        $('.navbar-collapse').collapse('hide');
         lastScrollPosition = offset;
     } else {
         document.getElementById('myNavbar').style.top = '0%';
