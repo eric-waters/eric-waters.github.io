@@ -47,10 +47,21 @@ function sendEmail(nameInput, orgInput, emailInput, messageInput) {
             Body : `${nameInput} (${emailInput}) from ${orgInput} has sent the following message:
             ${messageInput}`
         }).then(
-            message => alert('Thanks! I will get back to you as soon as I can.')
-        ).catch(message => 
-            alert(message)
-        );
+            message => {
+                alert('Thanks! I will get back to you as soon as I can.');
+                //clear inputs
+                var nameInput = document.getElementById('nameInput');
+                var orgInput = document.getElementById('orgInput');
+                var emailInput = document.getElementById('emailInput');
+                var messageInput = document.getElementById('messageInput');
+                nameInput.value = '';
+                orgInput.value ='';
+                emailInput.value = '';
+                messageInput.value = '';
+            }
+        ).catch(message => {
+            alert(message);
+        });
     }
     else {
          alert('Please enter your name and a message in order to submit.');
@@ -62,13 +73,7 @@ document.getElementById('sendEmailButton').addEventListener('click', () => {
     var orgInput = document.getElementById('orgInput');
     var emailInput = document.getElementById('emailInput');
     var messageInput = document.getElementById('messageInput');
-    if(sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value)) {
-        //clear input values
-        nameInput.value = '';
-        orgInput.value ='';
-        emailInput.value = '';
-        messageInput.value = '';
-    }
+    sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value);
 });
 
 //Text animation function at top of screen
