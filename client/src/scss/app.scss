@@ -26,7 +26,7 @@ header,
 
 //customizes the color of the hamburger icon in the navbar
 body .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(155,196,226, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 #myNavbar {
@@ -66,9 +66,9 @@ $dark: #1b171b;
 //Modifications that use $variables must go below the bootstrap css import,
 //otherwise the $variable will not be recognized.
 
-//sets border of hamburger to be primary
+//sets border of hamburger to be secondary
 body .custom-toggler.navbar-toggler {
-    border-color: $primary;
+    border-color: $secondary;
 }
 
 //sets nav links and brand to be secondary

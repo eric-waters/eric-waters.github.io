@@ -17,7 +17,7 @@ header,
   overflow: hidden; }
 
 body .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(155,196,226, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 #myNavbar {
   top: -0%;
@@ -8721,7 +8721,7 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 body .custom-toggler.navbar-toggler {
-  border-color: #6082b6; }
+  border-color: #9bc4e2; }
 
 .nav-link, .navbar-brand {
   color: #9bc4e2; }
