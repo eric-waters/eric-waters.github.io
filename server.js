@@ -4,7 +4,6 @@ var app = express();
 const path = require('path');
 var http = require('http');
 var server = http.Server(app);
-
 app.use(express.static('client'));
 
 server.listen(PORT, function() {

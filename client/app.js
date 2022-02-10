@@ -1,9 +1,3 @@
-const EmailAPIKey = "9CF5F50F482B54C125BED0979C4EB1A1A3A9";
-const MyEmail = "ericwaters2019@gmail.com";
-
-// let EmailAPIKey = process.env.EmailAPIKey;
-// let MyEmail = process.env.MyEmail;
-
 var lastScrollPosition = window.pageYOffset;
 
 //Hide navbar on first load of website. Once user scrolls, show it if they scroll up.
@@ -46,12 +40,9 @@ for(let i = 0; i < navItems.length; i++) {
 function sendEmail(nameInput, orgInput, emailInput, messageInput) {
     if(nameInput!= "" && messageInput!= "") {
         Email.send({
-            Host : "smtp.elasticemail.com",
-            Username : MyEmail,
-            Password : EmailAPIKey,
-            Port: "2525",
-            To : MyEmail,
-            From : MyEmail,
+            SecureToken : "ca32fb3e-0ce3-4bc8-9802-7242ee84cc80",
+            To : 'ericwaters2019@gmail.com',
+            From : "ericwaters2019@gmail.com",
             Subject : "Message from Personal Website",
             Body : `${nameInput} (${emailInput}) from ${orgInput} has sent the following message:
             ${messageInput}`
