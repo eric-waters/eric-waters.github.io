@@ -1,8 +1,8 @@
-let EmailAPIKey = process.env.EmailAPIKey;
-let MyEmail = process.env.MyEmail;
-const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
-const MyEmailFromHeroku = process.env.MyEmail;
 
+// const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
+// const MyEmailFromHeroku = process.env.MyEmail;
+
+// Was fiddling here with trying to dynamically choose which to import
 // const loadModule = async () => {
 //   try {
 //     return await import('./src/js/config.js');
@@ -19,6 +19,10 @@ const MyEmailFromHeroku = process.env.MyEmail;
 // });
 
 // import { EmailAPIKey, MyEmail } from "./src/js/config.js";
+
+//Get keys from heroku
+let EmailAPIKey = process.env.EmailAPIKey;
+let MyEmail = process.env.MyEmail;
 
 var lastScrollPosition = window.pageYOffset;
 
@@ -59,7 +63,7 @@ for(let i = 0; i < navItems.length; i++) {
 }
 
 //Send email
-export function sendEmail(nameInput, orgInput, emailInput, messageInput) {
+function sendEmail(nameInput, orgInput, emailInput, messageInput) {
     if(nameInput!= "" && messageInput!= "") {
         Email.send({
             Host : "smtp.elasticemail.com",
