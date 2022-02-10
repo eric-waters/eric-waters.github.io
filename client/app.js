@@ -1,27 +1,8 @@
-// const EmailAPIKeyFromHeroku = process.env.EmailAPIKey;
-// const MyEmailFromHeroku = process.env.MyEmail;
+const EmailAPIKey = "9CF5F50F482B54C125BED0979C4EB1A1A3A9";
+const MyEmail = "ericwaters2019@gmail.com";
 
-// Was fiddling here with trying to dynamically choose which to import
-// const loadModule = async () => {
-//   try {
-//     return await import('./src/js/config.js');
-//   } catch (e) {
-//     EmailAPIKey = EmailAPIKeyFromHeroku
-//     MyEmail = MyEmailFromHeroku
-//     return false
-//   }
-// }
-
-// var returnValue = loadModule().then((importedData) => {
-//     EmailAPIKey = importedData.EmailAPIKey;
-//     MyEmail = importedData.MyEmail;
-// });
-
-// import { EmailAPIKey, MyEmail } from "./src/js/config.js";
-
-//Get keys from heroku
-let EmailAPIKey = process.env.EmailAPIKey;
-let MyEmail = process.env.MyEmail;
+// let EmailAPIKey = process.env.EmailAPIKey;
+// let MyEmail = process.env.MyEmail;
 
 var lastScrollPosition = window.pageYOffset;
 

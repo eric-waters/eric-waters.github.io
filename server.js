@@ -1,5 +1,4 @@
 var PORT = process.env.PORT || 5000;
-console.log(process.env.MyEmail);
 var express = require('express');
 var app = express();
 const path = require('path');
