@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" style="scroll-behavior: smooth;">
+<head>
+	<title>Eric Waters</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="./src/css/bootstrap.css">
+
+	<!--Tab icon-->
+	<link rel="icon" href="assets/asu_logo.png">
+	
+	<!-- FontAwesome -->
+	<script src="https://kit.fontawesome.com/d9fddfb3f3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!--Header-->
+<header>
+
+	<!--Navbar-->
+	<nav id="myNavbar" class="navbar navbar-expand-md bg-dark fixed-top">
+		<div class="container-fluid mx-1">
+			<a class="navbar-brand">Eric Waters</a>
+			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul id="theList" class="navbar-nav ms-auto">
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link active">Home</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#skillsandresume" class="nav-link">Skills & Technologies</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="nav-link">Projects</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#contact" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--Intro-->
+	<div id="intro">
+
+		<!--playsinline attribute makes the video play on mobile-->
+		<video playsinline autoplay muted loop id="myVideo">
+			<source src="assets/typing-video.mp4">
+		</video>
+
+		<div class="container text-center mt-5 mb-4 pt-3" style="margin-top: 10em;">
+
+			<!--Hello, World! (animated)-->
+			<h1 class="text-light display-4 heading typewriter" style="font-size: 400%;">
+				<span class="typewrite text-light" data-period="2000" data-type='[ "Hello, World!" ]'>
+					<span class="wrap"></span>
+				</span>
+			</h1>
+			<p class="text-secondary lead">I strive to write high quality software that will have a positive impact on others.</p>
+
+			<img class="img-fluid mx-auto" src="assets/beach-pic-cropped.jpg" style="border-radius: 50%; width: 150px; height: auto; display: block;">
+
+			<!--Social Media Links-->
+			<div class="container mt-3 text-center text-secondary" style="font-size: 2rem">
+				<a href="mailto:eswaters@asu.edu" class="fa fa-envelope px-2 mt-2 text-decoration-none text-secondary"></a>
+				<a href="https://github.com/eswaters?tab=repositories" class="fa fa-github px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
+				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
+				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
+			</div>
+
+			<!--Enter Portfolio Button-->
+			<div style="position: absolute; bottom: 5%; left: 0; right: 0;">
+				<a href="#aboutMe" class="text-center text-secondary">
+					<button class="btn btn-secondary">
+						Enter Portfolio <i class="fa fa-arrow-down" aria-hidden="true"></i>
+					</button>
+					<!-- <i class="fa fa-chevron-circle-down fa-3x" aria-hidden="true"></i> -->
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+</header>
+
+<!--Main Layout-->
+<main>
+	<!--About Me-->
+	<div id="aboutMe" class="bg-light">
+
+		<div class="pt-3">
+			<p class="text-center display-5">About Me</p>
+		</div>
+		<hr class="mx-auto mb-5" style="width: 90%;">
+
+		<div class="container">
+			<div class="row">
+
+				<!--Personal Info Card-->
+				<div class="col-12 col-xl-4 my-auto pb-5">
+					<div class="card" style="background-color: rgba(96, 130, 182, 0.05)">
+						<div class="card-header text-center">
+							Eric Waters
+						</div>
+						<img src="assets/Headshot.jpg" class="card-img-top mx-auto border border-3 border-primary mt-3" style="max-width: 30%; border-radius: 50%;" alt="Headshot of Eric Waters">
+						<div class="card-body">
+							<h5 class="card-title text-center">ASU '23, M.S. in Computer Science (Big Data Systems), Software Engineer</h5>
+							<p class="card-text mt-4">I'm attending my sixth and final semester of my B.S. in Computer Science. I'm enrolled in ASU's 4+1 program, allowing me to take graduate courses as an undergraduate
+							in order to graduate with my M.S. in Computer Science in May 2023.</p>
+							<p class="card-text">Last summer, I worked at Dell Technologies as an Undergraduate Software Engineer Intern. I had a great experience, so I will be returning as a Graduate Software Engineer Intern next summer as well.</p>
+							<div class="text-center">
+								<em style="text-decoration: underline;">Why Big Data Systems?</em>
+							</div>
+							<p class="card-text mt-1">So far, my favorite courses have all been related to data: Database Management, DBMS Internals, and Foundations of Machine Learning. 
+								Year by year, the amount of data available in the world grows exponentially. The proper management and application of this data is an incredibly powerful tool that can profoundly impact the world.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!--Carousel-->
+				<div class="col-12 col-xl-8 my-auto pb-5">
+					<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 4"></button></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/prague.jfif" class="d-block w-100" alt="Prague, Czech Republic">
+								<div class="carousel-caption d-none d-md-block">
+								<!-- <h5>First slide label</h5> -->
+								<p>Prague, Czech Republic</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Ski.jpg" class="d-block w-100" alt="Skiing at Snowbowl Arizona">
+								<div class="carousel-caption d-none d-md-block">
+								<!-- <h5>Second slide label</h5> -->
+								<p>Skiing at Snowbowl Arizona</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Bikes.JPG" class="d-block w-100" alt="Mountain Biking in Truckee, California">
+								<div class="carousel-caption d-none d-md-block">
+								<!-- <h5>Third slide label</h5> -->
+								<p>Mountain Biking in Truckee, California</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/Fish.JPG" class="d-block w-100" alt="Baracuda caught in Punta Cana, Dominican Republic">
+								<div class="carousel-caption d-none d-md-block">
+								<!-- <h5>Fourth slide label</h5> -->
+								<p>Baracuda caught in Punta Cana, Dominican Republic</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="assets/New York.JPG" class="d-block w-100" alt="Fine Arts Tour to New York, New York">
+								<div class="carousel-caption d-none d-md-block">
+								<!-- <h5>Fifth slide label</h5> -->
+								<p>Fine Arts Tour to New York, New York</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Skills & Resume-->
+	<div id="skillsandresume" style="background-color: rgba(96, 130, 182, 0.2);">
+		<div class="pt-3">
+			<h1 class="text-center text-dark display-5">Skills & Technologies</h1>
+		</div>
+		<hr class="mx-auto mb-5" style="width: 90%;">
+		<div class="container-lg py-4">
+
+			<!--Card Deck-->
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/java-logo.png" class="card-img-top img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Java</h5>
+						<p class="card-text">Java is my "native" programming language and I continue to use it extensively through both coursework and professional work. It is my strongest language.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/cplusplus.jpg" class="card-img-top py-5 img-fluid" alt="..." style="max-height: 100%;">
+						<div class="card-body">
+						<h5 class="card-title">C/C++</h5>
+						<p class="card-text">The majority of my algorithms and programming languages courses used C and C++ exclusively. As a result, it is my second strongest language.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/javascript2.png" class="card-img-top px-2  img-fluid" style="max-height: 100%;" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">JavaScript</h5>
+						<p class="card-text">I taught myself JavaScript in order to be a more effective web developer. It really does come in handy when developing web applications like this one.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/htmlandcss (2).png" class="card-img-top mt-5 py-5 px-3 img-fluid" alt="...">
+						<div class="card-body mt-5">
+						<h5 class="card-title">HTML, CSS, jQuery, and Bootstrap</h5>
+						<p class="card-text">I also taught myself HTML, CSS, and jQuery in order to build the front-end of applications. I often choose to use Bootstrap 5 as a CSS framework (this website uses it).</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/spring3.png" class="card-img-top img-fluid mt-3 mb-1" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Spring Framework</h5>
+						<p class="card-text">At my Dell internship, I used Spring to create a web application from scratch. I also worked on some of my team's Spring Boot applications.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/node.svg" class="card-img-top px-3 pt-5 img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Node</h5>
+						<p class="card-text">Node is my first choice of JavaScript runtime when designing a web application. I use it because it is extremely simple and I like that I can use JavaScript syntax. This website uses node to serve its content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/MySQL-Logo.png" class="card-img-top pb-5 img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">MySQL DBMS & More</h5>
+						<p class="card-text">Through my Dell internship and various database courses, I've used several DBMSs suchs as OracleDB and Firebase, but I have the most experience with MySQL.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100 d-flex justify-content-center" style="overflow: hidden;">
+						<img src="assets/Animated-Linux-Tux-Loading-v1.07.gif" class="card-img-top pt-2 img-fluid mx-auto" style="object-fit: cover; object-position: center center; min-width: 55%; min-height: 55%;" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Linux OS</h5>
+						<p class="card-text">Various coursework and real-world applications have acquainted myself with the linux terminal. In my operating systems class, I even programmed my own syscall into a custom kernel.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/github.png" class="card-img-top img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Git & Github</h5>
+						<p class="card-text">Working on various hackathon teams, class group projects, and professional teams has taught me the importance of using version control for everything I code. Github is my service of choice for using Git.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/jsp.png" class="card-img-top img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">JSP & JSTL</h5>
+						<p class="card-text">At my Dell internship, I learned how to use JavaServer Pages and the JSP Standard Tag Library to build dynamic web content in my applications. It pairs well with the Spring Framework and I love that I can use Java.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">  
+						<img src="assets/data-structure.gif" class="card-img-top img-fluid px-3 my-5" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Data Structures</h5>
+						<p class="card-text">After several data structures courses, I am sound in my knowledge of graphs, trees, heaps, stacks, queues... you name it.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card bg-dark text-light h-100">
+						<img src="assets/bubble-sort.gif" class="card-img-top mt-5 py-5 img-fluid" alt="...">
+						<div class="card-body">
+						<h5 class="card-title">Algorithms</h5>
+						<p class="card-text">Through algorithms courses and LeetCode I have gained a solid grasp of various sorting, searching, and tree traversal algorithms. I'm always ready for a coding challenge!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="text-center pt-2 pb-5">
+			<h5 class="text-dark"></h5>
+			<a href="assets/Resume_Eric_Waters.docx" download><button type="button" class="btn btn-primary text-light w-50 py-3 mb-1">Download my resume (.DOCX)</button></a>
+			<a href="assets/Resume_Eric_Waters.pdf" download><button type="button" class="btn btn-primary text-light w-50 py-3 mt-1">Download my resume (.PDF)</button></a>
+		</div>
+	</div>
+
+	<!--Projects-->
+	<div id="projects" class="bg-dark pb-4">
+
+		<div class="pt-3">
+			<h1 class="text-center text-light display-5">Projects</h1>
+		</div>
+		<hr class="mx-auto mb-5 text-light" style="width: 90%;">
+
+		<div class="container-fluid">
+			<!--Card Deck-->
+			<div class="row row-cols-1 row-cols-md-2 g-4 mx-lg-4">
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/kanbanboard.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Kanban Board</h5>
+							<p class="card-text">An agile project management tool to visualize your work and maximize your efficiency. Created using Spring MVC, Bootstrap, and MySQL.</p>
+							<div class="text-center">
+								<a href="https://youtu.be/Yeo4pdilhBI" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">Watch the Demonstration</button></a>
+								<a href="https://devpost.com/software/kanban-board-0p7xeg" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://thekanbanboard.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">Try it out</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed during Summer 2021</small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/aa-inflight-transcriber.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">AA In-Flight Transcriber</h5>
+							<p class="card-text">Transcribes in-fight announcements in real-time so that you don't miss a beat. Created using AssemblyAI, Bootstrap, and Firebase.</p>
+							<div class="text-center">
+								<a href="https://tinyurl.com/y8ep483c" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">See AssemblyAI's Blog Post</button></a>
+								<a href="https://www.youtube.com/watch?v=e8oAAE0ailk&t=1s" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">Watch the Demonstration</button></a>
+								<a href="https://devpost.com/software/in-flight-closed-captioning" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://aa-inflight-transcriber.herokuapp.com" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">Try it out</button></a>
+								<a href="https://github.com/clarkshaeffer/flight_captioning" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at SunHacks 2021 - Awarded American Airlines & AssemblyAI First Place Prizes</small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/text_blaster.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Fact Blast</h5>
+							<p class="card-text">A fun way to annoy your friends... or to make them better at trivia! Utilized Twilio and Firebase.</p>
+							<div class="text-center">
+								<a href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="http://sunhacks2019.herokuapp.com/" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">Visit the Website</button></a>
+								<a href="https://github.com/eswaters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at SunHacks 2019</small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img class="card-img-top" src="assets/NMTSA.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">NMTSA Scheduling App</h5>
+							<p class="card-text">Created an application to organize patient data and make it more accessible for therapists to read. Utilized Bootstrap and Spring MVC.</p>
+							<div class="text-center">
+								<a href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">See the Devpost</button></a>
+								<a href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-primary mx-3 my-1 text-light">View in Github</button></a>
+							</div>
+						</div>
+						<div class="card-footer">
+							<small class="text-muted">Developed at Opportunity Hack 2019 - Finalists</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!--End of Main Layout-->
+
+<!--Footer-->
+<footer>
+	<div id="contact" class="container-fluid text-center bg-light pt-4">
+		<div class="container">
+			<h5 class="text-primary">Send me a message!</h5>
+			<p class="text-primary">Whether you want to just say hello, leave feedback on the website, or talk about an opportunity, I would love to hear it!</p>
+			<form>
+				<div class="form-group">
+					<label class="text-muted text-center mb-1" style="display: block;" for="nameInput">Your name</label>
+					<input type="text" class="form-control text-center mb-2" id="nameInput" placeholder="Firstname Lastname" required>
+				</div>
+				<div class="form-group">
+					<label class="text-muted text-center mb-1" style="display: block;" for="nameInput">Your organization</label>
+					<input type="text" class="form-control text-center mb-2" id="orgInput" placeholder="Company">
+					</div>
+				<div class="form-group">
+					<label class="text-muted text-center mb-1" style="display: block;" for="emailInput">Your email address</label>
+					<input type="text" class="form-control text-center mb-2" id="emailInput" placeholder="name@example.com">
+				</div>
+				<div class="form-group">
+					<label class="text-muted text-center mb-1" style="display: block;" for="messageInput">Write your message here</label>
+					<textarea class="form-control text-center mb-2" id="messageInput" rows="3" placeholder="Hi!" required></textarea>
+				</div>
+				<button id="sendEmailButton" type="button" class="btn btn-primary mt-2 text-light">Submit</button>
+			</form>
+		</div>
+		<div class="container mt-3">
+			<p class="text-primary">Website developed by Eric Waters<br>eswaters@asu.edu</p>
+			<div class="container text-center" style="font-size: 1.4rem">
+				<a href="mailto:eswaters@asu.edu" class="fa fa-envelope mx-2 text-decoration-none text-primary"></a>
+				<a href="https://github.com/eswaters?tab=repositories" class="fa fa-github mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin mx-2 text-decoration-none text-primary" target="_blank"></a>
+			</div>
+		</div>
+		<br>
+	</div>
+</footer>
+<!--End Footer-->
+
+<!--Mail Script-->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<!--Bootstrap Bundle JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--Custom JS-->
+<script src="./app.js"></script>
+
+</body>
+</html>

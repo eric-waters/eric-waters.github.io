@@ -4,7 +4,7 @@ var app = express();
 const path = require('path');
 var http = require('http');
 var server = http.Server(app);
-app.use(express.static('client'));
+app.use(express.static('docs'));
 
 server.listen(PORT, function() {
   console.log(`Website running on port ${PORT}`);
