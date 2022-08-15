@@ -1,5 +1,5 @@
 //To run from root directory:
-//sass client/src/scss/app.scss client/src/css/bootstrap.css
+//sass docs/src/scss/app.scss docs/src/css/bootstrap.css
 
 //Headings in the whole document are set to 'Courier New'
 html body .heading {
@@ -52,6 +52,11 @@ body .custom-toggler .navbar-toggler-icon {
     object-position: center center;
     width: 100%;
     height: 100%;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 2%;
 }
 
 //Bootstrap theme color overrides
