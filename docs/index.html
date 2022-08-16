@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./src/css/bootstrap.css">
 
 	<!--Tab icon-->
-	<link rel="icon" href="assets/asu_logo.png">
+	<link rel="icon" href="assets/code-icon.png">
 	
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/d9fddfb3f3.js" crossorigin="anonymous"></script>
@@ -520,11 +520,10 @@
 		</div>
 		<hr class="mx-auto mb-5 text-light" style="width: 90%;">
 		<div class="container">
-			<!-- <iframe src="assets/Eric-Waters-Resume.pdf#view=fitW" width="100%" style="height: 100vh">Your browser doesn't support iFrame.</iframe> -->
-			<!-- <div id="adobe-dc-view"></div> -->
+			<iframe src="https://drive.google.com/file/d/1vf-GF094bZ0zV3hAj5kB1CedlMJXP3do/preview" width="100%" allow="autoplay" style="height: 80vh; max-width: 100%;"></iframe>
 			<div class="text-center pt-2 pb-5">
-				<a href="assets/Eric-Waters-Resume.docx" download><button type="button" class="btn btn-primary w-25 text-light py-3 mx-2"><strong>Download (.DOCX)</strong></button></a>
-				<a href="assets/Eric-Waters-Resume.pdf" download><button type="button" class="btn btn-primary text-light w-25 py-3 mx-2"><strong>Download (.PDF)</strong></button></a>
+				<a href="assets/Eric-Waters-Resume.docx" download><button type="button" class="btn btn-primary w-25 text-light py-3 mx-2">Download (.DOCX)</button></a>
+				<a href="assets/Eric-Waters-Resume.pdf" download><button type="button" class="btn btn-primary text-light w-25 py-3 mx-2">Download (.PDF)</button></a>
 			</div>
 		</div>
 
@@ -584,18 +583,6 @@
 
 <!--Custom JS-->
 <script src="./app.js"></script>
-
-<!--PDF-->
-<script src="https://documentcloud.adobe.com/view-sdk/viewer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "fbf5c0516edf4f8994feee111e339698"});
-		adobeDCView.previewFile({
-			content:{location: {url: "https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b814e0dc-d756-4243-8f3b-9bcf4ac876d8"}},
-			metaData:{fileName: "Eric-Waters-Resume.pdf"}
-		}, {embedMode: "LIGHT_BOX"});
-	});
-</script>
 
 </body>
 </html>
