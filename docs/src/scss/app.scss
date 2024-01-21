@@ -7,6 +7,14 @@ $secondary: #0FE5FF;
 $light: #f2f2f2;
 $dark: #1b171b;
 
+$aspect-ratios: (
+  "8x11": calc(11 / 8.5 * 100%),
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);
+
 // Bootstrap and its default variables
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 

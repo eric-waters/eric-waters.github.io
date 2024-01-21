@@ -76,24 +76,6 @@ document.getElementById('sendEmailButton').addEventListener('click', () => {
     sendEmail(nameInput.value, orgInput.value, emailInput.value, messageInput.value);
 });
 
-function setIframeHeight() {
-    var iframe = document.getElementById('pdfViewer');
-    var min = Math.min(window.innerWidth, window.innerHeight);
-    console.log(min)
-    if(min == window.innerWidth) {
-        min += 50
-    }
-    else {
-        min = min -= 200
-    }
-    console.log(min)
-    iframe.style.height = min + 'px';
-}
-
-// Set initial height and update on window resize
-setIframeHeight();
-window.addEventListener('resize', setIframeHeight);
-
 //Text animation function at top of screen
 //made by vipul mirajkar thevipulm.appspot.com
 var TxtType = function(el, toRotate, period) {
