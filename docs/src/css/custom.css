@@ -29,7 +29,6 @@ body .custom-toggler .navbar-toggler-icon {
 #myNavbar {
     top: -0%;
     transition: top 300ms ease;
-    height: 55px;
 }
 
 #myNavbar:-webkit-scrollbar {
@@ -62,12 +61,10 @@ body .custom-toggler .navbar-toggler-icon {
     text-align: right;
 }
 
-
-
 /* Box animation */
 .bg-blur {
-    background: rgba(41, 40, 40, 0.5); /* Adjust the alpha value (0.8) for transparency */
-    backdrop-filter: blur(6px);
+    background: rgba(41, 40, 40, 0.7); /* Adjust the alpha value (0.8) for transparency */
+    backdrop-filter: blur(10px);
     border-radius: 4px;
 }
 

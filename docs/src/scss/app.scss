@@ -1,8 +1,6 @@
 //To run from root directory:
 //sass docs/src/scss/app.scss docs/src/css/bootstrap.css
 
-
-
 //Bootstrap theme color overrides
 $primary: #6082b6;
 $secondary: #0FE5FF;
@@ -14,13 +12,3 @@ $dark: #1b171b;
 
 //Modifications that use $variables must go below the bootstrap css import,
 //otherwise the $variable will not be recognized.
-
-//sets border of hamburger to be secondary
-body .custom-toggler.navbar-toggler {
-    border-color: $light;
-}
-
-// //sets nav links and brand to be secondary
-// .nav-link, .navbar-brand {
-//     color: $secondary;
-// }
