@@ -64,6 +64,7 @@ body .custom-toggler .navbar-toggler-icon {
 /* Box animation */
 .bg-blur {
     background: rgba(41, 40, 40, 0.7); /* Adjust the alpha value (0.8) for transparency */
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 4px;
 }
