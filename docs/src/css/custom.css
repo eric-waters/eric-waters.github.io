@@ -131,6 +131,12 @@ body .custom-toggler .navbar-toggler-icon {
 	animation: borderRotate var(--d) linear infinite forwards;
 }
 
+.skill-card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 @keyframes borderRotate {
 	100% {
 		--angle: 420deg;
