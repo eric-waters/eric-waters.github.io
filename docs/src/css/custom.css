@@ -23,12 +23,13 @@ header,
 
 /* customizes the color of the hamburger icon in the navbar */
 body .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(155,196,226, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242,242,242,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 #myNavbar {
     top: -0%;
     transition: top 300ms ease;
+    height: 55px;
 }
 
 #myNavbar:-webkit-scrollbar {
@@ -51,12 +52,91 @@ body .custom-toggler .navbar-toggler-icon {
     height: 100%;
 }
 
-.main-page-jumbotron {
-
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.date-text {
+    text-align: right;
+}
+
+
+
+/* Box animation */
 .bg-blur {
-    background: rgba(41, 40, 40, 0.3); /* Adjust the alpha value (0.8) for transparency */
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
+    background: rgba(41, 40, 40, 0.5); /* Adjust the alpha value (0.8) for transparency */
+    backdrop-filter: blur(6px);
+    border-radius: 4px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #0FE5FF;
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+	min-width: min(40rem, 100%);
+}
+
+.box {
+	border: 0.35rem solid;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
 }

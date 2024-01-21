@@ -1,10 +1,10 @@
 var lastScrollPosition = window.pageYOffset;
 
 //Hide navbar on first load of website. Once user scrolls, show it if they scroll up.
-let hasScrolledYet = false;
-if(lastScrollPosition == 0 && !hasScrolledYet) {
-    document.getElementById('myNavbar').style.top = '-50%';
-}
+// let hasScrolledYet = false;
+// if(lastScrollPosition == 0 && !hasScrolledYet) {
+//     document.getElementById('myNavbar').style.top = '-50%';
+// }
 
 //Hide navbar when scrolling down, show when scrolling up
 document.addEventListener('scroll', () => {

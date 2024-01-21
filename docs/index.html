@@ -24,7 +24,7 @@
 <header>
 
 	<!--Navbar-->
-	<nav id="myNavbar" class="navbar navbar-expand-md bg-dark fixed-top">
+	<nav id="myNavbar" class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color: rgba(41, 40, 40, 1);">
 		<div class="container-fluid mx-1">
 			<a class="navbar-brand">Eric Waters</a>
 			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +32,10 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarMenu">
 				<ul id="theList" class="navbar-nav ms-auto">
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link active">Home</a></li>
-					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#intro" class="nav-link">Home</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#education" class="nav-link">Education</a></li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#experience" class="nav-link">Experience</a></li>
+					<!-- <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#aboutMe" class="nav-link">About Me</a></li> -->
 					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#skills" class="nav-link">Technical Skills</a></li>
 					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#projects" class="nav-link">Projects</a></li>
 					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#resume" class="nav-link">Resume</a></li>
@@ -51,20 +53,19 @@
 			<source src="assets/digital.mp4">
 		</video>
 
-		<div class="container text-center main-page-jumbotron" style="margin-top: 4rem;">
-
+		<div class="container text-center main-page-jumbotron box bg-blur py-2">
 			<!--Hello, World! (animated)-->
 			<h1 class="text-light display-4 heading typewriter" style="font-size: 400%;">
-				<span class="typewrite text-light bg-blur" data-period="2000" data-type='[ "Hello, World!" ]'>
-					<span class="wrap"></span>
+				<span class="typewrite text-light" data-period="2000" data-type='[ "Eric Waters" ]'>
+					<span class="wrap">|</span>
 				</span>
 			</h1>
-			<p class="text-light lead p-0 m-0"><span class="bg-blur">I'm a versatile software engineer with a love for web development and everything big data.</span></p>
-			<p class="text-light lead p-0 m-0 pb-3"><span class="bg-blur">I'm currently a Software Application Development Engineer at Intel.</span></p>
+			<p class="text-light lead p-0 m-0"><span>I'm a versatile software engineer with a love for web development and everything big data.</span></p>
+			<p class="text-light lead p-0 m-0 pb-3"><span>Currently a Software Application Development Engineer at Intel.</span></p>
 			<img class="img-fluid mx-auto" src="assets/eric.jpg" style="border-radius: 50%; width: 150px; height: auto; display: block;">
 
 			<!--Social Media Links-->
-			<div class="container mt-3 text-center text-secondary bg-blur" style="font-size: 2rem; width: fit-content;">
+			<div class="container mt-3 text-center text-secondary" style="font-size: 2rem; width: fit-content;">
 				<a href="mailto:eswaters@asu.edu" class="fa fa-envelope px-2 mt-2 text-decoration-none text-secondary"></a>
 				<a href="https://github.com/eric-waters" class="fa fa-github px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
 				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
@@ -80,10 +81,10 @@
 <!--Main Layout-->
 <main>
 	<!--About Me-->
-	<div id="aboutMe" class="bg-light">
+	<div id="aboutMe" class="bg-light" hidden>
 
 		<div class="pt-3">
-			<p class="text-center display-5">About Me</p>
+			<p class="text-center display-6">About Me</p>
 		</div>
 		<hr class="mx-auto mb-5" style="width: 90%;">
 
@@ -173,10 +174,185 @@
 		</div>
 	</div>
 
-	<!--Skills & Resume-->
-	<div id="skills" style="background-color: rgba(96, 130, 182, 0.2);">
+	<!-- Education -->
+	<div id="education" class="bg-light">
 		<div class="pt-3">
-			<h1 class="text-center text-dark display-5">Technical Skills</h1>
+			<p class="text-center display-5">Education</p>
+		</div>
+		<!-- <hr class="mx-auto mb-5" style="width: 90%;"> -->
+		<div class="container pb-4">
+			<div class="card mb-3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-lg-2 col-sm-0">
+							<img src="assets/Arizona_State_University_seal.svg.png" class="img-fluid d-block mx-auto mb-2" style="width: 10rem;" alt="">
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="row">
+								<div class="col-lg-9 col-md-8 col-sm-0">
+									<h5 class="mb-0 mb-md-2">Computer Science (Big Data Systems), M.S.</h5>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-12 text-md-end text-muted mb-1">
+									2022 - 2023
+								</div>
+							</div>
+							<h6 class="card-subtitle text-muted mb-2">Ira A. Fulton Schools of Engineering</h6>
+							<h6 class="card-subtitle text-muted mb-2">Arizona State University - Tempe Campus</h6>
+							<small class="text-muted"><em>This concentration provides students with the knowledge, skills and advanced research expertise in designing scalable systems (parallel, distributed and real-time) 
+								for acquiring, storing, processing and accessing large-scale heterogeneous multisource data and in using analytical tools to mine information from the data.</em></small>
+							<br>
+							<br>
+							<p><strong style="color: #A40044">GPA: </strong>4.0</p>
+							<p class="mb-0"><strong style="color: #A40044">Coursework</strong></p>
+							<ul>
+								<li>Database Management System Implementation</li>
+								<li>Mobile Computing</li>
+								<li>Data Mining</li>
+								<li>Semantic Web Mining</li>
+								<li>Data Processing at Scale</li>
+								<li>Statistical Machine Learning</li>
+								<li>Data Visualization</li>
+								<li>Knowledge Representation</li>
+							</ul>
+							<p class="mb-0"><strong style="color: #A40044">Research Papers</strong></p>
+							<ul>
+								<li><a href="assets/Eric_Projects/Phishing_Detection_CSE572.pdf" download>Automated Detection of Phishing Attacks using Machine Learning Techniques</a></li>
+								<li><a href="assets/Eric_Projects/Data_Pipeline_CSE511.pdf" download>A Data Processing Pipeline with Kafka, Neo4j, and Kubernetes for Distributed Graph Algorithm Processing</a></li>
+								<li><a href="assets/Eric_Projects/Data_Visualization_CSE578.pdf" download>Fiscal Clarity: Turning Data into Insights for Engagement, Ohio</a></li>
+								<li><a href="assets/Eric_Projects/Automated_Warehouse_CSE579.pdf" download>Solving the Automated Warehouse Scenario using Answer Set Programming</a></li>
+								<li><a href="assets/Eric_Projects/Stance_Detection_CSE573.pdf" download>Stance Detection</a></li>
+								<li><a href="assets/Eric_Projects/Statistical_ML_CSE575.pdf" download>Statistical Machine Learning Approaches in Medicine and Biomedical Sciences</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-lg-2 col-sm-0">
+							<img src="assets/Arizona_State_University_seal.svg.png" class="img-fluid d-block mx-auto mb-2" style="width: 10rem;" alt="">
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="row">
+								<div class="col-lg-9 col-md-8 col-sm-0">
+									<h5 class="mb-0 mb-md-2">Computer Science, B.S.</h5>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-12 text-md-end text-muted mb-1">
+									2019 - 2022
+								</div>
+							</div>
+							<h6 class="card-subtitle text-muted mb-2">Ira A. Fulton Schools of Engineering</h6>
+							<h6 class="card-subtitle text-muted mb-2">Barrett, the Honors College</h6>
+							<h6 class="card-subtitle text-muted mb-2">Arizona State University - Tempe Campus</h6>
+							<small class="text-muted"><em>The program is anchored with core courses that provide a solid foundation in theoretical and practical aspects of computer science and ensure students have the requisite critical thinking, 
+								effective programming and problem solving skills in a variety of modern programming languages with an emphasis on understanding security and systems issues.</em></small>
+							<br>
+							<br>
+							<p><strong style="color: #A40044">GPA: </strong>4.0</p>
+							<p class="mb-0"><strong style="color: #A40044">Relevant Coursework</strong></p>
+							<ul>
+								<li>Object-Oriented Programming & Data Structures</li>
+								<li>Digital Design Fundamentals</li>
+								<li>Intro to Programming Languages</li>
+								<li>Logic in Computer Science</li>
+								<li>Discrete Math Structures</li>
+								<li>Computer Organization & Assembly Language Programming</li>
+								<li>Computing Ethics</li>
+								<li>Data Structures & Algorithms</li>
+								<li>Intro to Software Engineering</li>
+								<li>Applied Linear Algebra</li>
+								<li>Operating Systems</li>
+								<li>Principles of Programming Languages</li>
+								<li>Intro to Theoretical Computer Science</li>
+								<li>Information Assurance</li>
+								<li>Database Management</li>
+								<li>Software QA & Testing</li>
+								<li>Probability & Statistics Engineering Problem Solving</li>
+								<li>Foundations of Machine Learning</li>
+								<li>Computer Science Capstone Project</li>
+								<li>Honors Thesis</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Experience -->
+	<div id="experience" style="background-color: rgba(96, 130, 182, 0.2);">
+		<div class="pt-3">
+			<p class="text-center display-5">Experience</p>
+		</div>
+		<!-- <hr class="mx-auto mb-5" style="width: 90%;"> -->
+		<div class="container pb-4">
+			<div class="card mb-3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-lg-2 col-sm-0">
+							<img src="assets/Intel-logo.png" class="img-fluid d-block mx-auto mb-2" style="width: 20rem;" alt="">
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="row">
+								<div class="col-lg-9 col-md-8 col-sm-0">
+									<h5 class="mb-0 mb-md-2">Software Application Development Engineer</h5>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-12 text-md-end text-muted mb-1">
+									2023 - Present
+								</div>
+							</div>
+							<h6 class="card-subtitle text-muted mb-2">Intel Corporation</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-lg-2 col-sm-0">
+							<img src="assets/dell logo.png" class="img-fluid d-block mx-auto mb-2" style="width: 7rem;" alt="">
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="row">
+								<div class="col-lg-9 col-md-8 col-sm-0">
+									<h5 class="mb-0 mb-md-2">Graduate Software Engineering Intern</h5>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-12 text-md-end text-muted mb-1">
+									Summer 2022
+								</div>
+							</div>
+							<h6 class="card-subtitle text-muted mb-2">Dell Technologies</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-lg-2 col-sm-0">
+							<img src="assets/dell logo.png" class="img-fluid d-block mx-auto mb-2" style="width: 7rem;" alt="">
+						</div>
+						<div class="col-lg-10 col-sm-12">
+							<div class="row">
+								<div class="col-lg-9 col-md-8 col-sm-0">
+									<h5 class="mb-0 mb-md-2">Undergraduate Software Engineering Intern</h5>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-12 text-md-end text-muted mb-1">
+									Summer 2021
+								</div>
+							</div>
+							<h6 class="card-subtitle text-muted mb-2">Dell Technologies</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Skills & Resume-->
+	<div id="skills" style="background-color: lightgray">
+		<div class="pt-3">
+			<h1 class="text-center text-dark display-6">Technical Skills</h1>
 		</div>
 		<hr class="mx-auto mb-5" style="width: 90%;">
 		<div class="container-lg py-4">
@@ -187,7 +363,7 @@
 						<img src="assets/java-logo.png" class="card-img-top img-fluid" alt="...">
 						<div class="card-body">
 							<h5 class="card-title mt-3">Java</h5>
-							<p class="card-text">Java is my "native" programming language and I continue to use it extensively through both coursework and professional work. It is currently my strongest language.</p>
+							<p class="card-text">Java is my "native" programming language. I used it extensively throughout school and while I worked at Dell.</p>
 						</div>
 					</div>
 				</div>
@@ -372,7 +548,7 @@
 	<div id="projects" class="bg-dark pb-4">
 
 		<div class="pt-3">
-			<h1 class="text-center text-light display-5">Projects</h1>
+			<h1 class="text-center text-light display-6">Projects</h1>
 		</div>
 		<hr class="mx-auto mb-5 text-light" style="width: 90%;">
 
@@ -510,7 +686,7 @@
 
 	<div id="resume" class="pb-4" style="background-color: #323639;">
 		<div class="pt-3">
-			<h1 class="text-center text-light display-5">Resume</h1>
+			<h1 class="text-center text-light display-6">Resume</h1>
 		</div>
 		<hr class="mx-auto mb-5 text-light" style="width: 90%;">
 		<div class="container">

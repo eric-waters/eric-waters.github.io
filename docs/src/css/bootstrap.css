@@ -8679,9 +8679,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 body .custom-toggler.navbar-toggler {
-  border-color: #0FE5FF; }
-
-.nav-link, .navbar-brand {
-  color: #0FE5FF; }
+  border-color: #f2f2f2; }
 
 /*# sourceMappingURL=bootstrap.css.map */

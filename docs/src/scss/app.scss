@@ -17,10 +17,10 @@ $dark: #1b171b;
 
 //sets border of hamburger to be secondary
 body .custom-toggler.navbar-toggler {
-    border-color: $secondary;
+    border-color: $light;
 }
 
-//sets nav links and brand to be secondary
-.nav-link, .navbar-brand {
-    color: $secondary;
-}
+// //sets nav links and brand to be secondary
+// .nav-link, .navbar-brand {
+//     color: $secondary;
+// }
