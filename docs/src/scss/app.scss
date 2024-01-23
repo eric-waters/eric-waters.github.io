@@ -20,3 +20,13 @@ $aspect-ratios: (
 
 //Modifications that use $variables must go below the bootstrap css import,
 //otherwise the $variable will not be recognized.
+
+//sets border of hamburger to be secondary
+body .custom-toggler.navbar-toggler {
+  border-color: $secondary;
+}
+
+//sets nav links and brand to be secondary
+.nav-link, .navbar-brand {
+  color: $secondary;
+}
