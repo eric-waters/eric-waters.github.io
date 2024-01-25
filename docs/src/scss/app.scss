@@ -2,8 +2,8 @@
 //sass docs/src/scss/app.scss docs/src/css/bootstrap.css
 
 //Bootstrap theme color overrides
-$primary: #0072C9;
-$secondary: #0FE5FF;
+$primary: #0FE5FF;
+$secondary: #0072C9;
 $light: #f2f2f2;
 $dark: #1b171b;
 
@@ -21,12 +21,7 @@ $aspect-ratios: (
 //Modifications that use $variables must go below the bootstrap css import,
 //otherwise the $variable will not be recognized.
 
-//sets border of hamburger to be secondary
+//sets border of hamburger to be primary
 body .custom-toggler.navbar-toggler {
-  border-color: $secondary;
-}
-
-//sets nav links and brand to be secondary
-.nav-link, .navbar-brand {
-  color: $secondary;
+  border-color: $primary;
 }

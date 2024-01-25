@@ -11,6 +11,14 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="./src/css/bootstrap.css">
 
+	<!-- Form-control focus color override -->
+	<style>
+		.form-control:focus {
+			border-color: #0FE5FF;
+			box-shadow: 0 0 0 0.25rem rgba(15, 229, 255, 0.25);
+		}
+	</style>
+
 	<!-- Tab icon -->
 	<link rel="icon" href="assets/code-icon.png">
 	
@@ -24,7 +32,7 @@
 <header>
 
 	<!--Navbar-->
-	<nav id="myNavbar" class="navbar navbar-expand-md fixed-top" style="background-color: rgba(41, 40, 40, 1);">
+	<nav id="myNavbar" class="navbar navbar-primary navbar-expand-md fixed-top" style="background-color: rgba(41, 40, 40, 1);">
 		<div class="container-fluid mx-1">
 			<a class="navbar-brand">Eric Waters</a>
 			<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,21 +70,20 @@
 			<img class="img-fluid mx-auto" src="assets/eric.jpg" style="border-radius: 50%; width: 150px; height: auto; display: block;">
 
 			<!--Social Media Links-->
-			<div class="container mt-3 text-center text-secondary" style="font-size: 2rem; width: fit-content;">
-				<a href="mailto:ericwaters2019@gmail.com" class="fa fa-envelope px-2 mt-2 text-decoration-none text-secondary"></a>
-				<a href="https://github.com/eric-waters" class="fa fa-github px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin px-2 mt-2 text-decoration-none text-secondary" target="_blank"></a>
+			<div class="container mt-3 text-center text-primary" style="font-size: 2rem; width: fit-content;">
+				<a href="mailto:ericwaters2019@gmail.com" class="fa fa-envelope px-2 mt-2 text-decoration-none text-primary"></a>
+				<a href="https://github.com/eric-waters" class="fa fa-github px-2 mt-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook px-2 mt-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram px-2 mt-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin px-2 mt-2 text-decoration-none text-primary" target="_blank"></a>
 			</div>
 
+			<!-- Download Resume -->
 			<div class="mt-3 mb-2">
-				<a href="assets/Eric-Waters-Resume.pdf" download><button class="btn btn-outline-secondary"><i class="fa-solid fa-download me-2"></i>Download Resume</button></a>
+				<a href="assets/Eric-Waters-Resume.pdf" download><button class="btn btn-outline-primary"><i class="fa-solid fa-download me-2"></i>Download Resume</button></a>
 			</div>
 		</div>
-
 	</div>
-
 </header>
 
 <!--Main Layout-->
@@ -85,9 +92,9 @@
 	<!-- Education -->
 	<div id="education" class="bg-darkgray">
 		<div class="pt-3">
-			<p class="text-center display-6 text-secondary">Education</p>
+			<p class="text-center display-6 text-primary">Education</p>
 		</div>
-		<hr class="mx-auto mb-5 text-secondary" style="width: 90%; height: 3px;">
+		<hr class="mx-auto mb-5 text-primary" style="width: 90%; height: 3px;">
 		<div class="container pb-4">
 			<div class="card mb-3 bg-dark text-light">
 				<div class="card-body">
@@ -110,8 +117,8 @@
 								for acquiring, storing, processing and accessing large-scale heterogeneous multisource data and in using analytical tools to mine information from the data.</em></small>
 							<br>
 							<br>
-							<p><strong style="color: #A40044">GPA: </strong>4.0</p>
-							<p class="mb-0"><strong style="color: #A40044">Coursework</strong></p>
+							<p><strong class="text-primary">GPA: </strong>4.0</p>
+							<p class="mb-0"><strong class="text-primary">Coursework</strong></p>
 							<ul>
 								<li>Database Management System Implementation</li>
 								<li>Mobile Computing</li>
@@ -122,14 +129,14 @@
 								<li>Data Visualization</li>
 								<li>Knowledge Representation</li>
 							</ul>
-							<p class="mb-0"><strong style="color: #A40044">Research Papers</strong></p>
+							<p class="mb-0"><strong class="text-primary">Research Papers</strong></p>
 							<ul>
-								<li><a href="assets/Eric_Projects/Phishing_Detection_CSE572.pdf" download>Automated Detection of Phishing Attacks using Machine Learning Techniques</a></li>
-								<li><a href="assets/Eric_Projects/Data_Pipeline_CSE511.pdf" download>A Data Processing Pipeline with Kafka, Neo4j, and Kubernetes for Distributed Graph Algorithm Processing</a></li>
-								<li><a href="assets/Eric_Projects/Data_Visualization_CSE578.pdf" download>Fiscal Clarity: Turning Data into Insights for Engagement, Ohio</a></li>
-								<li><a href="assets/Eric_Projects/Automated_Warehouse_CSE579.pdf" download>Solving the Automated Warehouse Scenario using Answer Set Programming</a></li>
-								<li><a href="assets/Eric_Projects/Stance_Detection_CSE573.pdf" download>Stance Detection</a></li>
-								<li><a href="assets/Eric_Projects/Statistical_ML_CSE575.pdf" download>Statistical Machine Learning Approaches in Medicine and Biomedical Sciences</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Phishing_Detection_CSE572.pdf" download>Automated Detection of Phishing Attacks using Machine Learning Techniques</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Data_Pipeline_CSE511.pdf" download>A Data Processing Pipeline with Kafka, Neo4j, and Kubernetes for Distributed Graph Algorithm Processing</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Data_Visualization_CSE578.pdf" download>Fiscal Clarity: Turning Data into Insights for Engagement, Ohio</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Automated_Warehouse_CSE579.pdf" download>Solving the Automated Warehouse Scenario using Answer Set Programming</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Stance_Detection_CSE573.pdf" download>Stance Detection</a></li>
+								<li><a class="link-primary" href="assets/Eric_Projects/Statistical_ML_CSE575.pdf" download>Statistical Machine Learning Approaches in Medicine and Biomedical Sciences</a></li>
 							</ul>
 						</div>
 					</div>
@@ -157,8 +164,8 @@
 								effective programming and problem solving skills in a variety of modern programming languages with an emphasis on understanding security and systems issues.</em></small>
 							<br>
 							<br>
-							<p><strong style="color: #A40044">GPA: </strong>4.0</p>
-							<p class="mb-0"><strong style="color: #A40044">Relevant Coursework</strong></p>
+							<p><strong class="text-primary">GPA: </strong>4.0</p>
+							<p class="mb-0"><strong class="text-primary">Relevant Coursework</strong></p>
 							<ul>
 								<li>Object-Oriented Programming & Data Structures</li>
 								<li>Digital Design Fundamentals</li>
@@ -191,9 +198,9 @@
 	<!-- Experience -->
 	<div id="experience" class="bg-darkgray">
 		<div class="pt-3">
-			<p class="text-center display-6 text-secondary">Experience</p>
+			<p class="text-center display-6 text-primary">Experience</p>
 		</div>
-		<hr class="mx-auto mb-5 text-secondary" style="width: 90%; height: 3px;">
+		<hr class="mx-auto mb-5 text-primary" style="width: 90%; height: 3px;">
 		<div class="container pb-4">
 			<div class="card mb-3 bg-dark text-light">
 				<div class="card-body">
@@ -211,7 +218,7 @@
 								</div>
 							</div>
 							<h6 class="card-subtitle text-muted mb-2">Intel Corporation</h6>
-							<p class="mb-0"><strong style="color: #0072C9">Accomplishments</strong></p>
+							<p class="mb-0"><strong class="text-primary">Accomplishments</strong></p>
 							<ul>
 								<li>Enhanced organization-wide productivity by developing a web platform for hosting internal Generative AI tools</li>
 									<ul>
@@ -225,7 +232,7 @@
 										<li>Owned and managed several application servers and cloud databases to support the software</li>
 									</ul>
 							</ul>
-							<p class="mb-1"><strong style="color: #0072C9">Skills Developed</strong></p>
+							<p class="mb-1"><strong class="text-primary">Skills Developed</strong></p>
 							<div>
 								<span class="badge text-primary border border-primary">TypeScript</span>
 								<span class="badge text-primary border border-primary">Python</span>
@@ -255,7 +262,7 @@
 								</div>
 							</div>
 							<h6 class="card-subtitle text-muted mb-2">Dell Technologies</h6>
-							<p class="mb-0"><strong style="color: #0072C9">Accomplishments</strong></p>
+							<p class="mb-0"><strong class="text-primary">Accomplishments</strong></p>
 							<ul>
 								<li>Increased average login speed by 400% by implementing Sign in with Dell (SSO Authentication)</li>
 								<ul>
@@ -264,7 +271,7 @@
 								<li>Prevented immense penalties/fees by protecting data integrity with required authorization (rights/privileges) to alter sensitive resources in several REST APIs</li>
 								<li>Optimized and automated the employee-manager matching process for the new-hire rotational program</li>
 							</ul>
-							<p class="mb-1"><strong style="color: #0072C9">Skills Developed</strong></p>
+							<p class="mb-1"><strong class="text-primary">Skills Developed</strong></p>
 							<div>
 								<span class="badge text-primary border border-primary">Java</span>
 								<span class="badge text-primary border border-primary">TypeScript</span>
@@ -272,7 +279,7 @@
 								<span class="badge text-primary border border-primary">Spring Security</span>
 								<span class="badge text-primary border border-primary">OAuth 2.0</span>
 								<span class="badge text-primary border border-primary">Oracle Database</span>
-								<span class="badge text-primary border border-primary">VMware Tanzu Application Service</span>
+								<span class="badge text-primary border border-primary">Tanzu Application Service</span>
 							</div>
 						</div>
 					</div>
@@ -294,7 +301,7 @@
 								</div>
 							</div>
 							<h6 class="card-subtitle text-muted mb-2">Dell Technologies</h6>
-							<p class="mb-0"><strong style="color: #0072C9">Accomplishments</strong></p>
+							<p class="mb-0"><strong class="text-primary">Accomplishments</strong></p>
 							<ul>
 								<li>Enhanced the efficiency of DevOps and Agile teams by creating a proprietary Kanban Board application</li>
 								<ul>
@@ -306,7 +313,7 @@
 									<li>This was a UI/UX project - prototyped the improved onboarding process and presented it to the development team</li>
 								</ul>
 							</ul>
-							<p class="mb-1"><strong style="color: #0072C9">Skills Developed</strong></p>
+							<p class="mb-1"><strong class="text-primary">Skills Developed</strong></p>
 							<div>
 								<span class="badge text-primary border border-primary">Java</span>
 								<span class="badge text-primary border border-primary">JavaScript</span>
@@ -329,9 +336,9 @@
 	<!--Skills & Resume-->
 	<div id="skills" class="bg-darkgray">
 		<div class="pt-3">
-			<h1 class="text-center text-secondary display-6">Skills</h1>
+			<h1 class="text-center text-primary display-6">Skills</h1>
 		</div>
-		<hr class="mx-auto mb-5 text-secondary" style="width: 90%; height: 3px;">
+		<hr class="mx-auto mb-5 text-primary" style="width: 90%; height: 3px;">
 		<div class="container-fluid py-4" style="padding-left: 5%; padding-right: 5%;">
 			<!--Card Deck-->
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4">
@@ -349,7 +356,7 @@
 						<img src="assets/python.gif" class="card-img-top img-fluid my-5" alt="...">
 						<div class="card-body skill-card">
 							<h5 class="card-title ">Python</h5>
-							<p class="card-text">I've used Python mostly for working with data. For example, in my ML classes, I used libraries like NumPy, Pandas, TensorFlow, Keras, and Scikit-Learn.</p>
+							<p class="card-text">I used Python in virtually all courses in my master's degree (big data concentration). I continue to use it at Intel for any data science related task or quick scripts.</p>
 						</div>
 					</div>
 				</div>
@@ -367,7 +374,7 @@
 						<img src="assets/typescript.png" class="card-img-top px-2 img-fluid w-75 mx-auto my-5" alt="...">
 						<div class="card-body skill-card">
 							<h5 class="card-title">TypeScript</h5>
-							<p class="card-text">As someone who is more used to object oriented programming languages, TypeScript was awesome to learn. I use it often with my Angular projects.</p>
+							<p class="card-text">As someone who is more used to object oriented programming languages, TypeScript was awesome to learn. I often use it with my Angular projects.</p>
 						</div>
 					</div>
 				</div>
@@ -421,7 +428,7 @@
 						<img src="assets/spring3.png" class="card-img-top img-fluid mt-3 px-3" alt="...">
 						<div class="card-body skill-card">
 						<h5 class="card-title">Spring Framework</h5>
-						<p class="card-text">I've used Spring Framework for several work and personal projects. It's great!</p>
+						<p class="card-text">I've used Spring Framework for several work and personal projects. I also took the course "The Java Spring Tutorial" on Udemy.</p>
 						</div>
 					</div>
 				</div>
@@ -430,7 +437,7 @@
 						<img src="assets/node.gif" class="card-img-top img-fluid mt-1" style="padding-left: 5em; padding-right: 5em;" alt="...">
 						<div class="card-body skill-card">
 						<h5 class="card-title">Node</h5>
-						<p class="card-text">I often use Node as my go-to agile server because it's so easy to use. This website uses node to serve its content.</p>
+						<p class="card-text">I often use Node as my go-to quick server because it's so easy to use. This website uses node to serve its content.</p>
 						</div>
 					</div>
 				</div>
@@ -448,7 +455,7 @@
 						<img src="assets/htmlandcss (2).png" class="card-img-top px-3 my-5 img-fluid" alt="...">
 						<div class="card-body skill-card">
 						<h5 class="card-title">HTML, CSS, jQuery, and Bootstrap</h5>
-						<p class="card-text">I also taught myself HTML, CSS, and jQuery in order to build the front-end of applications. I often choose to use Bootstrap 5 as a CSS framework (this website uses it).</p>
+						<p class="card-text">I taught myself HTML, CSS, and jQuery to learn front-end development. I often choose to use Bootstrap 5 as a CSS framework (this website uses it).</p>
 						</div>
 					</div>
 				</div>
@@ -665,12 +672,10 @@
 
 	<!--Projects-->
 	<div id="projects" class="pb-4 bg-darkgray">
-
 		<div class="pt-3">
-			<h1 class="text-center display-6 text-secondary">Projects</h1>
+			<h1 class="text-center display-6 text-primary">Projects</h1>
 		</div>
-		<hr class="mx-auto mb-5 text-secondary" style="width: 90%; height: 3px;">
-
+		<hr class="mx-auto mb-5 text-primary" style="width: 90%; height: 3px;">
 		<div class="container">
 			<!--Card Deck-->
 			<div class="row row-cols-1 row-cols-md-1 g-4 mx-lg-4">
@@ -679,12 +684,12 @@
 						<img class="card-img-top" src="assets/pows.gif" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Party on Wall Street</h5>
-							<p class="card-text">Founded and built a couch-party video game designed to teach players entreprenurial skills.
+							<p class="card-text">Founded and built a couch-party video game designed to teach players entreprenurial skills. 
 								Made using Unity, C#, JavaScript, and AirConsole.
 							</p>
 							<div class="text-center">
-								<a href="assets/POWS-Pitch-Deck.pdf" download><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Pitch Deck</button></a>
-								<a href="assets/Party on Wall Street Thesis.pdf" download><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Thesis Document</button></a>
+								<a href="assets/POWS-Pitch-Deck.pdf" download><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Pitch Deck</button></a>
+								<a href="assets/Party on Wall Street Thesis.pdf" download><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Thesis Document</button></a>
 							</div>
 						</div>
 						<div class="card-footer">
@@ -699,10 +704,10 @@
 							<h5 class="card-title">AA In-Flight Transcriber</h5>
 							<p class="card-text">Transcribes in-fight announcements in real-time so that you don't miss a beat. Created using AssemblyAI, Bootstrap, and Firebase.</p>
 							<div class="text-center">
-								<a href="https://tinyurl.com/y8ep483c" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See AssemblyAI's Blog Post</button></a>
-								<a href="https://www.youtube.com/watch?v=e8oAAE0ailk&t=1s" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-brands fa-youtube me-2"></i>Watch the Demonstration</button></a>
-								<a href="https://devpost.com/software/in-flight-closed-captioning" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
-								<a href="https://github.com/clarkshaeffer/flight_captioning" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
+								<a href="https://tinyurl.com/y8ep483c" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See AssemblyAI's Blog Post</button></a>
+								<a href="https://www.youtube.com/watch?v=e8oAAE0ailk&t=1s" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-brands fa-youtube me-2"></i>Watch the Demonstration</button></a>
+								<a href="https://devpost.com/software/in-flight-closed-captioning" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
+								<a href="https://github.com/clarkshaeffer/flight_captioning" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
 							</div>
 						</div>
 						<div class="card-footer">
@@ -719,8 +724,8 @@
 								 Transformed the website into a production-ready state by enhancing the look and feel of the UI, creating mobile
 								safety forms, implementing an inventory pricing layer, and adding clocking in/out functionality.</p>
 							<div class="text-center">
-								<a href="https://www.youtube.com/watch?v=gXEd-HVifVI" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-brands fa-youtube me-2"></i>Watch the Demonstration</button></a>
-								<a href="assets/Wattserp-Digital-Poster.pdf" download><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Digital Poster</button></a>
+								<a href="https://www.youtube.com/watch?v=gXEd-HVifVI" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-brands fa-youtube me-2"></i>Watch the Demonstration</button></a>
+								<a href="assets/Wattserp-Digital-Poster.pdf" download><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-solid fa-download me-2"></i>Download the Digital Poster</button></a>
 							</div>
 						</div>
 						<div class="card-footer">
@@ -737,8 +742,8 @@
 								Created using Google Firebase, Twilio API, Java, and JavaScript.
 							</p>
 							<div class="text-center">
-								<a href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
-								<a href="https://github.com/eric-waters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
+								<a href="https://devpost.com/software/fact-blast" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
+								<a href="https://github.com/eric-waters/Sunhacks2019_FINAL" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
 							</div>
 						</div>
 						<div class="card-footer">
@@ -753,8 +758,8 @@
 							<h5 class="card-title">NMTSA Scheduling App</h5>
 							<p class="card-text">Created an application to organize patient data and make it more accessible for therapists to read. Utilized Bootstrap and Spring MVC.</p>
 							<div class="text-center">
-								<a href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
-								<a href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-outline-secondary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
+								<a href="https://devpost.com/software/nmtsa-scheduleapp" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>See the Devpost</button></a>
+								<a href="https://github.com/2019-Arizona-Opportunity-Hack/Team-8" target="_blank"><button type="button" class="btn btn-outline-primary mx-3 my-1"><i class="fa-regular fa-eye me-2"></i>View in Github</button></a>
 							</div>
 						</div>
 						<div class="card-footer">
@@ -765,7 +770,6 @@
 			</div>
 		</div>
 	</div>
-	</div>
 </main>
 <!--End of Main Layout-->
 
@@ -774,9 +778,9 @@
 	<div id="contact" class="container-fluid text-center bg-darkgray pt-4">
 		
 		<div class="pt-3">
-			<p class="text-center display-6 text-secondary">Contact</p>
+			<p class="text-center display-6 text-primary">Contact</p>
 		</div>
-		<hr class="mx-auto mb-5 text-secondary" style="width: 90%; height: 3px;">
+		<hr class="mx-auto mb-5 text-primary" style="width: 90%; height: 3px;">
 		<div class="container">
 			<div class="card bg-dark text-light">
 				<div class="card-body">
@@ -797,19 +801,19 @@
 							<label class="text-center mb-1" style="display: block;" for="messageInput">Message</label>
 							<textarea class="form-control bg-dark text-light text-center mb-2" id="messageInput" rows="3" placeholder="Hi!" required></textarea>
 						</div>
-						<button id="sendEmailButton" type="button" class="btn btn-secondary mt-2 text-dark"><i class="fa-solid fa-right-to-bracket me-2"></i>Submit</button>
+						<button id="sendEmailButton" type="button" class="btn btn-primary mt-2 text-dark"><i class="fa-solid fa-right-to-bracket me-2"></i>Submit</button>
 					</form>
 				</div>
 			</div>
 		</div>
 		<div class="container mt-5">
-			<p class="text-secondary">Website developed by Eric Waters
+			<p class="text-primary">Website developed by Eric Waters
 			<div class="container text-center" style="font-size: 1.4rem">
-				<a href="mailto:ericwaters2019@gmail.com" class="fa fa-envelope mx-2 text-decoration-none text-secondary"></a>
-				<a href="https://github.com/eric-waters" class="fa fa-github mx-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook mx-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram mx-2 text-decoration-none text-secondary" target="_blank"></a>
-				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin mx-2 text-decoration-none text-secondary" target="_blank"></a>
+				<a href="mailto:ericwaters2019@gmail.com" class="fa fa-envelope mx-2 text-decoration-none text-primary"></a>
+				<a href="https://github.com/eric-waters" class="fa fa-github mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.facebook.com/eric.waters.5895" class="fa fa-facebook mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.instagram.com/_ericwaters_/" class="fa fa-instagram mx-2 text-decoration-none text-primary" target="_blank"></a>
+				<a href="https://www.linkedin.com/in/eric-waters2019/" class="fa fa-linkedin mx-2 text-decoration-none text-primary" target="_blank"></a>
 			</div>
 		</div>
 		<br>
