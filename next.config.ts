@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
-  distDir: "out",
-  images: {
-    unoptimized: true, // If using images
-  },
-  basePath: "", // Set if you're deploying to a subpath
+  assetPrefix: isProd ? "/your-repo-name/" : "",
+  basePath: isProd ? "/your-repo-name" : "",
 };
 
 export default nextConfig;
