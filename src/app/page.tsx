@@ -13,7 +13,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[oklch(100%_0_0)] dark:bg-[oklch(17%_0_0)]">
-        <div className="container max-w-[90rem] px-5 md:px-10 lg:px-20 mx-auto py-30">
+        <div className="container max-w-[90rem] px-5 md:px-10 lg:px-20 mx-auto py-20 md:py-30">
           <HeroSection />
         </div>
       </div>

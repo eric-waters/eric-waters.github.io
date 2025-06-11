@@ -266,7 +266,10 @@ export default function Education() {
       </motion.div>
 
       {[mastersContent, bachelorsContent].map((content, index) => (
-        <div className="grid lg:grid-cols-5 gap-5 lg:gap-20" key={index}>
+        <div
+          className="grid lg:grid-cols-5 gap-5 lg:gap-20 lg:my-16 "
+          key={index}
+        >
           <motion.div
             initial={{
               opacity: 0,
@@ -280,7 +283,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="my-8 lg:col-span-3"
+            className="my-10 lg:my-0 lg:col-span-3"
           >
             {content.textData}
           </motion.div>
@@ -297,7 +300,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="mb-16 lg:col-span-2"
+            className="mb-16 lg:mb-0 lg:col-span-2 px-5 lg:px-0"
           >
             {content.carousel}
           </motion.div>

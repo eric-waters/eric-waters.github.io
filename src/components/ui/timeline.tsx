@@ -49,9 +49,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         }}
       >
         <div className="mx-auto">
-          <h2 className="text-4xl md:text-6xl mb-4 text-black dark:text-white font-bold flex items-center">
-            Quality Code, Real{"\u00A0"}Results{"\u00A0"}
-            <TrendingUp className="text-blue-500 w-16 h-16 ml-3" />
+          <h2 className="text-4xl md:text-6xl mb-4 text-black dark:text-white font-bold flex items-center flex-wrap">
+            <span>Quality Code, Real{"\u00A0"}</span>
+            <span className="inline-flex items-center whitespace-nowrap">
+              Results
+              <TrendingUp className="text-blue-500 w-10 h-10 md:w-16 md:h-16 ml-4" />
+            </span>
           </h2>
           <p className="text-lg text-neutral-800 dark:text-neutral-400 mt-5">
             Over 2 years of professionally building and shipping full-stack
