@@ -189,6 +189,12 @@ export default function Skills() {
             "A platform for building and deploying ML models. I used it extensively in graduate school for various ML tasks and leveraged TensorFlow Lite to deploy models on mobile devices.",
         },
         {
+          name: "LangChain",
+          image: "/skills/langchain.png",
+          description:
+            "A framework for building applications with LLMs. I used it at Intel to develop APIs to serve generative AI models for creating chatbots and other AI applications.",
+        },
+        {
           name: "Scikit-learn",
           image: "/skills/scikit.png",
           description:
@@ -199,12 +205,6 @@ export default function Skills() {
           image: "/skills/keras.png",
           description:
             "A high-level neural networks API. I used it in graduate school for building and training deep learning models, especially for image classification tasks.",
-        },
-        {
-          name: "LLM Integration",
-          image: "/skills/meta.png",
-          description:
-            "I've integrated large language models (LLMs) into various applications at Intel, including informational chatbots and action recommendation systems.",
         },
       ],
     },
