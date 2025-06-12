@@ -212,8 +212,8 @@ export default function Education() {
             <Image
               src="/papers/screenshots/undergrad-capstone-netpoint-llc.png"
               alt="Undergraduate Capstone: Developing a Contractor Management System"
-              width={812}
-              height={1051}
+              width={1700}
+              height={2210}
               className="relative opacity-50"
             ></Image>
             <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white text-lg md:text-2xl font-bold px-10 mx-auto">
@@ -267,13 +267,13 @@ export default function Education() {
 
       {[mastersContent, bachelorsContent].map((content, index) => (
         <div
-          className="grid lg:grid-cols-5 gap-5 lg:gap-20 lg:my-16 "
+          className="grid lg:grid-cols-2 gap-5 lg:gap-20 lg:my-16 overflow-x-hidden"
           key={index}
         >
           <motion.div
             initial={{
               opacity: 0,
-              x: -50,
+              x: -100,
             }}
             whileInView={{
               opacity: 1,
@@ -283,14 +283,14 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="my-10 lg:my-0 lg:col-span-3"
+            className="my-10 lg:my-0 lg:col-span-1"
           >
             {content.textData}
           </motion.div>
           <motion.div
             initial={{
               opacity: 0,
-              x: 50,
+              x: 100,
             }}
             whileInView={{
               opacity: 1,
@@ -300,7 +300,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="mb-16 lg:mb-0 lg:col-span-2 px-5 lg:px-0"
+            className="mb-16 lg:mb-0 lg:col-span-1 lg:mx-12"
           >
             {content.carousel}
           </motion.div>

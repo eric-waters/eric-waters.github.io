@@ -187,7 +187,7 @@ function CarouselPrevious({
       className={cn(
         "absolute size-8 rounded-full",
         orientation === "horizontal"
-          ? "-bottom-12 left-1/2 -translate-x-9 md:bottom-auto md:translate-x-0 md:top-1/2 md:-left-12 md:-translate-y-1/2"
+          ? "-bottom-12 left-1/2 -translate-x-9 lg:bottom-auto lg:translate-x-0 lg:top-1/2 lg:-left-12 lg:-translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -217,7 +217,7 @@ function CarouselNext({
       className={cn(
         "absolute size-8 rounded-full",
         orientation === "horizontal"
-          ? "-bottom-12 left-1/2 translate-x-2 md:bottom-auto md:left-auto md:translate-x-0 md:top-1/2 md:-right-12 md:-translate-y-1/2"
+          ? "-bottom-12 left-1/2 translate-x-2 lg:bottom-auto lg:left-auto lg:translate-x-0 lg:top-1/2 lg:-right-12 lg:-translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
