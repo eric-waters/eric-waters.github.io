@@ -59,7 +59,7 @@ const testimonials = [
   },
 ];
 
-export default function HeroSection() {
+export default function Hero() {
   return (
     <>
       <div className="relative flex w-full flex-col items-center justify-center">

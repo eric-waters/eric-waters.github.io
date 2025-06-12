@@ -1,8 +1,8 @@
-import HeroSection from "@/components/custom/hero-section";
-import Experience from "./experience/page";
-import Education from "./education/page";
-import Skills from "./skills/page";
-import Navbar from "@/components/custom/navbar";
+import Hero from "@/components/main/hero";
+import Experience from "../components/main/experience";
+import Education from "../components/main/education";
+import Skills from "../components/main/skills";
+import Navbar from "@/components/main/navbar";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div className="bg-[oklch(100%_0_0)] dark:bg-[oklch(17%_0_0)]">
         <div className="container max-w-[90rem] px-5 md:px-10 lg:px-20 mx-auto py-20 md:py-30">
-          <HeroSection />
+          <Hero />
         </div>
       </div>
       <div
