@@ -2,6 +2,7 @@
 import { TrendingUp } from "lucide-react";
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import SectionHeading from "../minor/section-heading";
 
 interface TimelineEntry {
   title: string;
@@ -33,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full font-sans mt-12 mb-0 lg:mt-0" ref={containerRef}>
+    <div className="w-full font-sans mb-0 lg:mt-0" ref={containerRef}>
       <motion.div
         initial={{
           opacity: 0,
@@ -48,19 +49,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           duration: 0.6,
         }}
       >
-        <div className="mx-auto">
-          <h2 className="text-4xl md:text-6xl mb-4 text-black dark:text-white font-bold flex items-center flex-wrap">
-            <span>Quality Code, Real{"\u00A0"}</span>
-            <span className="inline-flex items-center whitespace-nowrap">
-              Results
-              <TrendingUp className="text-blue-500 w-10 h-10 md:w-16 md:h-16 ml-4" />
-            </span>
-          </h2>
-          <p className="text-lg text-neutral-800 dark:text-neutral-400 mt-5">
-            Over 2 years of professionally building and shipping full-stack
-            applications.
-          </p>
-        </div>
+        <SectionHeading
+          heading="Quality Code, Real Results"
+          icon={
+            <TrendingUp
+              style={{ width: "1em", height: "1em" }}
+              className="text-blue-500 ml-3 md:ml-5"
+            />
+          }
+          subheading="Over 2 years of professionally building and shipping full-stack applications."
+        />
       </motion.div>
 
       <div ref={ref} className="relative mx-auto pb-20">

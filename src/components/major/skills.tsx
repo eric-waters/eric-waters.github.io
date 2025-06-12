@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Drill } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
+import SectionHeading from "../minor/section-heading";
 
 export default function Skills() {
   const skills = [
@@ -261,14 +262,16 @@ export default function Skills() {
           duration: 0.6,
         }}
       >
-        <div className="text-4xl md:text-6xl font-bold flex items-center gap-4">
-          A Powerful Toolbox{"\u00A0"}
-          <Drill className="text-blue-500 w-16 h-16" />
-        </div>
-        <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
-          A well-rounded set of technical skills, continuously sharpened to keep
-          pace with evolving technologies.
-        </div>
+        <SectionHeading
+          heading="A Powerful Toolbox"
+          icon={
+            <Drill
+              style={{ width: "1em", height: "1em" }}
+              className="text-blue-500 ml-4 md:ml-6"
+            />
+          }
+          subheading="A well-rounded set of technical skills, continuously sharpened to keep pace with evolving technologies."
+        />
       </motion.div>
 
       {skills.map((section, sectionIndex) => (
@@ -287,7 +290,7 @@ export default function Skills() {
               duration: 0.6,
             }}
           >
-            <div className="text-2xl md:text-3xl font-semibold mt-20">
+            <div className="text-2xl md:text-3xl font-semibold mt-14">
               {section.title}
             </div>
           </motion.div>

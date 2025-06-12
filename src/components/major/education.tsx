@@ -11,7 +11,9 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { IconBrandYoutubeFilled, IconDownload } from "@tabler/icons-react";
-import { BookText, GraduationCap } from "lucide-react";
+import { GraduationCap } from "lucide-react";
+import SectionHeading from "../minor/section-heading";
+import { Badge } from "../ui/badge";
 
 export default function Education() {
   const mastersCarouselData = [
@@ -54,25 +56,19 @@ export default function Education() {
   const mastersContent = {
     textData: (
       <>
-        <div className="flex items-start sm:items-center gap-3">
-          <div className="text-3xl font-bold">
-            Computer Science (Big Data Systems), M.S.
-          </div>
-          <GraduationCap className="text-blue-500 w-16 h-16 shrink-0" />
-        </div>
-        <div className="mt-1">
-          <div className="text-lg text-neutral-800 dark:text-neutral-300">
-            Arizona State University, Tempe AZ
-          </div>
-          <div className="text-base text-neutral-600 dark:text-neutral-400">
-            2022 - 2023
-          </div>
-          <div className="text-base text-neutral-600 dark:text-neutral-400">
-            4.0 GPA
-          </div>
+        <div className="text-3xl font-bold">Computer Science, M.S.</div>
+        <div className="flex flex-wrap gap-2 mt-3">
+          <Badge className="bg-blue-500 text-neutral-100">
+            Big Data Systems Concentration
+          </Badge>
+          <Badge className="bg-blue-500 text-neutral-100">
+            Arizona State University
+          </Badge>
+          <Badge className="bg-blue-500 text-neutral-100">2022 - 2023</Badge>
+          <Badge className="bg-blue-500 text-neutral-100">4.0 GPA</Badge>
         </div>
 
-        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
+        <div className="mt-7 text-xl font-bold dark:text-neutral-200">
           Overview
         </div>
         <div className="text-neutral-800 dark:text-neutral-300 mt-1">
@@ -133,23 +129,17 @@ export default function Education() {
   const bachelorsContent = {
     textData: (
       <>
-        <div className="flex items-center gap-3">
-          <div className="text-3xl font-bold">Computer Science, B.S.</div>
-          <GraduationCap className="text-blue-500 w-16 h-16 shrink-0" />
-        </div>
-        <div className="mt-1">
-          <div className="text-lg text-neutral-800 dark:text-neutral-300">
-            Arizona State University, Tempe AZ
-          </div>
-          <div className="text-base text-neutral-600 dark:text-neutral-400">
-            2019 - 2022
-          </div>
-          <div className="text-base text-neutral-600 dark:text-neutral-400">
-            4.0 GPA
-          </div>
+        <div className="text-3xl font-bold">Computer Science, B.S.</div>
+
+        <div className="flex flex-wrap gap-2 mt-3">
+          <Badge className="bg-blue-500 text-neutral-100">
+            Arizona State University
+          </Badge>
+          <Badge className="bg-blue-500 text-neutral-100">2019 - 2022</Badge>
+          <Badge className="bg-blue-500 text-neutral-100">4.0 GPA</Badge>
         </div>
 
-        <div className="mt-5 text-xl font-bold dark:text-neutral-200">
+        <div className="mt-7 text-xl font-bold dark:text-neutral-200">
           Overview
         </div>
         <div className="text-neutral-800 dark:text-neutral-300 mt-1">
@@ -256,13 +246,16 @@ export default function Education() {
           duration: 0.6,
         }}
       >
-        <div className="text-4xl md:text-6xl font-bold flex items-center gap-8">
-          <span>Academic Excellence</span>
-          <BookText className="text-blue-500 w-16 h-16 shrink-0" />
-        </div>
-        <div className="text-lg text-neutral-800 dark:text-neutral-300 mt-5">
-          Pursuing knowledge with purpose and precision.
-        </div>
+        <SectionHeading
+          heading="Academic Excellence"
+          icon={
+            <GraduationCap
+              style={{ width: "1em", height: "1em" }}
+              className="text-blue-500 ml-3 md:ml-5"
+            />
+          }
+          subheading="Pursuing knowledge with purpose and precision."
+        />
       </motion.div>
 
       {[mastersContent, bachelorsContent].map((content, index) => (

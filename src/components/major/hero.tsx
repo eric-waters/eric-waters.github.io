@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
-import { Briefcase, Code, GraduationCap } from "lucide-react";
+import { Briefcase, Code, GraduationCap, Hand, Smile } from "lucide-react";
 
 const testimonials = [
   {
@@ -62,9 +62,9 @@ const testimonials = [
 export default function Hero() {
   return (
     <>
-      <div className="relative flex w-full flex-col items-center justify-center">
+      <div className="relative flex w-full flex-col items-start justify-start">
         <div className="w-full">
-          <div className="flex justify-center lg:justify-between">
+          <div className="flex justify-start lg:justify-between">
             <div className="my-auto">
               <motion.div
                 initial={{
@@ -80,9 +80,23 @@ export default function Hero() {
                   duration: 0.6,
                 }}
               >
-                <h1 className="relative z-10 max-w-4xl text-5xl md:text-6xl font-bold lg:text-7xl text-center justify-center lg:justify-start lg:text-left flex items-center gap-4 md:gap-8">
+                {/* <h1 className="relative z-10 max-w-4xl text-5xl md:text-6xl font-bold lg:text-7xl text-start justify-start lg:justify-start lg:text-left flex items-center gap-4 md:gap-8">
                   <span className="align-middle">Hi, I&apos;m Eric</span>
-                  <Code className="text-blue-500 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16" />
+                  <Code
+                    style={{ width: "1em", height: "1em" }}
+                    className="text-blue-500"
+                  />
+                </h1> */}
+
+                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold flex items-center flex-wrap">
+                  <span>Hi, I&apos;m{"\u00A0"}</span>
+                  <span className="inline-flex items-center whitespace-nowrap">
+                    Eric
+                    <Code
+                      style={{ width: "1em", height: "1em" }}
+                      className="text-blue-500 ml-4 lg:ml-5"
+                    />
+                  </span>
                 </h1>
               </motion.div>
               <motion.p
@@ -98,7 +112,7 @@ export default function Hero() {
                 transition={{
                   duration: 0.6,
                 }}
-                className="z-10 max-w-2xl md:px-0 lg:pr-4 py-4 text-lg lg:text-xl font-normal text-neutral-900 dark:text-neutral-200 text-center lg:text-left"
+                className="z-10 max-w-2xl md:px-0 lg:pr-4 py-4 text-lg lg:text-xl font-normal text-neutral-900 dark:text-neutral-200 text-start lg:text-left"
               >
                 I build powerful backend systems and intuitive interfaces —
                 always with clean, optimized code and a focus on impact.
@@ -117,7 +131,7 @@ export default function Hero() {
                   duration: 0.6,
                 }}
               >
-                <div className="flex gap-4 mt-2 justify-center lg:justify-start">
+                <div className="flex gap-4 mt-2 justify-start lg:justify-start">
                   <a href="/resume.pdf" download>
                     <button className="w-36 sm:w-40 flex items-center justify-center gap-2 transform rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.6 hover:bg-blue-500/90 cursor-pointer">
                       <IconDownload />

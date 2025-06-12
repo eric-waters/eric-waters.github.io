@@ -1,8 +1,8 @@
-import Hero from "@/components/main/hero";
-import Experience from "../components/main/experience";
-import Education from "../components/main/education";
-import Skills from "../components/main/skills";
-import Navbar from "@/components/main/navbar";
+import Hero from "@/components/major/hero";
+import Experience from "../components/major/experience";
+import Education from "../components/major/education";
+import Skills from "../components/major/skills";
+import Navbar from "@/components/major/navbar";
 
 export default function Home() {
   return (
