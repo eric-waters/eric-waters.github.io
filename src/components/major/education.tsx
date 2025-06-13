@@ -276,7 +276,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="my-10 lg:my-0 lg:col-span-1"
+            className="my-6 lg:my-0 lg:col-span-1"
           >
             {content.textData}
           </motion.div>

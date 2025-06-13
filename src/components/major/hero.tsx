@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 import { IconBrandLinkedin, IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
-import { Briefcase, Code, GraduationCap, Hand, Smile } from "lucide-react";
+import { Briefcase, Code, GraduationCap } from "lucide-react";
 
 const testimonials = [
   {
@@ -189,7 +189,7 @@ export default function Hero() {
             transition={{
               duration: 0.6,
             }}
-            className="z-10 mt-20 flex flex-wrap items-center justify-center gap-4"
+            className="z-10 mt-10 flex flex-wrap items-center justify-center gap-4"
           >
             <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
               <InfiniteMovingCards
