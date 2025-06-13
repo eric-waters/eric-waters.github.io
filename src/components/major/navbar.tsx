@@ -45,6 +45,7 @@ export default function Navbar() {
     if (el) {
       e.preventDefault();
       el.scrollIntoView({ behavior: "smooth" });
+      e.currentTarget.blur();
 
       if (id !== "home") {
         setTimeout(() => {
