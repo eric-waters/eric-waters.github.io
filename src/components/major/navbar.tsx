@@ -59,19 +59,22 @@ export default function Navbar() {
     href: string,
     setShow: React.Dispatch<React.SetStateAction<boolean>>
   ) {
-    const id = href.replace("#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      e.preventDefault();
-      el.scrollIntoView({ behavior: "smooth" });
+    e.preventDefault();
+    setDrawerOpen(false);
 
-      if (id !== "home") {
-        setTimeout(() => {
-          setShow(false);
-        }, 800);
+    const id = href.replace("#", "");
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+
+        if (id !== "home") {
+          setTimeout(() => {
+            setShow(false);
+          }, 800);
+        }
       }
-      setTimeout(() => setDrawerOpen(false), 800);
-    }
+    }, 0);
   }
 
   useEffect(() => {
