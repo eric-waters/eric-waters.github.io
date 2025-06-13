@@ -313,7 +313,7 @@ export default function Skills() {
                   duration: 0.6,
                 }}
               >
-                <Card className="p-5 border-neutral-400 dark:border-neutral-800 gap-3 bg-white/50 dark:bg-neutral-950/50">
+                <Card className="p-5 border-neutral-300 dark:border-neutral-800 gap-3 bg-neutral-50/30 dark:bg-neutral-950/30">
                   <div className="flex">
                     <div className="flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
                       <Image

@@ -97,7 +97,7 @@ export default function Education() {
       </>
     ),
     carousel: (
-      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded">
+      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded-xl">
         <CarouselContent>
           {mastersCarouselData.map((item, index) => (
             <CarouselItem key={index} className="relative">
@@ -106,7 +106,7 @@ export default function Education() {
                 alt={item.title}
                 width={1700}
                 height={2200}
-                className="relative opacity-50 dark:opacity-50"
+                className="relative opacity-50 rounded-xl"
               ></Image>
               <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white sm:text-2xl font-bold px-10 mx-auto">
                 <div className="text-center">{item.title}</div>
@@ -171,7 +171,7 @@ export default function Education() {
       </>
     ),
     carousel: (
-      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded">
+      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded-xl">
         <CarouselContent>
           <CarouselItem className="relative">
             <Image
@@ -179,7 +179,7 @@ export default function Education() {
               alt="Undergraduate thesis"
               width={1700}
               height={2200}
-              className="relative opacity-50"
+              className="relative opacity-50 rounded-xl"
             ></Image>
             <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white text-lg md:text-2xl font-bold px-10 mx-auto">
               <div className="text-center">
@@ -204,7 +204,7 @@ export default function Education() {
               alt="Undergraduate Capstone: Developing a Contractor Management System"
               width={1700}
               height={2210}
-              className="relative opacity-50"
+              className="relative opacity-50 rounded-xl"
             ></Image>
             <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white text-lg md:text-2xl font-bold px-10 mx-auto">
               <div className="text-center">
