@@ -88,13 +88,13 @@ export default function Hero() {
                   />
                 </h1> */}
 
-                <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold flex items-center flex-wrap">
+                <h1 className="flex flex-wrap items-center text-5xl font-bold md:text-6xl xl:text-7xl">
                   <span>Hi, I&apos;m{"\u00A0"}</span>
                   <span className="inline-flex items-center whitespace-nowrap">
                     Eric
                     <Code
                       style={{ width: "1em", height: "1em" }}
-                      className="text-blue-500 ml-4 lg:ml-5"
+                      className="ml-4 text-blue-500 lg:ml-5"
                     />
                   </span>
                 </h1>
@@ -112,7 +112,7 @@ export default function Hero() {
                 transition={{
                   duration: 0.6,
                 }}
-                className="z-10 max-w-2xl md:px-0 lg:pr-4 py-4 text-lg lg:text-xl font-normal text-neutral-900 dark:text-neutral-200 text-start lg:text-left"
+                className="z-10 max-w-2xl py-4 text-start text-lg font-normal text-neutral-900 md:px-0 lg:pr-4 lg:text-left lg:text-xl dark:text-neutral-200"
               >
                 I build powerful backend systems and intuitive interfaces —
                 always with clean, optimized code and a focus on impact.
@@ -131,9 +131,9 @@ export default function Hero() {
                   duration: 0.6,
                 }}
               >
-                <div className="flex gap-4 mt-2 justify-start lg:justify-start">
+                <div className="mt-2 flex justify-start gap-4 lg:justify-start">
                   <a href="/resume.pdf" download>
-                    <button className="w-36 sm:w-40 flex items-center justify-center gap-2 transform rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-500/90 cursor-pointer">
+                    <button className="flex w-36 transform cursor-pointer items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-500/90 sm:w-40">
                       <IconDownload />
                       Resume
                     </button>
@@ -142,7 +142,7 @@ export default function Hero() {
                     href="https://www.linkedin.com/in/eric-waters2019/"
                     target="_blank"
                   >
-                    <button className="w-36 sm:w-40 flex items-center justify-center gap-2 transform rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900 cursor-pointer">
+                    <button className="flex w-36 transform cursor-pointer items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-6 py-2 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 sm:w-40 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
                       <IconBrandLinkedin />
                       LinkedIn
                     </button>
@@ -170,7 +170,7 @@ export default function Hero() {
                   alt="Eric Waters"
                   width={1125}
                   height={1125}
-                  className="aspect-square max-w-80 rounded-full border bg-neutral-50/50 border-neutral-400/50 dark:bg-neutral-950/40 dark:border-neutral-800"
+                  className="aspect-square max-w-80 rounded-full border border-neutral-400/50 bg-neutral-50/50 dark:border-neutral-800 dark:bg-neutral-950/40"
                   priority
                 />
               </div>
@@ -191,7 +191,7 @@ export default function Hero() {
             }}
             className="z-10 mt-10 flex flex-wrap items-center justify-center gap-4"
           >
-            <div className="h-[20rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
+            <div className="dark:bg-grid-white/[0.05] flex h-[20rem] flex-col items-center justify-center overflow-hidden rounded-md antialiased">
               <InfiniteMovingCards
                 items={testimonials}
                 direction="right"

@@ -60,12 +60,12 @@ export const InfiniteMovingCards = ({
       if (direction === "left") {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "forwards"
+          "forwards",
         );
       } else {
         containerRef.current.style.setProperty(
           "--animation-direction",
-          "reverse"
+          "reverse",
         );
       }
     }
@@ -85,8 +85,8 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-full overflow-hidden ",
-        className
+        "scroller relative z-20 max-w-full overflow-hidden",
+        className,
       )}
     >
       <ul
@@ -94,34 +94,19 @@ export const InfiniteMovingCards = ({
         className={cn(
           "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border bg-neutral-50/30 border-neutral-300 px-8 py-6 md:w-[450px] dark:border-neutral-800 dark:bg-neutral-950/30"
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-neutral-300 bg-neutral-50/30 px-8 py-6 md:w-[450px] dark:border-neutral-800 dark:bg-neutral-950/30"
             key={idx}
           >
-            {/* <img
-              src={item.image}
-              alt={item.name}
-              width={item.imageSize}
-              className="mb-5"
-            /> */}
-            {/* <div className="flex gap-2 items-center mb-3">
-              <item.icon
-                style={{ width: "1em", height: "1em" }}
-                className="text-blue-500"
-              />
-              <span className="text-2xl font-bold align-middle">
-                {item.name}
-              </span>
-            </div> */}
-            <h2 className="text-2xl font-bold flex items-center flex-wrap">
+            <h2 className="flex flex-wrap items-center text-2xl font-bold">
               <span className="inline-flex items-center whitespace-nowrap">
                 <item.icon
                   style={{ width: "1em", height: "1em" }}
-                  className="text-blue-500 mr-2"
+                  className="mr-2 text-blue-500"
                 />
                 {item.name}
               </span>
@@ -137,7 +122,7 @@ export const InfiniteMovingCards = ({
                   <span className="text-sm text-zinc-600 dark:text-zinc-400">
                     {item.date}
                   </span>
-                  <span className="text-sm mt-2">{item.description}</span>
+                  <span className="mt-2 text-sm">{item.description}</span>
                 </span>
               </div>
             </blockquote>

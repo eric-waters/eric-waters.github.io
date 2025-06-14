@@ -267,7 +267,7 @@ export default function Skills() {
           icon={
             <Drill
               style={{ width: "1em", height: "1em" }}
-              className="text-blue-500 ml-4 md:ml-6"
+              className="ml-4 text-blue-500 md:ml-6"
             />
           }
           subheading="Robust, relevant, and always evolving."
@@ -290,16 +290,16 @@ export default function Skills() {
               duration: 0.6,
             }}
           >
-            <div className="text-2xl md:text-3xl font-semibold mt-14">
+            <div className="mt-14 text-2xl font-semibold md:text-3xl">
               {section.title}
             </div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5">
+          <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {section.content.map((skill, cardIndex) => (
               <motion.div
                 key={cardIndex}
-                className="h-full flex"
+                className="flex h-full"
                 initial={{
                   opacity: 0,
                   y: 50,
@@ -313,19 +313,19 @@ export default function Skills() {
                   duration: 0.6,
                 }}
               >
-                <Card className="p-5 border-neutral-300 dark:border-neutral-800 gap-3 bg-neutral-50/30 dark:bg-neutral-950/30">
+                <Card className="gap-3 border-neutral-300 bg-neutral-50/30 p-5 dark:border-neutral-800 dark:bg-neutral-950/30">
                   <div className="flex">
-                    <div className="flex-shrink-0 w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[70px] lg:h-[70px] flex items-center justify-center">
+                    <div className="flex h-[50px] w-[50px] flex-shrink-0 items-center justify-center md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px]">
                       <Image
                         src={skill.image}
                         alt={skill.name}
                         width={70}
                         height={70}
-                        className="object-contain w-[40px] h-[40px] md:w-[50px] md:h-[50px] lg:w-[60px] lg:h-[60px] max-h-full"
+                        className="h-[40px] max-h-full w-[40px] object-contain md:h-[50px] md:w-[50px] lg:h-[60px] lg:w-[60px]"
                       />
                     </div>
-                    <div className="pl-3 flex flex-col justify-center">
-                      <div className="text-2xl md:text-3xl font-semibold">
+                    <div className="flex flex-col justify-center pl-3">
+                      <div className="text-2xl font-semibold md:text-3xl">
                         {skill.name}
                       </div>
                     </div>

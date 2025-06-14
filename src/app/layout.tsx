@@ -38,10 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="relative min-h-screen">
-            {/* <div className="fixed inset-0 -z-10">
-              <BackgroundGradientAnimation interactive={false} size="100%" />
-            </div> */}
-            <div className="relative z-10 ">{children}</div>
+            <div className="relative z-10">{children}</div>
           </div>
         </ThemeProvider>
       </body>

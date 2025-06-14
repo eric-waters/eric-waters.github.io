@@ -57,7 +57,7 @@ export default function Education() {
     textData: (
       <>
         <div className="text-3xl font-bold">Computer Science, M.S.</div>
-        <div className="flex flex-wrap gap-2 mt-3">
+        <div className="mt-3 flex flex-wrap gap-2">
           <Badge className="bg-blue-500 text-neutral-100">
             Big Data Systems Concentration
           </Badge>
@@ -71,7 +71,7 @@ export default function Education() {
         <div className="mt-7 text-xl font-bold dark:text-neutral-200">
           Overview
         </div>
-        <div className="text-neutral-800 dark:text-neutral-300 mt-1">
+        <div className="mt-1 text-neutral-800 dark:text-neutral-300">
           Focused on designing and deploying scalable systems for processing and
           analyzing large-scale, complex datasets. Gained hands-on experience
           with distributed computing, real-time data processing, data mining,
@@ -82,8 +82,8 @@ export default function Education() {
         <div className="mt-5 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
-        <div className="text-neutral-800 dark:text-neutral-300 mt-1">
-          <ul className="list-disc list-inside">
+        <div className="mt-1 text-neutral-800 dark:text-neutral-300">
+          <ul className="list-inside list-disc">
             <li>Data Processing at Scale</li>
             <li>Data Mining</li>
             <li>Semantic Web Mining</li>
@@ -97,7 +97,7 @@ export default function Education() {
       </>
     ),
     carousel: (
-      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded-xl">
+      <Carousel className="mx-auto w-full rounded-xl border-3 border-neutral-600 dark:border-0">
         <CarouselContent>
           {mastersCarouselData.map((item, index) => (
             <CarouselItem key={index} className="relative">
@@ -106,12 +106,12 @@ export default function Education() {
                 alt={item.title}
                 width={1700}
                 height={2200}
-                className="relative opacity-50 rounded-xl"
+                className="relative rounded-xl opacity-50"
               ></Image>
-              <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white sm:text-2xl font-bold px-10 mx-auto">
+              <div className="absolute inset-0 mx-auto flex flex-col items-center justify-center gap-5 px-10 font-bold sm:text-2xl dark:text-white">
                 <div className="text-center">{item.title}</div>
                 <a className="cursor-pointer" href={item.link} download>
-                  <Button className="cursor-pointer bg-blue-500 hover:bg-blue-500/90 text-neutral-50">
+                  <Button className="cursor-pointer bg-blue-500 text-neutral-50 hover:bg-blue-500/90">
                     <IconDownload />
                     Download
                   </Button>
@@ -131,7 +131,7 @@ export default function Education() {
       <>
         <div className="text-3xl font-bold">Computer Science, B.S.</div>
 
-        <div className="flex flex-wrap gap-2 mt-3">
+        <div className="mt-3 flex flex-wrap gap-2">
           <Badge className="bg-blue-500 text-neutral-100">
             Arizona State University
           </Badge>
@@ -142,7 +142,7 @@ export default function Education() {
         <div className="mt-7 text-xl font-bold dark:text-neutral-200">
           Overview
         </div>
-        <div className="text-neutral-800 dark:text-neutral-300 mt-1">
+        <div className="mt-1 text-neutral-800 dark:text-neutral-300">
           Studied the design, development, and analysis of software systems,
           building a strong foundation in programming, data structures,
           algorithms, and computer systems. Gained hands-on experience in
@@ -153,8 +153,8 @@ export default function Education() {
         <div className="mt-5 text-xl font-bold dark:text-neutral-200">
           Key Coursework
         </div>
-        <div className="text-neutral-800 dark:text-neutral-300 mt-1">
-          <ul className="list-disc list-inside">
+        <div className="mt-1 text-neutral-800 dark:text-neutral-300">
+          <ul className="list-inside list-disc">
             <li>Programming Languages</li>
             <li>Object-Oriented Programming & Data Structures</li>
             <li>Data Structures & Algorithms</li>
@@ -171,7 +171,7 @@ export default function Education() {
       </>
     ),
     carousel: (
-      <Carousel className="w-full mx-auto border-3 border-neutral-600 dark:border-0 rounded-xl">
+      <Carousel className="mx-auto w-full rounded-xl border-3 border-neutral-600 dark:border-0">
         <CarouselContent>
           <CarouselItem className="relative">
             <Image
@@ -179,9 +179,9 @@ export default function Education() {
               alt="Undergraduate thesis"
               width={1700}
               height={2200}
-              className="relative opacity-50 rounded-xl"
+              className="relative rounded-xl opacity-50"
             ></Image>
-            <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white text-lg md:text-2xl font-bold px-10 mx-auto">
+            <div className="absolute inset-0 mx-auto flex flex-col items-center justify-center gap-5 px-10 text-lg font-bold md:text-2xl dark:text-white">
               <div className="text-center">
                 Undergraduate Thesis:
                 <br /> Party on Wall Street
@@ -191,7 +191,7 @@ export default function Education() {
                 href="papers/pdfs/undergrad-thesis-party-on-wall-street.pdf"
                 download
               >
-                <Button className="cursor-pointer bg-blue-500 hover:bg-blue-500/90 text-neutral-50">
+                <Button className="cursor-pointer bg-blue-500 text-neutral-50 hover:bg-blue-500/90">
                   <IconDownload />
                   Download
                 </Button>
@@ -204,9 +204,9 @@ export default function Education() {
               alt="Undergraduate Capstone: Developing a Contractor Management System"
               width={1700}
               height={2210}
-              className="relative opacity-50 rounded-xl"
+              className="relative rounded-xl opacity-50"
             ></Image>
-            <div className="absolute inset-0 flex flex-col gap-5 items-center justify-center dark:text-white text-lg md:text-2xl font-bold px-10 mx-auto">
+            <div className="absolute inset-0 mx-auto flex flex-col items-center justify-center gap-5 px-10 text-lg font-bold md:text-2xl dark:text-white">
               <div className="text-center">
                 Undergraduate Capstone:
                 <br /> Developing a Contractor Management System
@@ -216,7 +216,7 @@ export default function Education() {
                 href="https://youtu.be/gXEd-HVifVI?si=C152_wEGmC8HLu_B"
                 target="_blank"
               >
-                <Button className="cursor-pointer bg-blue-500 hover:bg-blue-500/90 text-neutral-50">
+                <Button className="cursor-pointer bg-blue-500 text-neutral-50 hover:bg-blue-500/90">
                   <IconBrandYoutubeFilled />
                   Watch Demo
                 </Button>
@@ -251,7 +251,7 @@ export default function Education() {
           icon={
             <GraduationCap
               style={{ width: "1em", height: "1em" }}
-              className="text-blue-500 ml-3 md:ml-5"
+              className="ml-3 text-blue-500 md:ml-5"
             />
           }
           subheading="Rigorous study in computer science and engineering principles."
@@ -260,7 +260,7 @@ export default function Education() {
 
       {[mastersContent, bachelorsContent].map((content, index) => (
         <div
-          className="grid lg:grid-cols-2 gap-5 lg:gap-20 lg:my-16 overflow-x-hidden"
+          className="grid gap-5 overflow-x-hidden lg:my-16 lg:grid-cols-2 lg:gap-20"
           key={index}
         >
           <motion.div
@@ -276,7 +276,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="my-6 lg:my-0 lg:col-span-1"
+            className="my-6 lg:col-span-1 lg:my-0"
           >
             {content.textData}
           </motion.div>
@@ -293,7 +293,7 @@ export default function Education() {
             transition={{
               duration: 0.6,
             }}
-            className="mb-16 lg:mb-0 lg:col-span-1 lg:mx-12"
+            className="mb-16 lg:col-span-1 lg:mx-12 lg:mb-0"
           >
             {content.carousel}
           </motion.div>
