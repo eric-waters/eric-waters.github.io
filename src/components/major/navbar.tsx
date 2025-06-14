@@ -143,6 +143,7 @@ export default function Navbar() {
             <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
               <DrawerTrigger asChild className="lg:hidden">
                 <Button
+                  type="button"
                   variant="outline"
                   size="icon"
                   className="cursor-pointer border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.15)]/30 text-white hover:bg-[rgba(255,255,255,0.15)]/50 hover:text-white"
