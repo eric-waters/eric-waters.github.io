@@ -174,9 +174,9 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Streamlined the onboarding process</strong> for an
-                employee resource group, winning 1st place in the Dell Intern
-                Hackathon.
+                <strong>Designed an interactive Adobe XD prototype</strong> to
+                streamline the onboarding experience for an employee resource
+                group, earning 1st place in the Dell Intern Hackathon.
               </div>
             </div>
           </div>

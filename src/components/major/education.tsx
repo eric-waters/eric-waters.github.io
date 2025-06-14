@@ -254,7 +254,7 @@ export default function Education() {
               className="text-blue-500 ml-3 md:ml-5"
             />
           }
-          subheading="Pursuing knowledge with purpose and precision."
+          subheading="Rigorous study in computer science and engineering principles."
         />
       </motion.div>
 

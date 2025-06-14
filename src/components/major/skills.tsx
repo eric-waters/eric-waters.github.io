@@ -228,7 +228,7 @@ export default function Skills() {
           name: "GitHub Actions",
           image: "/skills/github-actions.png",
           description:
-            "A CI/CD tool that allows you to automate your software workflows. I've used it at Intel to automate testing, building, and deploying projects.",
+            "A CI/CD tool that allows you to automate your software workflows. At Intel, I built my own workflows from scratch to automate testing, deployment, and other tasks in several projects.",
         },
         {
           name: "Rancher",
@@ -270,7 +270,7 @@ export default function Skills() {
               className="text-blue-500 ml-4 md:ml-6"
             />
           }
-          subheading="A well-rounded set of technical skills, continuously sharpened to keep pace with evolving technologies."
+          subheading="Robust, relevant, and always evolving."
         />
       </motion.div>
 

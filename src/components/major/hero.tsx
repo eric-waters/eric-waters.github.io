@@ -15,7 +15,7 @@ const testimonials = [
     position: "Software Application Development Engineer",
     date: "August 2023 - Present",
     description:
-      "Created a drag-and-drop generative AI tool studio, redesigned an entire generative AI web platform, created an API to serve advanced ML analytics, and owned a search engine for manufacturing data.",
+      "Created an AI contract auditing tool saving $30M, a modular Generative AI web platform, a no-code AI app studio, a scalable ML analytics API, and an AI search platform with robust ETL pipelines.",
   },
   {
     name: "Arizona State University",
@@ -35,7 +35,7 @@ const testimonials = [
     position: "Graduate Software Engineering Intern",
     date: "June 2022 - August 2022",
     description:
-      "Implemented Sign in with Dell (OAuth SSO) for several applications and protected data integrity by implementing authorization for several Spring Boot REST APIs.",
+      "Implemented OAuth 2.0 SSO and fine-grained authorization across enterprise apps and APIs, unifying authentication and enhancing security and compliance.",
   },
   {
     name: "Arizona State University",
@@ -55,7 +55,7 @@ const testimonials = [
     position: "Undergraduate Software Engineering Intern",
     date: "May 2021 - August 2021",
     description:
-      "Enhanced the efficiency of agile teams by creating a proprietary kanban board application using Spring. Won the intern hackathon for streamlining the Employee Resource Group onboarding process.",
+      "Developed a Kanban board app with Spring/MySQL to enhance team agility, and won 1st place in Dell's Intern Hackathon with an Adobe XD onboarding prototype.",
   },
 ];
 
