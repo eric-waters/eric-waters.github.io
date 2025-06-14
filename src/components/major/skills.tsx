@@ -247,7 +247,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="">
+    <div>
       <motion.div
         initial={{
           opacity: 0,

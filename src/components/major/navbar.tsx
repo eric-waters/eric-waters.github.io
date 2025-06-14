@@ -31,10 +31,10 @@ const menuItems = [
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
-  const [drawerOpen, setDrawerOpen] = useState(false); // Add this line
-
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const lastScroll = useRef(0);
 
+  // Handle navigation click events
   function handleNavClick(
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
@@ -55,20 +55,16 @@ export default function Navbar() {
     }
   }
 
+  // Handle drawer navigation click
   function handleDrawerNavClick(
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
     setShow: React.Dispatch<React.SetStateAction<boolean>>,
   ) {
-    // e.preventDefault();
-    // setDrawerOpen(false);
-
     const id = href.replace("#", "");
     setTimeout(() => {
       const el = document.getElementById(id);
       if (el) {
-        // el.scrollIntoView({ behavior: "smooth" });
-
         if (id !== "home") {
           setTimeout(() => {
             setShow(false);
@@ -78,6 +74,7 @@ export default function Navbar() {
     }, 0);
   }
 
+  // Handle scroll events to show/hide navbar
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
@@ -97,9 +94,9 @@ export default function Navbar() {
         return;
       }
       if (currentScroll < lastScroll.current) {
-        setShow(true); // scrolling up
+        setShow(true);
       } else if (currentScroll > lastScroll.current) {
-        setShow(false); // scrolling down
+        setShow(false);
       }
       lastScroll.current = currentScroll;
     };
@@ -167,7 +164,6 @@ export default function Navbar() {
                           onClick={(e) =>
                             handleDrawerNavClick(e, item.href, setShow)
                           }
-                          className=""
                         >
                           {item.name}
                         </Link>

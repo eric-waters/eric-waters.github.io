@@ -80,14 +80,6 @@ export default function Hero() {
                   duration: 0.6,
                 }}
               >
-                {/* <h1 className="relative z-10 max-w-4xl text-5xl md:text-6xl font-bold lg:text-7xl text-start justify-start lg:justify-start lg:text-left flex items-center gap-4 md:gap-8">
-                  <span className="align-middle">Hi, I&apos;m Eric</span>
-                  <Code
-                    style={{ width: "1em", height: "1em" }}
-                    className="text-blue-500"
-                  />
-                </h1> */}
-
                 <h1 className="flex flex-wrap items-center text-5xl font-bold md:text-6xl xl:text-7xl">
                   <span>Hi, I&apos;m{"\u00A0"}</span>
                   <span className="inline-flex items-center whitespace-nowrap">

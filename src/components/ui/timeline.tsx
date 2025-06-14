@@ -29,7 +29,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const heightTransform = useTransform(
     scrollYProgress,
     [0, 1],
-    [0, height * 1], // Adjust the multiplier as needed
+    [0, height * 1],
   );
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
