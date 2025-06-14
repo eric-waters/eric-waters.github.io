@@ -11,6 +11,7 @@ import {
 import { ModeToggle } from "../next/mode-toggle";
 import {
   Drawer,
+  DrawerClose,
   DrawerContent,
   DrawerHeader,
   DrawerTitle,
@@ -19,6 +20,7 @@ import {
 import { Button } from "../ui/button";
 import { IconMenu2 } from "@tabler/icons-react";
 import { BadgeCheck } from "lucide-react";
+import Link from "next/link";
 
 const menuItems = [
   { name: "Home", href: "#home" },
@@ -58,14 +60,14 @@ export default function Navbar() {
     href: string,
     setShow: React.Dispatch<React.SetStateAction<boolean>>
   ) {
-    e.preventDefault();
-    setDrawerOpen(false);
+    // e.preventDefault();
+    // setDrawerOpen(false);
 
     const id = href.replace("#", "");
     setTimeout(() => {
       const el = document.getElementById(id);
       if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
+        // el.scrollIntoView({ behavior: "smooth" });
 
         if (id !== "home") {
           setTimeout(() => {
@@ -79,6 +81,16 @@ export default function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      // Show navbar if within 100px of bottom
+      if (pageHeight - scrollPosition <= 100) {
+        setShow(true);
+        lastScroll.current = currentScroll;
+        return;
+      }
+
       if (currentScroll < 10) {
         setShow(true);
         lastScroll.current = currentScroll;
@@ -144,20 +156,25 @@ export default function Navbar() {
               <DrawerContent>
                 <DrawerHeader>
                   <DrawerTitle className="hidden">Menu</DrawerTitle>
+                </DrawerHeader>
+
+                <div className="px-4 pb-4">
                   {menuItems.map((item) => (
                     <div key={item.name} className="text-xl px-2 py-2">
-                      <a
-                        href={item.href}
-                        onClick={(e) =>
-                          handleDrawerNavClick(e, item.href, setShow)
-                        }
-                        className="block w-full"
-                      >
-                        {item.name}
-                      </a>
+                      <DrawerClose asChild>
+                        <Link
+                          href={item.href}
+                          onClick={(e) =>
+                            handleDrawerNavClick(e, item.href, setShow)
+                          }
+                          className=""
+                        >
+                          {item.name}
+                        </Link>
+                      </DrawerClose>
                     </div>
                   ))}
-                </DrawerHeader>
+                </div>
               </DrawerContent>
             </Drawer>
             <div className="pl-2 lg:pl-5">
