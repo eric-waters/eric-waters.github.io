@@ -11,7 +11,6 @@ import {
 import { ModeToggle } from "../next/mode-toggle";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerHeader,
   DrawerTitle,
@@ -19,7 +18,6 @@ import {
 } from "../ui/drawer";
 import { Button } from "../ui/button";
 import { IconMenu2 } from "@tabler/icons-react";
-import Link from "next/link";
 import { BadgeCheck } from "lucide-react";
 
 const menuItems = [

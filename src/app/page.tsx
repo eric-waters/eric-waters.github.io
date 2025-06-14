@@ -3,7 +3,7 @@ import Experience from "../components/major/experience";
 import Education from "../components/major/education";
 import Skills from "../components/major/skills";
 import Navbar from "@/components/major/navbar";
-import Image from "next/image";
+import Footer from "@/components/minor/footer";
 
 export default function Home() {
   return (
@@ -43,27 +43,7 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[oklch(100%_0_0)] dark:bg-[oklch(17%_0_0)] border-t">
-        <footer>
-          <div className="container max-w-[90rem] px-5 md:px-10 lg:px-20 mx-auto py-10 lg:py-14">
-            <div className="flex justify-between">
-              <p className="text-gray-600 dark:text-gray-400">
-                © {new Date().getFullYear()} Eric Waters. All rights reserved.
-              </p>
-              <a
-                href="https://github.com/eric-waters/eric-waters.github.io"
-                target="_blank"
-              >
-                <Image
-                  src="github.svg"
-                  alt="Github"
-                  width={24}
-                  height={24}
-                  className="cursor-pointer text-neutral-50"
-                ></Image>
-              </a>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );

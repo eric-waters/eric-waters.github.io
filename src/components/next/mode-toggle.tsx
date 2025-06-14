@@ -10,7 +10,6 @@ export function ModeToggle() {
 
   const toggleTheme = () => {
     // use matchMedia to infer current system or HTML class
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     const isCurrentlyDark = document.documentElement.classList.contains("dark");
     setTheme(isCurrentlyDark ? "light" : "dark");
   };
