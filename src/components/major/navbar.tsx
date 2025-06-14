@@ -11,7 +11,6 @@ import {
 import { ModeToggle } from "../next/mode-toggle";
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerHeader,
   DrawerTitle,
@@ -20,74 +19,66 @@ import {
 import { Button } from "../ui/button";
 import { IconMenu2 } from "@tabler/icons-react";
 import { BadgeCheck } from "lucide-react";
-import Link from "next/link";
 
 const menuItems = [
-  { name: "Home", href: "#home" },
-  { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
-  { name: "Skills", href: "#skills" },
+  { name: "Home", id: "home" },
+  { name: "Experience", id: "experience" },
+  { name: "Education", id: "education" },
+  { name: "Skills", id: "skills" },
 ];
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const lastScroll = useRef(0);
+  const [scrollToId, setScrollToId] = useState<string | null>(null);
 
-  // Handle navigation click events
-  function handleNavClick(
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-    setShow: React.Dispatch<React.SetStateAction<boolean>>,
-  ) {
-    const id = href.replace("#", "");
-    const el = document.getElementById(id);
+  // scroll to the section with the given id
+  useEffect(() => {
+    if (!scrollToId) return;
+
+    const el = document.getElementById(scrollToId);
     if (el) {
-      e.preventDefault();
-      el.scrollIntoView({ behavior: "smooth" });
-      e.currentTarget.blur();
+      // Short delay to allow the drawer to start its closing animation
+      // and for the webview to process the UI change.
+      setTimeout(() => {
+        const y = el.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: y, behavior: "smooth" });
 
-      if (id !== "home") {
-        setTimeout(() => {
-          setShow(false);
-        }, 800);
-      }
-    }
-  }
-
-  // Handle drawer navigation click
-  function handleDrawerNavClick(
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-    setShow: React.Dispatch<React.SetStateAction<boolean>>,
-  ) {
-    const id = href.replace("#", "");
-    setTimeout(() => {
-      const el = document.getElementById(id);
-      if (el) {
-        if (id !== "home") {
+        // Logic to hide navbar after scrolling, if not scrolling to home
+        if (scrollToId !== "home") {
           setTimeout(() => {
             setShow(false);
           }, 800);
         }
-      }
-    }, 0);
-  }
 
-  // Handle scroll events to show/hide navbar
+        // Reset the state for the next click
+        setScrollToId(null);
+      }, 150);
+    } else {
+      setScrollToId(null); // Reset if element isn't found
+    }
+  }, [scrollToId]);
+
+  // Click handler for navigation items
+  const handleNavClick = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    setDrawerOpen(false);
+    setScrollToId(id);
+  };
+
+  // scroll event listener to show/hide navbar
   useEffect(() => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
       const scrollPosition = window.scrollY + window.innerHeight;
       const pageHeight = document.documentElement.scrollHeight;
 
-      // Show navbar if within 100px of bottom
       if (pageHeight - scrollPosition <= 100) {
         setShow(true);
         lastScroll.current = currentScroll;
         return;
       }
-
       if (currentScroll < 10) {
         setShow(true);
         lastScroll.current = currentScroll;
@@ -130,8 +121,8 @@ export default function Navbar() {
                       }
                     >
                       <a
-                        href={item.href}
-                        onClick={(e) => handleNavClick(e, item.href, setShow)}
+                        href={`#${item.id}`}
+                        onClick={(e) => handleNavClick(e, item.id)}
                       >
                         {item.name}
                       </a>
@@ -140,7 +131,12 @@ export default function Navbar() {
                 ))}
               </NavigationMenuList>
             </NavigationMenu>
-            <Drawer open={drawerOpen} onOpenChange={setDrawerOpen}>
+
+            <Drawer
+              open={drawerOpen}
+              onOpenChange={setDrawerOpen}
+              modal={false}
+            >
               <DrawerTrigger asChild className="lg:hidden">
                 <Button
                   type="button"
@@ -148,7 +144,7 @@ export default function Navbar() {
                   size="icon"
                   className="cursor-pointer border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.15)]/30 text-white hover:bg-[rgba(255,255,255,0.15)]/50 hover:text-white"
                 >
-                  <IconMenu2></IconMenu2>
+                  <IconMenu2 />
                 </Button>
               </DrawerTrigger>
               <DrawerContent>
@@ -159,16 +155,13 @@ export default function Navbar() {
                 <div className="px-4 pb-4">
                   {menuItems.map((item) => (
                     <div key={item.name} className="px-2 py-2 text-xl">
-                      <DrawerClose asChild>
-                        <Link
-                          href={item.href}
-                          onClick={(e) =>
-                            handleDrawerNavClick(e, item.href, setShow)
-                          }
-                        >
-                          {item.name}
-                        </Link>
-                      </DrawerClose>
+                      <button
+                        type="button"
+                        onClick={(e) => handleNavClick(e, item.id)}
+                        className="w-full cursor-pointer border-none bg-transparent p-0 text-left"
+                      >
+                        {item.name}
+                      </button>
                     </div>
                   ))}
                 </div>
