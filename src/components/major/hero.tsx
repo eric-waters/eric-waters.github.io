@@ -124,7 +124,7 @@ export default function Hero() {
                 }}
               >
                 <div className="mt-2 flex justify-start gap-4 lg:justify-start">
-                  <a href="/resume.pdf" download>
+                  <a href="/Eric-Waters-Resume.pdf" download>
                     <button className="flex w-36 transform cursor-pointer items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-2 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-500/90 sm:w-40">
                       <IconDownload />
                       Resume
