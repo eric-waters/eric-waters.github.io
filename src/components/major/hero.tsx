@@ -77,7 +77,7 @@ export default function Hero() {
                 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                 }}
               >
                 <h1 className="flex flex-wrap items-center text-5xl font-bold md:text-6xl xl:text-7xl">
@@ -102,7 +102,7 @@ export default function Hero() {
                 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                 }}
                 className="z-10 max-w-2xl py-4 text-start text-lg font-normal text-neutral-900 md:px-0 lg:pr-4 lg:text-left lg:text-xl dark:text-neutral-200"
               >
@@ -120,7 +120,7 @@ export default function Hero() {
                 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                 }}
               >
                 <div className="mt-2 flex justify-start gap-4 lg:justify-start">
@@ -153,7 +153,7 @@ export default function Hero() {
               }}
               viewport={{ once: true }}
               transition={{
-                duration: 0.6,
+                duration: 0.4,
               }}
             >
               <div className="hidden lg:flex">
@@ -179,7 +179,7 @@ export default function Hero() {
             }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 0.4,
             }}
             className="z-10 mt-10 flex flex-wrap items-center justify-center gap-4"
           >

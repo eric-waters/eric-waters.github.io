@@ -243,7 +243,7 @@ export default function Education() {
         }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 0.4,
         }}
       >
         <SectionHeading
@@ -274,7 +274,7 @@ export default function Education() {
             }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 0.4,
             }}
             className="my-6 lg:col-span-1 lg:my-0"
           >
@@ -291,7 +291,7 @@ export default function Education() {
             }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 0.4,
             }}
             className="mb-16 lg:col-span-1 lg:mx-12 lg:mb-0"
           >

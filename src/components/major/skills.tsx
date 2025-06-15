@@ -259,7 +259,7 @@ export default function Skills() {
         }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 0.4,
         }}
       >
         <SectionHeading
@@ -287,7 +287,7 @@ export default function Skills() {
             }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 0.4,
             }}
           >
             <div className="mt-14 text-2xl font-semibold md:text-3xl">
@@ -310,7 +310,7 @@ export default function Skills() {
                 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.6,
+                  duration: 0.4,
                 }}
               >
                 <Card className="gap-3 border-neutral-300 bg-neutral-50/30 p-5 dark:border-neutral-800 dark:bg-neutral-950/30">

@@ -46,7 +46,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         }}
         viewport={{ once: true }}
         transition={{
-          duration: 0.6,
+          duration: 0.4,
         }}
       >
         <SectionHeading
@@ -75,7 +75,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             }}
             viewport={{ once: true }}
             transition={{
-              duration: 0.6,
+              duration: 0.4,
             }}
           >
             <div className="mt-12 flex justify-start md:mt-24 md:gap-10">
