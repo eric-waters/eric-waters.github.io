@@ -66,14 +66,16 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                {/* <strong>Independently owned an AI search platform</strong> for
+                {/* <strong>Independently administered an AI search platform</strong> for
                 manufacturing data, delivering up to{" "}
                 <strong>$5M in estimated ROI</strong> through faster
                 problem-solving. Created robust ETL pipelines using Pandas and
                 SQL Server to ingest, normalize, and consolidate data across
                 business units.{" "} */}
-                <strong>Independently owned an AI search platform</strong> for
-                manufacturing data, enabling faster problem-solving. Created
+                <strong>
+                  Independently administered an AI search platform
+                </strong>{" "}
+                for manufacturing data, enabling faster problem-solving. Created
                 robust ETL pipelines using Pandas and SQL Server to ingest,
                 normalize, and consolidate data across business units.{" "}
               </div>
