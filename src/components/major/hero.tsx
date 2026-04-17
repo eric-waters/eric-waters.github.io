@@ -106,7 +106,7 @@ export default function Hero() {
                 }}
                 className="z-10 max-w-2xl py-4 text-start text-lg font-normal text-neutral-900 md:px-0 lg:pr-4 lg:text-left lg:text-xl dark:text-neutral-200"
               >
-                I'm a versatile software engineer with 3+ years of experience building production APIs, responsive UIs, data processing pipelines, AI/ML integrations, and cloud/DevOps solutions.
+                I&apos;m a versatile software engineer with 3+ years of experience building production APIs, responsive UIs, data processing pipelines, AI/ML integrations, and cloud/DevOps solutions.
               </motion.p>
               <motion.div
                 initial={{
