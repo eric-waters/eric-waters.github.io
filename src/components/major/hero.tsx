@@ -15,7 +15,7 @@ const testimonials = [
     position: "Software Application Development Engineer",
     date: "August 2023 - Present",
     description:
-      "Created an AI contract auditing tool saving $30M, a modular Generative AI web platform, a no-code AI app studio, a scalable ML analytics API, and administered an AI search platform.",
+      "Architected an offline analytics platform, created a suite of 5 GenAI applications, a no-code AI app studio, a scalable ML analytics API, and administered an AI search engine.",
   },
   {
     name: "Arizona State University",

@@ -24,9 +24,9 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Lead Developer for a centralized ETL platform</strong>,
-                aggregating Airflow, Kubernetes, and Docker to standardize data
-                ingestion across the organization.
+                <strong>Architected and launched a centralized Offline Analytics Platform</strong>, 
+                  integrating Airflow, Kubernetes, CI/CD, and ELK to
+                  standardize ETL development and eliminate duplicated tooling across teams.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
