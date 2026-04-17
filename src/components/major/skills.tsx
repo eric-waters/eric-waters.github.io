@@ -12,7 +12,7 @@ export default function Skills() {
       title: "Programming Languages",
       content: [
         {
-          name: "Typescript",
+          name: "TypeScript",
           image: "/skills/typescript.png",
           description:
             "A superset of JavaScript that adds static typing. I use it in all my web projects, as it helps catch errors early and improves code quality.",

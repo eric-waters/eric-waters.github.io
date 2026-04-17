@@ -16,15 +16,17 @@ export default function Experience() {
             Software Application Development Engineer
           </div>
           <div className="my-8">
+            <div className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              Offline Data Analytics Platform
+            </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Developed an AI-powered contract auditing tool</strong>{" "}
-                that enabled enterprise legal teams to identify risks and
-                inefficiencies, resulting in up to{" "}
-                <strong>$30M in estimated cost savings</strong>.
+                <strong>Lead Developer for a centralized ETL platform</strong>,
+                aggregating Airflow, Kubernetes, and Docker to standardize data
+                ingestion across the organization.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -33,11 +35,10 @@ export default function Experience() {
               </div>
               <div>
                 <strong>
-                  Built a modular web platform for Generative AI tools{" "}
+                  Reduced ETL onboarding time from several weeks to 2 days
                 </strong>{" "}
-                using Angular and Sanic, enabling rapid development of
-                AI-powered apps with reusable components, unified UI, and robust
-                API integrations.
+                by creating reusable GitHub Actions CI/CD workflows and a
+                custom Python library for rapid Airflow DAG development.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -45,9 +46,24 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Designed a no-code AI app studio </strong> using React,
-                Next.js, and Tailwind, empowering teams to create and deploy AI
-                apps without using development resources.
+                <strong>Integrated ELK Stack for unified monitoring</strong> and
+                logging, providing a single dashboard to manage health and
+                performance for dozens of tenant applications.
+              </div>
+            </div>
+
+            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              Generative AI Web Platform
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>Developed a suite of 5 GenAI applications</strong>
+                using Angular and Python (Sanic), including a legal contract
+                audit tool estimated to save $30M annually (recipient of a
+                Divisional Recognition Award).
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -55,36 +71,99 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Engineered a scalable ML analytics API </strong> for
-                manufacturing data using FastAPI, Docker, and Kubernetes,
-                enabling seamless integration of advanced analytics into
-                multiple applications.
-              </div>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>
-                <Check className="text-blue-500" />
-              </div>
-              <div>
-                {/* <strong>Independently administered an AI search platform</strong> for
-                manufacturing data, delivering up to{" "}
-                <strong>$5M in estimated ROI</strong> through faster
-                problem-solving. Created robust ETL pipelines using Pandas and
-                SQL Server to ingest, normalize, and consolidate data across
-                business units.{" "} */}
                 <strong>
-                  Independently administered an AI search platform
+                  Architected a no-code drag-and-drop AI app studio
                 </strong>{" "}
-                for manufacturing data, enabling faster problem-solving. Created
-                robust ETL pipelines using Pandas and SQL Server to ingest,
-                normalize, and consolidate data across business units.{" "}
+                using React, Next.js, Tailwind CSS, enabling non-technical
+                teams to build custom AI workflows in record time.
+              </div>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>Redesigned the platform's UI/UX</strong>, implementing
+                reusable frontend components to standardize design language and
+                accelerate development cycles across 6+ developers.
+              </div>
+            </div>
+
+            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              Factory Excursion Management API
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>
+                  Spearheaded the architectural merger of two massive FastAPI
+                  instances
+                </strong>
+                , unifying authentication (OAuth 2.0/OpenID), logging, and
+                CI/CD pipelines to reduce long-term maintenance overhead.
+              </div>
+            </div>
+
+            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              Factory ML Analysis API
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>
+                  Engineered a high-availability FastAPI service
+                </strong>{" "}
+                to expose legacy .NET ML algorithms to external applications,
+                handling hundreds of thousands of requests.
+              </div>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>Implemented a Blue-Green deployment strategy</strong> on
+                Windows VMs using reverse proxies and GitHub Actions, ensuring
+                zero-downtime updates for factory analysis.
+              </div>
+            </div>
+
+            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+              AI Cognitive Search Engine
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>
+                  Sole Administrator for a cross-company cognitive search
+                  engine
+                </strong>
+                ; developed ETL pipelines using Python, Pandas, and SQL Server
+                to index millions of documents from SharePoint, Wikis, and work
+                orders.
+              </div>
+            </div>
+            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
+              <div>
+                <Check className="text-blue-500" />
+              </div>
+              <div>
+                <strong>Optimized factory engineering workflows</strong>,
+                resulting in an estimated $15M/year in time savings by enabling
+                rapid discovery of crucial technical documentation.
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <Image
-              src="/intel-ocotillo.png"
+              src="/intel.jpg"
               alt="Intel Ocotillo Campus"
               width={500}
               height={500}

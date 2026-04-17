@@ -57,7 +57,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               className="ml-3 text-blue-500 md:ml-5"
             />
           }
-          subheading="Over 2 years of professionally building and shipping full-stack applications."
+          subheading="Over 3 years of professionally building and shipping full-stack applications."
         />
       </motion.div>
 
