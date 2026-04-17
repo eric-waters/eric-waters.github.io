@@ -60,7 +60,7 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Developed a suite of 5 GenAI applications</strong>
+                <strong>Developed a suite of 5 GenAI applications </strong>
                 using Angular and Python (Sanic), including a legal contract
                 audit tool estimated to save $30M annually (recipient of a
                 Divisional Recognition Award).
@@ -83,7 +83,7 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Redesigned the platform's UI/UX</strong>, implementing
+                <strong>Redesigned the platform&apos;s UI/UX</strong>, implementing
                 reusable frontend components to standardize design language and
                 accelerate development cycles across 6+ developers.
               </div>
