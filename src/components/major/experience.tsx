@@ -16,7 +16,7 @@ export default function Experience() {
             Software Application Development Engineer
           </div>
           <div className="my-8">
-            <div className="text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            <div className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
               Offline Data Analytics Platform
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -52,7 +52,7 @@ export default function Experience() {
               </div>
             </div>
 
-            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
               Generative AI Web Platform
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -89,7 +89,7 @@ export default function Experience() {
               </div>
             </div>
 
-            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
               Factory Excursion Management API
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -106,7 +106,7 @@ export default function Experience() {
               </div>
             </div>
 
-            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
               Factory ML Analysis API
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -132,7 +132,7 @@ export default function Experience() {
               </div>
             </div>
 
-            <div className="mt-6 text-xl font-semibold text-neutral-900 dark:text-neutral-100">
+            <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
               AI Cognitive Search Engine
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">

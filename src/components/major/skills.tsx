@@ -118,6 +118,12 @@ export default function Skills() {
       title: "Data Technologies",
       content: [
         {
+          name: "Apache Airflow",
+          image: "/skills/airflow.png",
+          description:
+            "An orchestration platform for scheduling and managing ETL workflows. At Intel, I built an internal Offline Analytics Platform around Airflow DAGs to standardize and improve data pipelines.",
+        },
+        {
           name: "Pandas",
           image: "/skills/pandas.png",
           description:
