@@ -11,34 +11,22 @@ export default function Experience() {
       title: "2023 - Present",
       content: (
         <div>
-          <div className="text-3xl">Intel Corporation</div>
+          <div className="text-3xl">Intel Corporation - Chandler, AZ</div>
           <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Software Application Development Engineer
           </div>
           <div className="my-8">
             <div className="text-lg font-medium text-neutral-900 dark:text-neutral-100">
-              Offline Data Analytics Platform
+              Batch Data Processing Platform
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Architected and launched a centralized Offline Analytics Platform</strong>, 
-                  integrating Airflow, Kubernetes, CI/CD, and ELK to
-                  standardize ETL development and eliminate duplicated tooling across teams.
-              </div>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>
-                <Check className="text-blue-500" />
-              </div>
-              <div>
-                <strong>
-                  Reduced ETL onboarding time from several weeks to 2 days
-                </strong>{" "}
-                by creating reusable GitHub Actions CI/CD workflows and a
-                custom Python library for rapid Airflow DAG development.
+                Designed and built a standardized batch processing framework
+                that <strong>unifies disparate manufacturing ETL implementations</strong>{" "}
+                using Airflow, Docker, Kubernetes, GitHub Actions, and ELK.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -46,9 +34,10 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Integrated ELK Stack for unified monitoring</strong> and
-                logging, providing a single dashboard to manage health and
-                performance for dozens of tenant applications.
+                Created <strong>reusable platform tooling</strong> for ETL
+                development, logging, CI/CD, and DAG creation, enabling teams
+                to rapidly build and deploy pipelines with
+                consistent infrastructure, performance, and quality.
               </div>
             </div>
 
@@ -60,10 +49,10 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Developed a suite of 5 GenAI applications </strong>
+                Developed a <strong>suite of 5 enterprise GenAI applications</strong>{" "}
                 using Angular and Python (Sanic), including a legal contract
-                audit tool estimated to save $30M annually (recipient of a
-                Divisional Recognition Award).
+                auditing tool estimated to save $30M annually and recognized
+                with a Divisional Recognition Award.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -71,11 +60,10 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>
-                  Architected a no-code drag-and-drop AI app studio
-                </strong>{" "}
-                using React, Next.js, Tailwind CSS, enabling non-technical
-                teams to build custom AI workflows in record time.
+                Designed and developed <strong>a no-code AI application studio</strong>{" "}
+                using React, Next.js, and Tailwind CSS, enabling non-technical
+                teams to create custom AI workflows through an intuitive
+                drag-and-drop interface.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -83,14 +71,15 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Redesigned the platform&apos;s UI/UX</strong>, implementing
-                reusable frontend components to standardize design language and
-                accelerate development cycles across 6+ developers.
+                Transformed the platform UI/UX into a <strong>modern, visually
+                polished experience</strong>{" "}and built <strong>reusable frontend
+                components</strong>{" "}that improved consistency and accelerated
+                feature delivery across applications.
               </div>
             </div>
 
             <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
-              Factory Excursion Management API
+              Autonomous Excursion Response API
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>
@@ -98,11 +87,12 @@ export default function Experience() {
               </div>
               <div>
                 <strong>
-                  Spearheaded the architectural merger of two massive FastAPI
-                  instances
+                  Led consolidation of two large-scale FastAPI services into a
+                  unified API
                 </strong>
-                , unifying authentication (OAuth 2.0/OpenID), logging, and
-                CI/CD pipelines to reduce long-term maintenance overhead.
+                , standardizing authentication, CI/CD workflows, Kubernetes
+                deployments, and logging, reducing long-term complexity and
+                maintenance overhead.
               </div>
             </div>
 
@@ -114,11 +104,10 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>
-                  Engineered a high-availability FastAPI service
-                </strong>{" "}
-                to expose legacy .NET ML algorithms to external applications,
-                handling hundreds of thousands of requests.
+                Engineered an asynchronous <strong>FastAPI service for internal
+                ML algorithms</strong>, enabling external applications to
+                execute long-running analytics jobs and retrieve ranked
+                correlation results from factory-scale datasets.
               </div>
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
@@ -126,37 +115,24 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Implemented a Blue-Green deployment strategy</strong> on
-                Windows VMs using reverse proxies and GitHub Actions, ensuring
-                zero-downtime updates for factory analysis.
+                Designed a blue-green deployment architecture on Windows VMs
+                and automated CI/CD with GitHub Actions, enabling <strong>seamless
+                failover and zero-downtime deployments</strong>.
               </div>
             </div>
 
             <div className="mt-6 text-lg font-medium text-neutral-900 dark:text-neutral-100">
-              AI Cognitive Search Engine
+              AI Enterprise Search Engine
             </div>
             <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
               <div>
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>
-                  Sole Administrator for a cross-company cognitive search
-                  engine
-                </strong>
-                ; developed ETL pipelines using Python, Pandas, and SQL Server
-                to index millions of documents from SharePoint, Wikis, and work
-                orders.
-              </div>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>
-                <Check className="text-blue-500" />
-              </div>
-              <div>
-                <strong>Optimized factory engineering workflows</strong>,
-                resulting in an estimated $15M/year in time savings by enabling
-                rapid discovery of crucial technical documentation.
+                Administered an AI-powered enterprise search platform,
+                developing Python ETL pipelines and managing 4 VMware servers
+                to <strong>index millions of manufacturing documents</strong>{" "}
+                and unify fragmented knowledge sources.
               </div>
             </div>
           </div>
@@ -185,7 +161,7 @@ export default function Experience() {
       title: "2022",
       content: (
         <div>
-          <div className="text-3xl">Dell Technologies</div>
+          <div className="text-3xl">Dell Technologies - Round Rock, TX</div>
           <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Graduate Software Engineering Intern
           </div>
@@ -195,19 +171,11 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Implemented OAuth 2.0 SSO </strong>
-                across several enterprise apps, unifying authentication and
-                enhancing user experience.
-              </div>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>
-                <Check className="text-blue-500" />
-              </div>
-              <div>
-                <strong>Integrated fine-grained authorization controls </strong>
-                for several web apps and REST APIs using Spring Boot and
-                Angular, strengthening security and compliance.
+                Implemented <strong>OAuth 2.0 SSO</strong> and <strong>fine-grained
+                authorization controls</strong>{" "}across multiple enterprise web
+                applications and REST APIs using Spring Boot and Angular,
+                centralizing authentication, strengthening security and
+                compliance, and streamlining user access.
               </div>
             </div>
           </div>
@@ -235,7 +203,7 @@ export default function Experience() {
       title: "2021",
       content: (
         <div>
-          <div className="text-3xl">Dell Technologies</div>
+          <div className="text-3xl">Dell Technologies - Round Rock, TX</div>
           <div className="text-xl text-neutral-800 dark:text-neutral-200">
             Undergraduate Software Engineering Intern
           </div>
@@ -245,19 +213,9 @@ export default function Experience() {
                 <Check className="text-blue-500" />
               </div>
               <div>
-                <strong>Built a custom Kanban board app</strong> with Spring and
-                MySQL, improving agile collaboration and task tracking for
-                engineering teams.
-              </div>
-            </div>
-            <div className="flex items-start gap-2 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
-              <div>
-                <Check className="text-blue-500" />
-              </div>
-              <div>
-                <strong>Designed an interactive Adobe XD prototype</strong> to
-                streamline the onboarding experience for an employee resource
-                group, earning 1st place in the Dell Intern Hackathon.
+                Built a <strong>custom Kanban board application</strong>{" "}using
+                Spring, improving agile workflow visibility and collaboration
+                across engineering teams.
               </div>
             </div>
           </div>

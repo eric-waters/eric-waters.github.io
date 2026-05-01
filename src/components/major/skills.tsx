@@ -196,12 +196,6 @@ export default function Skills() {
             "A platform for building and deploying ML models. I used it extensively in graduate school for various ML tasks and leveraged TensorFlow Lite to deploy models on mobile devices.",
         },
         {
-          name: "LangChain",
-          image: "/skills/langchain.png",
-          description:
-            "A framework for building applications with LLMs. I used it at Intel to develop APIs to serve generative AI models for creating chatbots and other AI applications.",
-        },
-        {
           name: "Scikit-learn",
           image: "/skills/scikit.png",
           description:
@@ -247,6 +241,12 @@ export default function Skills() {
           image: "/skills/harbor.png",
           description:
             "An open-source cloud-native registry that stores, signs, and scans content. I've used it at Intel to manage and secure container images in my projects.",
+        },
+        {
+          name: "ELK Stack",
+          image: "/skills/elastic.png",
+          description:
+            "A powerful suite for search, logging, and analytics. I've used it at Intel to create dashboards and alerts to monitor and analyze application performance.",
         },
       ],
     },

@@ -15,7 +15,7 @@ const testimonials = [
     position: "Software Application Development Engineer",
     date: "August 2023 - Present",
     description:
-      "Architected an offline analytics platform, created a suite of 5 GenAI applications, a no-code AI app studio, a scalable ML analytics API, and administered an AI search engine.",
+      "Built a standardized manufacturing ETL platform, delivered 5 enterprise GenAI apps, created a no-code AI studio, and led FastAPI/ML API and enterprise search initiatives.",
   },
   {
     name: "Arizona State University",
@@ -35,7 +35,7 @@ const testimonials = [
     position: "Graduate Software Engineering Intern",
     date: "June 2022 - August 2022",
     description:
-      "Implemented OAuth 2.0 SSO and fine-grained authorization across enterprise apps and APIs, unifying authentication and enhancing security and compliance.",
+      "Implemented OAuth 2.0 SSO and fine-grained authorization across enterprise apps and REST APIs using Spring Boot and Angular, centralizing authentication and strengthening security and compliance.",
   },
   {
     name: "Arizona State University",
@@ -55,7 +55,7 @@ const testimonials = [
     position: "Undergraduate Software Engineering Intern",
     date: "May 2021 - August 2021",
     description:
-      "Developed a Kanban board app with Spring/MySQL to enhance team agility, and won 1st place in Dell's Intern Hackathon with an Adobe XD onboarding prototype.",
+      "Built a custom Kanban board application with Spring, improving agile workflow visibility and collaboration across engineering teams.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function Hero() {
                 }}
                 className="z-10 max-w-2xl py-4 text-start text-lg font-normal text-neutral-900 md:px-0 lg:pr-4 lg:text-left lg:text-xl dark:text-neutral-200"
               >
-                I&apos;m a versatile software engineer with 3+ years of experience building production APIs, responsive UIs, data processing pipelines, AI/ML integrations, and cloud/DevOps solutions.
+                I&apos;m a Software Engineer with proven expertise in building robust APIs, data pipelines, AI/ML integrations, responsive UIs, and cloud/DevOps solutions.
               </motion.p>
               <motion.div
                 initial={{
